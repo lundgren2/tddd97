@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="client.css" type="text/css" rel="stylesheet">
+    <script src="client.js" type="text/javascript"></script>
+    <script src="serverstub.js" type="text/javascript"></script>
+    <title>TWIDDER</title>
+
+    <script id="welcomeview" type="text/view">
+        <div class="container">
+            <div id="logoslogan"><a href="/TDDD97/client.html"><img src="wimagew.png" width="340" height="400"/></a></div><!-- logo slogan -->
+            <div id="login">
+                <h2>Sign In</h2><br />
+                <form onsubmit="return loginConverter(this);">
+                    <label>Email<input type="email" name="email" required></label><br>
+                    <label>Password<input type="password" id="loginpass" name="password" required></label>
+                    <button type="submit">Login</button>
+                </form>
+            </div><!-- login -->
+            <div id="signup">
+                 <h2>Sign up here</h2><br />
+                <form id="signupform" onsubmit="return signupConverter(this);">
+                    <fieldset>
+                        <label>First name<input id="firstname" type="text" name="firstname" required></label><br />
+                        <label>Last name<input id="lastname" type="text" name="lastname" required></label><br />
+                        <label>Gender
+                            <select id="gender">
+                                <option value="Male">-- Select --</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </label>
+                        <label>City <input id="city" type="text" name="city" required></label><br />
+                        <label>Country <input id="country" type="text" name="country" required></label><br />
+                        <label>Email <input id="email" type="email" name="email" required></label><br />
+                        <label>Password: <input id="password" type="password" onkeyup="passwordLength()" required></label><br />
+                        <label>Repeat PW <input id="confirm_password" type="password" onkeyup="validatePassword()" required></label>
+                        <button type="submit">Sign Up</button>
+                    </fieldset>
+                </form>
+
+            </div><!-- signup -->
+        </div><!-- container -->
+    </script><!-- welcomveview -->
+
+    <script id="profileview" type="text/html">
+        <header id="header">
+            <nav id="nav">
+                <ul id="tabs">
+                    <li id="home" class="selected"><a onclick='tabs("home")' href="javascript:void(0);">Home</a></li>
+                    <li id="browse"><a onclick='tabs("browse")' href="javascript:void(0);">Browse</a></li>
+                    <li id="account"><a onclick='tabs("account")' href="javascript:void(0);">Account</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div id="loggedin">
+                <div id="tabview"></div>
+            </div>
+        </div><!-- container -->
+    </script><!-- profileveview -->
+
+    <script id="hometab" type="text/html">
+        <h1>Welcome </h1><br />
+        <div class="persinfo" id="usrfirstname"></div>
+        <div class="persinfo" id="usrfamname"></div>
+        <div id="personalinfo">
+
+            <h2>Personal information</h2>
+
+            <label>Firstname:</label>
+            <div class="persinfo" id="usrfirstname"> </div><br />
+
+            <label>Lastname:</label>
+            <div class="persinfo" id="usrfamname"></div><br />
+
+            <label>Gender: </label>
+            <div class="persinfo" id="usrgender"></div><br />
+
+            <label>City: </label>
+            <div class="persinfo" id="usrcity"></div><br />
+
+            <label>Country: </label>
+            <div class="persinfo" id="usrcountry"></div><br />
+
+            <label>E-mail address: </label>
+            <div class="persinfo" id="usremail"></div><br />
+
+            <button class="signout" onclick='logoutUser()'>Sign out</button>
+        </div>
+    </script><!-- homeview -->
+
+    <script id="browsetab" type="text/html">
+    </script><!-- browseview -->
+
+    <script id="accounttab" type="text/html">
+    </script><!-- accountview -->
+</head>
+<body>
+    <div id="mainview"></div><!-- view content -->
+
+</body>
+</html><!-- logo slogan -->
+                   
