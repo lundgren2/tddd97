@@ -6,13 +6,11 @@ def hello():
     return "Hello World!"
 
 
-@app.route("/sign_in")
-def login();
+@app.route("/sign_in/<email>/<password>")
+def login(email,password):
 
-
-
-
-
+    email = request.form['email']
+    password = request.form['password']
 
 
 if __name__ == "__main__":
