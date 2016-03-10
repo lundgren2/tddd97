@@ -19,8 +19,6 @@ def teardown_request(exception):
     database_helper.close_db()
 
 
-
-
 @app.route("/")
 def hello_world():
     return "Hello World!"
@@ -37,6 +35,12 @@ def signup():
     city = request.get_json()['city']
     country = request.get_json()['country']
     #messages = ???
+
+result = database_helper.signup_contact(email, password, firstname, familyname, gender, city, country)
+    if result == True:
+        return 'Successfully created a new user.', 200
+    else:
+        return 'Form data missing or incorrect type.', 501
 
 
 
