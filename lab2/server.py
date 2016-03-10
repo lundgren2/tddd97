@@ -36,12 +36,11 @@ def signup():
     country = request.get_json()['country']
     #messages = ???
 
-result = database_helper.signup_contact(email, password, firstname, familyname, gender, city, country)
-    if result == True:
+    result = database_helper.signup_contact(email, password, firstname, familyname, gender, city, country)
+    if result is True:
         return 'Successfully created a new user.', 200
     else:
         return 'Form data missing or incorrect type.', 501
-
 
 
 @app.route('/sign_in/<email>/<password>', methods=['GET'])
