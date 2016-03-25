@@ -17,5 +17,6 @@ def close_connection(exception):
 
 
 login_contact
-signup_contact
+signup_contact()
+sign_in()
 def login()

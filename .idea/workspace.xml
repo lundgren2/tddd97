@@ -2,7 +2,619 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d39853b-5204-435b-81c5-6d621e399466" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/.Python" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/activate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/activate.csh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/activate.fish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/activate_this.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/easy_install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/easy_install-2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/pip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/pip2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/pip2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/python" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/python-config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/python2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/python2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/bin/wheel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/include/python2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/UserDict.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/_abcoll.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/_weakrefset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/abc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/codecs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/copy_reg.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/distutils/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/distutils/distutils.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/encodings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/fnmatch.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/genericpath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/lib-dynload" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/linecache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/locale.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/no-global-site-packages.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/ntpath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/orig-prefix.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/os.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/posixpath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/re.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Flask-0.10.1.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Flask-0.10.1.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Flask-0.10.1.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Flask-0.10.1.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Flask-0.10.1.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Flask-0.10.1.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Flask-0.10.1.dist-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/entry_points.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/MarkupSafe-0.23.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/MarkupSafe-0.23.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/MarkupSafe-0.23.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/MarkupSafe-0.23.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/MarkupSafe-0.23.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/MarkupSafe-0.23.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/MarkupSafe-0.23.dist-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Werkzeug-0.11.4.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Werkzeug-0.11.4.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Werkzeug-0.11.4.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Werkzeug-0.11.4.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Werkzeug-0.11.4.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Werkzeug-0.11.4.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/Werkzeug-0.11.4.dist-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/_markerlib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/_markerlib/markers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/easy_install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/_compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/blueprints.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/ctx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/debughelpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/ext/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/exthook.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/globals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/json.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/logging.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/module.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/signals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/templating.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/appctx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/basic.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/blueprints.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/deprecations.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/examples.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/ext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/reqctx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/signals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/static/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/subclassing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/templates/_macro.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/templates/context_template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/templates/escaping_template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/templates/mail.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/templates/nested/nested.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/templates/simple_template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/templates/template_filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/templates/template_test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/templating.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/admin/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/admin/static/css/test.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/admin/static/test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/admin/templates/admin/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/frontend/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/frontend/templates/frontend/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/config_module_app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/config_package_app/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_broken/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_broken/b.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_newext_package/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_newext_package/submodule.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_newext_simple.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/flaskext/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/flaskext/oldext_package/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/flaskext/oldext_package/submodule.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/flaskext/oldext_simple.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/importerror.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/lib/python2.5/site-packages/SiteEgg.egg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/lib/python2.5/site-packages/site_app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/lib/python2.5/site-packages/site_package/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/main_app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/admin/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/admin/static/css/test.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/admin/static/test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/admin/templates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/frontend/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/frontend/templates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/path/installed_package/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/subdomaintestmodule/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/test_apps/subdomaintestmodule/static/hello.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/testing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/testsuite/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/flask/wrappers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/itsdangerous-0.24.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/itsdangerous-0.24.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/itsdangerous-0.24.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/itsdangerous-0.24.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/itsdangerous-0.24.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/itsdangerous-0.24.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/itsdangerous-0.24.dist-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/itsdangerous.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/_compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/_stringdefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/bccache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/compiler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/debug.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/defaults.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/environment.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/ext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/filters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/lexer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/loaders.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/meta.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/nodes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/optimizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/runtime.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/sandbox.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/jinja2/visitor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/markupsafe/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/markupsafe/_compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/markupsafe/_constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/markupsafe/_native.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/markupsafe/_speedups.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/markupsafe/_speedups.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/markupsafe/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip-8.0.2.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip-8.0.2.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip-8.0.2.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip-8.0.2.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip-8.0.2.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip-8.0.2.dist-info/entry_points.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip-8.0.2.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip-8.0.2.dist-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/__main__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/_markerlib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/_markerlib/markers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/_cmd.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/adapter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/controller.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/filewrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/heuristics.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/serialize.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/wrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/colorama/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/colorama/ansi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/colorama/ansitowin32.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/colorama/initialise.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/colorama/win32.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/colorama/winterm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/misc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/shutil.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/sysconfig.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/sysconfig.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/tarfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/database.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/locators.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/manifest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/markers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/metadata.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/resources.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/scripts.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/t32.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/t64.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/w32.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/w64.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/distlib/wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/alphabeticalattributes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/inject_meta_charset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/optionaltags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/sanitizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/whitespace.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/html5parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/ihatexml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/inputstream.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/sanitizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer/htmlserializer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/tokenizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treeadapters/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treeadapters/sax.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/dom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/etree.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/etree_lxml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/dom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/etree.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/genshistream.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/lxmletree.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/pulldom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/trie/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/trie/_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/trie/datrie.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/trie/py.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/ipaddress.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/linklockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/mkdirlockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/pidlockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/sqlitelockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/symlinklockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/packaging/__about__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/packaging/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/packaging/_compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/packaging/_structures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/packaging/markers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/packaging/specifiers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/packaging/version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/pkg_resources/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/progress/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/progress/bar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/progress/counter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/progress/helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/progress/spinner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/pyparsing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/re-vendor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/adapters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/api.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/auth.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/cacert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/certs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/cookies.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/hooks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/big5freq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/big5prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/chardetect.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/chardistribution.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/charsetgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/charsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/codingstatemachine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/cp949prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/escprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/escsm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/eucjpprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/euckrfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/euckrprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/euctwfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/euctwprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/gb2312freq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/gb2312prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/hebrewprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/jisfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/jpcntx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/langbulgarianmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/langcyrillicmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/langgreekmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/langhebrewmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/langhungarianmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/langthaimodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/latin1prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/mbcharsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/mbcsgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/mbcssm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/sbcharsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/sbcsgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/sjisprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/universaldetector.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/utf8prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/_collections.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/connection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/connectionpool.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/contrib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/contrib/appengine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/contrib/ntlmpool.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/contrib/pyopenssl.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/fields.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/filepost.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/packages/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/packages/ordered_dict.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/packages/six.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/poolmanager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/request.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/response.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/connection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/request.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/response.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/retry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/timeout.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/url.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/status_codes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/structures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/requests/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/retrying.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/_vendor/six.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/basecommand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/baseparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/cmdoptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/commands/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/commands/completion.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/commands/download.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/commands/freeze.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/commands/hash.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/commands/help.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/commands/install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/commands/list.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/commands/search.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/commands/show.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/commands/uninstall.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/commands/wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/compat/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/compat/dictconfig.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/download.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/locations.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/models/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/models/index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/operations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/operations/freeze.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/pep425tags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/req/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/req/req_file.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/req/req_install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/req/req_set.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/req/req_uninstall.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/status_codes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/utils/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/utils/appdirs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/utils/build.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/utils/deprecation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/utils/filesystem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/utils/hashes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/utils/logging.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/utils/outdated.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/utils/setuptools_build.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/utils/ui.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/vcs/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/vcs/bazaar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/vcs/git.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/vcs/mercurial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/vcs/subversion.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pip/wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pkg_resources/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pkg_resources/_vendor/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/__about__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/_compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/_structures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/specifiers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pkg_resources/_vendor/six.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/pkg_resources/extern/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools-20.1.1.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools-20.1.1.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools-20.1.1.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools-20.1.1.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools-20.1.1.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools-20.1.1.dist-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools-20.1.1.dist-info/entry_points.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools-20.1.1.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools-20.1.1.dist-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools-20.1.1.dist-info/zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/archive_util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/cli-32.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/cli-64.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/cli-arm-32.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/cli.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/alias.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/bdist_egg.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/bdist_rpm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/bdist_wininst.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/build_ext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/build_py.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/develop.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/easy_install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/egg_info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/install_egg_info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/install_lib.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/install_scripts.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/launcher manifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/register.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/rotate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/saveopts.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/sdist.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/setopt.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/upload.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/command/upload_docs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/depends.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/dist.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/extension.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/extern/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/gui-32.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/gui-64.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/gui-arm-32.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/gui.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/launch.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/lib2to3_ex.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/msvc9_support.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/package_index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/py26compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/py27compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/py31compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/sandbox.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/script (dev).tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/script.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/site-patch.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/ssl_support.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/unicode_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/setuptools/windows_support.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/_compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/_internal.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/_reloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/contrib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/contrib/atom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/contrib/cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/contrib/fixers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/contrib/iterio.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/contrib/jsrouting.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/contrib/limiter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/contrib/lint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/contrib/profiler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/contrib/securecookie.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/contrib/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/contrib/testtools.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/contrib/wrappers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/datastructures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/debug/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/debug/console.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/debug/repr.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/debug/shared/FONT_LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/debug/shared/console.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/debug/shared/debugger.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/debug/shared/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/debug/shared/less.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/debug/shared/more.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/debug/shared/source.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/debug/shared/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/debug/shared/ubuntu.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/debug/tbtools.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/filesystem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/formparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/http.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/local.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/posixemulation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/routing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/script.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/security.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/serving.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/testapp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/useragents.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/wrappers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/werkzeug/wsgi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel-0.29.0.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel-0.29.0.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel-0.29.0.dist-info/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel-0.29.0.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel-0.29.0.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel-0.29.0.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel-0.29.0.dist-info/entry_points.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel-0.29.0.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel-0.29.0.dist-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/__main__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/archive.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/bdist_wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/decorator.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/egg2wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/eggnames.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/metadata.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/paths.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/pep425tags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/pkginfo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/signatures/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/signatures/djbec.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/signatures/ed25519py.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/signatures/keys.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/complex-dist/complexdist/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/complex-dist/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/headers.dist/header.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/headers.dist/headersdist.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/headers.dist/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/pydist-schema.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/simple.dist/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/simple.dist/simpledist/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/test-1.0-py2.py3-none-win32.whl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/test_basic.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/test_install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/test_keys.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/test_paths.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/test_ranking.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/test_signatures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/test_tagopt.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/test_tool.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/test/test_wheelfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/tool/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site-packages/wheel/wininst2wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/site.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/sre.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/sre_compile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/sre_constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/sre_parse.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/stat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/types.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/lib/python2.7/warnings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/venv/pip-selfcheck.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TDDD97.iml" afterPath="$PROJECT_DIR$/.idea/TDDD97.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab1/serverstub.js" afterPath="$PROJECT_DIR$/lab1/serverstub.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab2/database_helper.py" afterPath="$PROJECT_DIR$/lab2/database_helper.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab2/server.py" afterPath="$PROJECT_DIR$/lab2/server.py" />
     </list>
     <ignored path="TDDD97.iws" />
@@ -17,7 +629,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/TDDD97$server.coverage" NAME="server Coverage Results" MODIFIED="1456268547618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab2" />
+    <SUITE FILE_PATH="PyCharm50/coverage/TDDD97$server.coverage" NAME="server Coverage Results" MODIFIED="1456268547618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab2" />
+    <SUITE FILE_PATH="coverage/TDDD97$server.coverage" NAME="server Coverage Results" MODIFIED="1458915126835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab2" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -33,11 +646,9 @@
           <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lab2/server.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3313253">
-                  <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#30#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="30">
+                  <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -45,8 +656,8 @@
           <file leaf-file-name="serverstub.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-15.259259">
-                  <caret line="150" column="55" selection-start-line="150" selection-start-column="55" selection-end-line="150" selection-end-column="55" />
+                <state relative-caret-position="2250">
+                  <caret line="154" column="55" selection-start-line="154" selection-start-column="55" selection-end-line="154" selection-end-column="55" />
                   <folding />
                 </state>
               </provider>
@@ -55,8 +666,8 @@
           <file leaf-file-name="database_helper.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+                <state relative-caret-position="270">
+                  <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
                   <folding>
                     <element signature="e#0#14#0" expanded="true" />
                   </folding>
@@ -67,12 +678,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="serverstub.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.9148191">
-                  <caret line="156" column="40" selection-start-line="156" selection-start-column="40" selection-end-line="156" selection-end-column="40" />
+                <state relative-caret-position="330">
+                  <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -83,8 +694,18 @@
     </splitter>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="lundgren2" />
+      </list>
+    </option>
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="lundgren2" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="TDDD97" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -93,8 +714,8 @@
         <option value="$PROJECT_DIR$/client.css" />
         <option value="$PROJECT_DIR$/client.js" />
         <option value="$PROJECT_DIR$/client.html" />
-        <option value="$PROJECT_DIR$/lab1/serverstub.js" />
         <option value="$PROJECT_DIR$/lab2/database_helper.py" />
+        <option value="$PROJECT_DIR$/lab1/serverstub.js" />
         <option value="$PROJECT_DIR$/lab2/server.py" />
       </list>
     </option>
@@ -105,10 +726,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="608" />
+    <option name="x" value="1109" />
     <option name="y" value="23" />
-    <option name="width" value="1632" />
-    <option name="height" value="977" />
+    <option name="width" value="1451" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -152,7 +773,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -191,12 +811,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/GitHub/TDDD97/lab2/virtenv" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -295,7 +916,21 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="TDDD97" />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
@@ -306,6 +941,7 @@
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -430,7 +1066,9 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -439,46 +1077,58 @@
       <changelist id="2d39853b-5204-435b-81c5-6d621e399466" name="Default" comment="" />
       <created>1453390283257</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1453390283257</updated>
     </task>
     <task id="LOCAL-00001" summary="added SQLite with Flask">
       <created>1456268004694</created>
       <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1456268004694</updated>
     </task>
     <task id="LOCAL-00002" summary="added SQLite with Flask">
       <created>1457626432881</created>
       <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
       <updated>1457626432881</updated>
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="608" y="23" width="1632" height="977" extended-state="0" />
-    <editor active="true" />
+    <frame x="1109" y="23" width="1451" height="1417" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1327044" sideWeight="0.4960452" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19111817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1327044" sideWeight="0.5039548" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13058907" sideWeight="0.48760933" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24107851" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980143" sideWeight="0.49708456" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980143" sideWeight="0.50291544" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24107851" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -497,17 +1147,26 @@
       <path value="$USER_HOME$" />
     </ignored-roots>
     <MESSAGE value="added SQLite with Flask" />
-    <option name="LAST_COMMIT_MESSAGE" value="added SQLite with Flask" />
+    <MESSAGE value="updated tab spaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated tab spaces" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state relative-caret-position="270">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -516,7 +1175,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.259259">
+        <state relative-caret-position="2250">
           <caret line="150" column="55" selection-start-line="150" selection-start-column="55" selection-end-line="150" selection-end-column="55" />
           <folding />
         </state>
@@ -524,11 +1183,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab2/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3313253">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="150" column="55" selection-start-line="150" selection-start-column="55" selection-end-line="150" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>

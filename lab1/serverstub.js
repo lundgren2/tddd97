@@ -28,6 +28,10 @@ var serverstub = (function() {
   };
   var persistLoggedInUsers = function(){
     localStorage.setItem("loggedinusers", JSON.stringify(loggedInUsers));
+
+
+
+
   };
   var tokenToEmail = function(token){
     return loggedInUsers[token];

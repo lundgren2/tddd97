@@ -1,5 +1,7 @@
-from flask import app, request
+#from flask import app, request
 from flask import Flask
+#app = Flask(__name__)
+
 import database_helper
 import json
 
@@ -43,12 +45,18 @@ def signup():
         return 'Form data missing or incorrect type.', 501
 
 
-@app.route('/sign_in/<email>/<password>', methods=['GET'])
-def login(email, password):
+@app.route('/login/<email>/<password>', methods=['GET'])
+def sign_in(email = None, password = None):
 
-   # result = database_helper.get_contact(email, password)
-    email = request.form['email']
-    password = request.form['password']
+    if email != None and password != None:
+        result = database_helper.sign_in(email, password)
+
+        if len(result) == 0:
+            return 'contact not found', 404
+        else:
+            return json.dumps(result), 200
+    else:
+        return "", 404
 
 
 if __name__ == "__main__":
