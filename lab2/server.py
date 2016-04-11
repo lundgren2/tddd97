@@ -6,7 +6,6 @@ import database_helper
 import json
 
 
-
 #Lesson 2
 
 app = Flask(__name__)
