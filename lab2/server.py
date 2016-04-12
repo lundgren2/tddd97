@@ -10,7 +10,7 @@ import database_helper
 import json
 import string
 
-
+# Database connections
 @app.before_request
 def before_request():
     database_helper.connect_db()
