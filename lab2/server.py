@@ -16,14 +16,14 @@ def before_request():
     database_helper.connect_db()
 
 
-@app.teardownrequest
+@app.teardown_request
 def teardown_request(exception):
     database_helper.close_db()
 
 
 @app.route("/")
 def hello_world():
-    return "Hello World!"
+    return "Hello Worldssa!"
 
 
 @app.route('/signup', methods=['POST'])

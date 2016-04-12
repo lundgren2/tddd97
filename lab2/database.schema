@@ -1,0 +1,24 @@
+CREATE TABLE IF NOT EXISTS users(
+email VARCHAR(40),
+password VARCHAR(200),
+firstname VARCHAR(40),
+familyname VARCHAR(40),
+country VARCHAR(40),
+city VARCHAR(40),
+gender VARCHAR(40),
+PRIMARY KEY(email)
+);
+
+CREATE TABLE IF NOT EXISTS loggedInUsers(
+email VARCHAR(40),
+token VARCHAR(40),
+PRIMARY KEY(email)
+);
+
+CREATE TABLE IF NOT EXISTS userMessages(
+id INTEGER PRIMARY KEY,
+toEmail VARCHAR(40),
+fromEmail VARCHAR(40),
+message VARCHAR(140)
+);
+

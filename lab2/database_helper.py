@@ -1,28 +1,28 @@
-import os
-import sqlite3 #V
-from flask import g #V
+import sqlite3
+from flask import g
+import os.path
+#from flask import Flask
 
-DATABASE = 'database.db' # V
+#DATABASE = 'database.db'
 
 db = sqlite3.connect('database.db')
-cursor = db.cursor() ##
-
+cursor = db.cursor()
 
 
 # Connect to database.db
 def connect_db():
-    return sqlite3.connect(app.config['DATABASE']) # V
+    return sqlite3.connect('database.db')
 
 
 # Get current database connection
 def get_db():
-    db = getattr(g, '_database', None) #g? #V
+    db = getattr(g, '_database', None)
     if db is None:
         db = g._database = connect_to_database()
     return db
 
 # Initializes the database
-def init_db():
+def init_db(app):
     with closing(connect_db()) as db:
         with app.open_resource('database.schema', mode='r') as f:
             db.cursor().executescript(f.read())
@@ -30,21 +30,19 @@ def init_db():
     print("db init done")
 
 
-@app.before_request
 def before_request():
     g.db = connect_db()
 
 
 # Teardown active db
-@app.teardown_appcontext
-def teardown_db(exception):
+def close_db():
     db = getattr(g, '_database', None)
     if db is not None:
         db.close()
 
 # Getting the cursor, executing and fetching the results
 def query_db(query, args=(), one=False):
-    cur = get_db().execute(query, args)
+    cur = get_db().execute(query, args) #cur = db.cursor()
     rv = cur.fetchall()
     cur.close()
     return (rv[0] if rv else None) if one else rv
@@ -57,18 +55,4 @@ def get_user(email):
     if user is None:
         print 'No such user'
     else:
-        return userData
-
-
-
-
-
-
-
-@app.teardown_appcontext
-def close_connection(exception): #Argument db?
-    db = getattr(g, '_database', None)
-    if db is not None:
-        db.close()
-
-
+        return user
