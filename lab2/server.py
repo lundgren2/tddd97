@@ -1,19 +1,20 @@
-#from flask import app, request
+from flask import app, request
 from flask import Flask
-#app = Flask(__name__)
+
+# Create application
+app = Flask(__name__)
+app.config.from_object(__name__)
+app.debug = True
 
 import database_helper
 import json
+import string
 
-
-#Lesson 2
-
-app = Flask(__name__)
-app.debug = True
 
 @app.before_request
 def before_request():
     database_helper.connect_db()
+
 
 @app.teardownrequest
 def teardown_request(exception):
@@ -27,7 +28,6 @@ def hello_world():
 
 @app.route('/signup', methods=['POST'])
 def signup():
-
     email = request.get_json()['email']
     password = request.get_json()['password']
     firstname = request.get_json()['firstname']
@@ -35,7 +35,7 @@ def signup():
     gender = request.get_json()['gender']
     city = request.get_json()['city']
     country = request.get_json()['country']
-    #messages = ???
+    # messages = ???
 
     result = database_helper.signup_contact(email, password, firstname, familyname, gender, city, country)
     if result is True:
@@ -45,8 +45,7 @@ def signup():
 
 
 @app.route('/login/<email>/<password>', methods=['GET'])
-def sign_in(email = None, password = None):
-
+def sign_in(email=None, password=None):
     if email != None and password != None:
         result = database_helper.sign_in(email, password)
 
@@ -58,5 +57,6 @@ def sign_in(email = None, password = None):
         return "", 404
 
 
+# Run file as a standalone application
 if __name__ == "__main__":
     app.run()
