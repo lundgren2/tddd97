@@ -4,6 +4,10 @@ from flask import g #V
 
 DATABASE = 'database.db' # V
 
+db = sqlite3.connect('database.db')
+cursor = db.cursor() ##
+
+
 
 # Connect to database.db
 def connect_db():
@@ -51,9 +55,9 @@ def get_user(email):
     user = query_db('select * from users where email = ?', 
         [email], one=True)
     if user is None:
-    print 'No such user'
-else:
-    return userData
+        print 'No such user'
+    else:
+        return userData
 
 
 
