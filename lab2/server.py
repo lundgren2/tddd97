@@ -27,14 +27,15 @@ def hello_world():
 
 
 @app.route('/signup', methods=['POST'])
-def signup():
-    email = request.get_json()['email']
-    password = request.get_json()['password']
-    firstname = request.get_json()['firstname']
-    familyname = request.get_json()['familyname']
-    gender = request.get_json()['gender']
-    city = request.get_json()['city']
-    country = request.get_json()['country']
+def sign_up():
+    request = requset.get_json()
+    email = request['email']
+    password = request['password']
+    firstname = request['firstname']
+    familyname = request['familyname']
+    gender = request['gender']
+    city = request['city']
+    country = request['country']
     # messages = ???
 
     result = database_helper.signup_contact(email, password, firstname, familyname, gender, city, country)
