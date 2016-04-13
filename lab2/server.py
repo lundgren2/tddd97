@@ -1,20 +1,25 @@
 from flask import app, request
 from flask import Flask
 
-# Create application
-app = Flask(__name__)
-app.config.from_object(__name__)
-app.debug = True
 
 import database_helper
-import json
-import string
+import json, random, string
+
+
+# Create application
+app = Flask(__name__)
+#app.config.from_object(__name__)
+app.debug = True
+
 
 # Database connections
+
+
 
 @app.before_request
 def before_request():
     database_helper.connect_db()
+    database_helper.init_db(app)
 
 @app.teardown_request
 def teardown_request(exception):
@@ -27,7 +32,7 @@ def hello_world():
 
 @app.route('/signup', methods=['POST'])
 def sign_up():
-    request = requset.get_json()
+    request = request.get_json()
     email = request['email']
     password = request['password']
     firstname = request['firstname']
@@ -45,17 +50,20 @@ def sign_up():
 
 
 @app.route('/login/<email>/<password>', methods=['GET'])
-def sign_in(email=None, password=None):
-    if email != None and password != None:
-        result = database_helper.sign_in(email, password)
+def signIn(email=None, password=None):
+    token = ''.join(random.choice(string.lowercase) for i in range(32))
 
-        if len(result) == 0:
-            return 'contact not found', 404
+    if email != None and password != None:
+        result = database_helper.signIn(email, password, token)
+
+        if result != True:
+            return 'user not found or wrong password', 404
         else:
-            return json.dumps(result), 200
+            return token
     else:
         return "", 404
 
+@app.route('/get_message/<email>/<password>', methods=['GET'])
 
 # Run file as a standalone application
 if __name__ == "__main__":
