@@ -11,15 +11,14 @@ import json
 import string
 
 # Database connections
+
 @app.before_request
 def before_request():
     database_helper.connect_db()
 
-
 @app.teardown_request
 def teardown_request(exception):
     database_helper.close_db()
-
 
 @app.route("/")
 def hello_world():
