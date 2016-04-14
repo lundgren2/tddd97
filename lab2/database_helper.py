@@ -22,7 +22,7 @@ def connect_db():
 def get_db():
     db = getattr(g, '_database', None)
     if db is None:
-        db = g._database = connect_to_database()
+        db = g._database = connect_db()
     return db
 
 # Initializes the database
@@ -65,21 +65,20 @@ def get_user(email):
 # Login user
 def signIn(email, password, token):
     user = get_user(email)
-
-    if user[email] is email and user[password] is password:
-
+    if user is None:
+        return "Wrong password or mail."
+    elif user[email] is email and user[password] is password:
 
         query_db('INSERT INTO loggedinusers (email, token) VALUES (?,?)',
-                 (user[email], token))
-        )
-
+                 (user[email], token)
+                 )
         return True
-    else:
-        print 'Wrong password or mail.'
 
 # Create user
 def signup_contact(email, password, firstname, familyname, gender, city, country):
     query_db('INSERT INTO users (email, password, firstname, familyname, country, city , gender) VALUES (?,?,?,?,?,?,?)',
              (email, password, firstname, familyname, country, city, gender))
 
-def get_token()
+#def create_message(email, token)
+#def get_token()
+

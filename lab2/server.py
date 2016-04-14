@@ -1,9 +1,9 @@
-from flask import app, request
-from flask import Flask
-
-
+import random
+import string
 import database_helper
-import json, random, string
+
+from flask import app
+from flask import Flask, request, redirect, url_for, send_from_directory
 
 
 # Create application
@@ -26,8 +26,8 @@ def teardown_request(exception):
     database_helper.close_db()
 
 @app.route("/")
-def hello_world():
-    return "Hello Worldssa!"
+def root():
+    return app.send_static_file('client.html')
 
 
 @app.route('/signup', methods=['POST'])
@@ -53,6 +53,7 @@ def sign_up():
 def signIn(email=None, password=None):
     token = ''.join(random.choice(string.lowercase) for i in range(32))
 
+    print token
     if email != None and password != None:
         result = database_helper.signIn(email, password, token)
 
@@ -63,7 +64,7 @@ def signIn(email=None, password=None):
     else:
         return "", 404
 
-@app.route('/get_message/<email>/<password>', methods=['GET'])
+#@app.route('/get_message/<email>/<password>', methods=['GET'])
 
 # Run file as a standalone application
 if __name__ == "__main__":

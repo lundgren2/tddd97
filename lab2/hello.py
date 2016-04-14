@@ -1,20 +1,25 @@
-#hello.py
-import os
-import flask
-import unittest
-import tempfile
+#!/usr/bin/python
+#
+# Flask server, woo!
+#
 
-class FlaskrTestCase(unittest.TestCase):
+from flask import Flask, request, redirect, url_for, send_from_directory
 
-    def setUp(self):
-        self.db_fd, flaskr.app.config['DATABASE'] = tempfile.mkstemp()
-        flaskr.app.config['TESTING'] = True
-        self.app = flaskr.app.test_client()
-        flaskr.init_db()
+# Setup Flask app.
+app = Flask(__name__)
+app.debug = True
 
-    def tearDown(self):
-        os.close(self.db_fd)
-        os.unlink(flaskr.app.config['DATABASE'])
+
+# Routes
+@app.route('/')
+def root():
+  return "app.send_static_file('index.html')"
+
+@app.route('/<path:path>')
+def static_proxy(path):
+  # send_static_file will guess the correct MIME type
+  return app.send_static_file(path)
+
 
 if __name__ == '__main__':
-    unittest.main()
+  app.run()
