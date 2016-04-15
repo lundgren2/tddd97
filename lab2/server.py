@@ -1,14 +1,15 @@
-from flask import app, request
 from flask import Flask
+from flask import request
+import database_helper
+import json
+#import flask import jsonify
 
 # Create application
 app = Flask(__name__)
 app.config.from_object(__name__)
 app.debug = True
 
-import database_helper
-import json
-import string
+
 
 # Database connections
 
@@ -59,4 +60,5 @@ def sign_in(email=None, password=None):
 
 # Run file as a standalone application
 if __name__ == "__main__":
+    database_helper.init_db(app)
     app.run()
