@@ -4,7 +4,7 @@ from contextlib import closing
 
 
 import os.path
-#from flask import Flask
+from flask import Flask
 
 #DATABASE = 'database.db'
 

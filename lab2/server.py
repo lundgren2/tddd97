@@ -1,15 +1,20 @@
 import random
 import string
 import database_helper
-
-from flask import app
 from flask import Flask, request, redirect, url_for, send_from_directory
+
+from flask import Flask
+from flask import request
+import database_helper
+import json
+#import flask import jsonify
 
 
 # Create application
 app = Flask(__name__)
 #app.config.from_object(__name__)
 app.debug = True
+
 
 
 # Database connections
@@ -68,4 +73,5 @@ def signIn(email=None, password=None):
 
 # Run file as a standalone application
 if __name__ == "__main__":
+    database_helper.init_db(app)
     app.run()
