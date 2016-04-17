@@ -62,5 +62,6 @@ target/
 .ipynb_checkpoints
 
 # Own-files
+flask/
 *.pyc
 
