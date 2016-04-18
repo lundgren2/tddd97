@@ -1,5 +1,6 @@
 import sqlite3
 from flask import g
+from server import app
 from contextlib import closing
 
 
@@ -8,8 +9,8 @@ from flask import Flask
 
 #DATABASE = 'database.db'
 
-db = sqlite3.connect('database.db')
-cursor = db.cursor()
+#db = sqlite3.connect('database.db')
+#cursor = db.cursor()
 
 
 # Connect to database.db
@@ -34,10 +35,6 @@ def init_db(app):
         print("db init done")
 
 
-def before_request():
-    g.db = connect_db()
-
-
 # Teardown active db
 def close_db():
     print "close_db"
@@ -53,32 +50,78 @@ def query_db(query, args=(), one=False):
     return (rv[0] if rv else None) if one else rv
 
 
-# Get user
+# INSERT functions
+
+def signup_user(email, password, firstname, familyname, gender, city, country):
+    return query_db('INSERT INTO users (email, password, firstname, familyname, country, city , gender) VALUES (?,?,?,?,?,?,?)',
+            [email], [password], [firstname], [familyname], [gender], [city], [country])
+
+def add_message(sender, recipient, message):
+    return query_db('INSERT INTO userMessages (sender, recipient, message) VALUES (?,?,?)',
+                    [sender], [recipient], [message])
+
+# GET functions
 def get_user(email):
-    user = query_db('SELECT * FROM users WHERE email = ?',
-        [email], one=True)
-    if user is None:
-        print 'No such user'
+    return query_db('SELECT * FROM users WHERE email = ?',
+        [email], True)
+
+def get_users():
+    return query_db('SELECT * FROM users')
+
+def get_email(token):
+    email = query_db('SELECT email FROM loggedInUsers WHERE token IS ?', [token], True)
+    if email is not None:
+        return email
     else:
-        return user
+        return None
 
-# Login user
-def signIn(email, password, token):
-    user = get_user(email)
+def get_password(email):
+    return query_db('SELECT password FROM users WHERE email IS ?', [email], True)
+
+def get_messages(email):
+    return query_db('SELECT * FROM userMessages WHERE recipient IS ?', [email], True)
+
+# SET functions
+def set_password(email, password):
+    return query_db('UPDATE users SET password IS ? AND email IS ?', [password], [email])
+
+
+def valid_login(email, password):
+    result = query_db('SELECT * FROM users WHERE email = ? AND password = ?', [email], [password], True)
+
     if user is None:
-        return "Wrong password or mail."
-    elif user[email] is email and user[password] is password:
-
-        query_db('INSERT INTO loggedinusers (email, token) VALUES (?,?)',
-                 (user[email], token)
-                 )
+     return False
+    else:
         return True
 
-# Create user
-def signup_contact(email, password, firstname, familyname, gender, city, country):
-    query_db('INSERT INTO users (email, password, firstname, familyname, country, city , gender) VALUES (?,?,?,?,?,?,?)',
-             (email, password, firstname, familyname, country, city, gender))
+# IS USER INLOGGED? (email)
+# ADD USER ONLINE?
 
-#def create_message(email, token)
-#def get_token()
+# Logout user
+def signOut(token):
+    return query_db('DELETE FROM loggedInUsers WHERE token is ?', [token], True)
 
+# Login user
+def add_loggedInUsers(email, token):
+    return query_db('INSERT INTO loggedInUsers) VALUES (?,?)',
+                    [email], [token])
+
+def get_loggedInUsers(email):
+    user = query_db('SELECT * FROM loggedInUsers WHERE email is ?', [email], True)
+    if user is None:
+        return False
+    else:
+        return True
+
+
+'''
+def login()
+  user = get_user(email)
+  if user is None:
+      return "Wrong password or mail."
+  elif user[email] is email and user[password] is password:
+
+      query_db('INSERT INTO loggedinusers (email, token) VALUES (?,?)',
+               (user[email], token)
+               )      return True
+'''
