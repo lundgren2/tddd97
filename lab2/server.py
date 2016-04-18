@@ -13,14 +13,11 @@ import json
 
 # Create application
 app = Flask(__name__)
-#app.config.from_object(__name__)
+app._static_folder = '/Users/tobiaslundgren/GitHub/TDDD97/lab2/static'
 app.debug = True
 
 
-
 # Database connections
-
-
 
 @app.before_request
 def before_request():
@@ -31,15 +28,9 @@ def before_request():
 def teardown_request(exception):
     database_helper.close_db()
 
-#@app.route("/")
-#def root():
- #   return app.send_static_file('client.html')
-
-
-#@app.route('/', methods=['GET'])
-#def start():
-#    return redirect('client.html')
-
+@app.route("/")
+def root():
+    return app.send_static_file('client.html')
 
 @app.route('/signup', methods=['POST'])
 def sign_up():
@@ -82,5 +73,6 @@ def signIn(email=None, password=None):
 
 # Run file as a standalone application
 if __name__ == "__main__":
-    database_helper.init_db(app)
+#    database_helper.init_db(app)
     app.run()
+    #app.run(host = '127.0.0.1', port = 5051)
