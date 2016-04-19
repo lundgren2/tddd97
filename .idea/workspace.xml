@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d39853b-5204-435b-81c5-6d621e399466" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TDDD97.iws" />
@@ -45,11 +46,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.735415">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lab2/server.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+                <state relative-caret-position="472">
+                  <caret line="121" column="12" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -70,45 +71,21 @@
           <file leaf-file-name="database_helper.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+                <state relative-caret-position="690">
+                  <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
                   <folding>
                     <element signature="e#0#14#0" expanded="true" />
-                    <marker date="1460981103000" expanded="true" signature="1243:1348" placeholder="INSERT INTO users... " />
-                    <marker date="1460981103000" expanded="true" signature="1254:1348" placeholder="INSERT INTO users... " />
-                    <marker date="1460981103000" expanded="true" signature="1507:1575" placeholder="INSERT INTO userMessages... " />
-                    <marker date="1460981103000" expanded="true" signature="1691:1726" placeholder="SELECT * FRO... users" />
-                    <marker date="1460981103000" expanded="true" signature="1691:1728" placeholder="SELECT * FRO... users" />
-                    <marker date="1460981103000" expanded="true" signature="1791:1810" placeholder="SELECT * FRO... users" />
-                    <marker date="1460981103000" expanded="true" signature="1858:1876" placeholder="SELECT email... s" />
-                    <marker date="1460981103000" expanded="true" signature="1858:1906" placeholder="SELECT email... loggedInUsers" />
-                    <marker date="1460981103000" expanded="true" signature="2048:2069" placeholder="SELECT passw... Users" />
-                    <marker date="1460981103000" expanded="true" signature="2048:2091" placeholder="SELECT passw... users" />
-                    <marker date="1460981103000" expanded="true" signature="2156:2203" placeholder="SELECT * FRO... userMessages" />
-                    <marker date="1460981103000" expanded="true" signature="2156:2205" placeholder="SELECT * FRO... userMessages" />
-                    <marker date="1460981103000" expanded="true" signature="2156:2213" placeholder="SELECT * FRO... userMessages" />
-                    <marker date="1460981103000" expanded="true" signature="2156:2220" placeholder="SELECT * FRO... userMessages" />
-                    <marker date="1460981103000" expanded="true" signature="2294:2339" placeholder="UPDATE users... " />
-                    <marker date="1460981103000" expanded="true" signature="2422:2474" placeholder="SELECT * fro... users" />
-                    <marker date="1460981103000" expanded="true" signature="2435:2474" placeholder="UPDATE users... " />
-                    <marker date="1460981103000" expanded="true" signature="2678:2720" placeholder="DELETE FROM " />
-                    <marker date="1460981103000" expanded="true" signature="2810:2836" placeholder="INSERT INTO loggedInUsers... " />
-                    <marker date="1460981103000" expanded="true" signature="2810:2843" placeholder="INSERT INTO loggedInUsers... " />
-                    <marker date="1460981103000" expanded="true" signature="2810:2848" placeholder="INSERT INTO loggedInUsers... " />
-                    <marker date="1460981103000" expanded="true" signature="2810:2849" placeholder="INSERT INTO loggedInUsers... " />
-                    <marker date="1460981103000" expanded="true" signature="2810:2851" placeholder="INSERT INTO loggedInUsers... " />
-                    <marker date="1460981103000" expanded="true" signature="2942:2986" placeholder="SELECT * FRO... loggedInUsers" />
-                    <marker date="1460981103000" expanded="true" signature="3254:3307" placeholder="INSERT INTO loggedinusers... " />
+                    <marker date="1461053690000" expanded="true" signature="3416:3469" placeholder="INSERT INTO loggedinusers... " />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="975">
-                  <caret line="65" column="10" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
+                <state relative-caret-position="630">
+                  <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -161,8 +138,8 @@
           <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lab2/server.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="194">
-                  <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+                <state relative-caret-position="179">
+                  <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -173,17 +150,13 @@
           <file leaf-file-name="database_helper.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="705">
-                  <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+                <state relative-caret-position="1050">
+                  <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#14#0" expanded="true" />
-                    <marker date="1460981103000" expanded="true" signature="1243:1348" placeholder="INSERT INTO users... " />
-                    <marker date="1460981103000" expanded="true" signature="1507:1575" placeholder="INSERT INTO userMessage... " />
-                    <marker date="1460981103000" expanded="true" signature="1691:1726" placeholder="SELECT * FRO... users" />
-                    <marker date="1460981103000" expanded="true" signature="1791:1810" placeholder="SELECT * FRO... users" />
-                    <marker date="1460981103000" expanded="true" signature="2921:3379" placeholder="..." />
-                    <marker date="1460981103000" expanded="true" signature="3236:3379" placeholder="..." />
-                    <marker date="1460981103000" expanded="true" signature="3254:3307" placeholder="INSERT INTO loggedinusers... " />
+                    <marker date="1461053690000" expanded="true" signature="3237:3541" placeholder="..." />
+                    <marker date="1461053690000" expanded="true" signature="3398:3541" placeholder="..." />
+                    <marker date="1461053690000" expanded="true" signature="3416:3469" placeholder="INSERT INTO loggedinusers... " />
                   </folding>
                 </state>
               </provider>
@@ -227,10 +200,10 @@
         <option value="$PROJECT_DIR$/lab2/client.html" />
         <option value="$PROJECT_DIR$/lab2/hello.py" />
         <option value="$PROJECT_DIR$/lab2/database.schema" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/lab2/database_helper.py" />
         <option value="$PROJECT_DIR$/lab2/static/client.html" />
         <option value="$PROJECT_DIR$/lab2/server.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -241,9 +214,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1301" />
+    <option name="x" value="1574" />
     <option name="y" value="23" />
-    <option name="width" value="1259" />
+    <option name="width" value="986" />
     <option name="height" value="1417" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -696,10 +669,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1301" y="23" width="1259" height="1417" extended-state="0" />
+    <frame x="1574" y="23" width="986" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17337716" sideWeight="0.48760933" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16737288" sideWeight="0.48760933" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -744,12 +717,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/lab2/server.py</url>
-          <line>32</line>
+          <line>38</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/lab2/server.py</url>
-          <line>15</line>
+          <line>14</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
@@ -772,31 +745,7 @@
           <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1460981103000" expanded="true" signature="1243:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1254:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1507:1575" placeholder="INSERT INTO userMessages... " />
-            <marker date="1460981103000" expanded="true" signature="1691:1726" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1691:1728" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1791:1810" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1858:1876" placeholder="SELECT email... s" />
-            <marker date="1460981103000" expanded="true" signature="1858:1906" placeholder="SELECT email... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="2048:2069" placeholder="SELECT passw... Users" />
-            <marker date="1460981103000" expanded="true" signature="2048:2091" placeholder="SELECT passw... users" />
-            <marker date="1460981103000" expanded="true" signature="2156:2203" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2205" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2213" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2220" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2294:2339" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2422:2474" placeholder="SELECT * fro... users" />
-            <marker date="1460981103000" expanded="true" signature="2435:2474" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2678:2720" placeholder="DELETE FROM " />
-            <marker date="1460981103000" expanded="true" signature="2810:2836" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2843" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2848" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2849" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2851" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2942:2986" placeholder="SELECT * FRO... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="3254:3307" placeholder="INSERT INTO loggedinusers... " />
+            <marker date="1461053690000" expanded="true" signature="3416:3469" placeholder="INSERT INTO loggedinusers... " />
           </folding>
         </state>
       </provider>
@@ -833,31 +782,7 @@
           <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1460981103000" expanded="true" signature="1243:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1254:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1507:1575" placeholder="INSERT INTO userMessages... " />
-            <marker date="1460981103000" expanded="true" signature="1691:1726" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1691:1728" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1791:1810" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1858:1876" placeholder="SELECT email... s" />
-            <marker date="1460981103000" expanded="true" signature="1858:1906" placeholder="SELECT email... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="2048:2069" placeholder="SELECT passw... Users" />
-            <marker date="1460981103000" expanded="true" signature="2048:2091" placeholder="SELECT passw... users" />
-            <marker date="1460981103000" expanded="true" signature="2156:2203" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2205" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2213" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2220" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2294:2339" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2422:2474" placeholder="SELECT * fro... users" />
-            <marker date="1460981103000" expanded="true" signature="2435:2474" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2678:2720" placeholder="DELETE FROM " />
-            <marker date="1460981103000" expanded="true" signature="2810:2836" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2843" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2848" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2849" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2851" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2942:2986" placeholder="SELECT * FRO... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="3254:3307" placeholder="INSERT INTO loggedinusers... " />
+            <marker date="1461053690000" expanded="true" signature="3416:3469" placeholder="INSERT INTO loggedinusers... " />
           </folding>
         </state>
       </provider>
@@ -901,31 +826,7 @@
           <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1460981103000" expanded="true" signature="1243:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1254:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1507:1575" placeholder="INSERT INTO userMessages... " />
-            <marker date="1460981103000" expanded="true" signature="1691:1726" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1691:1728" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1791:1810" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1858:1876" placeholder="SELECT email... s" />
-            <marker date="1460981103000" expanded="true" signature="1858:1906" placeholder="SELECT email... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="2048:2069" placeholder="SELECT passw... Users" />
-            <marker date="1460981103000" expanded="true" signature="2048:2091" placeholder="SELECT passw... users" />
-            <marker date="1460981103000" expanded="true" signature="2156:2203" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2205" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2213" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2220" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2294:2339" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2422:2474" placeholder="SELECT * fro... users" />
-            <marker date="1460981103000" expanded="true" signature="2435:2474" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2678:2720" placeholder="DELETE FROM " />
-            <marker date="1460981103000" expanded="true" signature="2810:2836" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2843" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2848" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2849" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2851" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2942:2986" placeholder="SELECT * FRO... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="3254:3307" placeholder="INSERT INTO loggedinusers... " />
+            <marker date="1461053690000" expanded="true" signature="3416:3469" placeholder="INSERT INTO loggedinusers... " />
           </folding>
         </state>
       </provider>
@@ -946,31 +847,7 @@
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1460981103000" expanded="true" signature="1243:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1254:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1507:1575" placeholder="INSERT INTO userMessages... " />
-            <marker date="1460981103000" expanded="true" signature="1691:1726" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1691:1728" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1791:1810" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1858:1876" placeholder="SELECT email... s" />
-            <marker date="1460981103000" expanded="true" signature="1858:1906" placeholder="SELECT email... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="2048:2069" placeholder="SELECT passw... Users" />
-            <marker date="1460981103000" expanded="true" signature="2048:2091" placeholder="SELECT passw... users" />
-            <marker date="1460981103000" expanded="true" signature="2156:2203" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2205" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2213" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2220" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2294:2339" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2422:2474" placeholder="SELECT * fro... users" />
-            <marker date="1460981103000" expanded="true" signature="2435:2474" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2678:2720" placeholder="DELETE FROM " />
-            <marker date="1460981103000" expanded="true" signature="2810:2836" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2843" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2848" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2849" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2851" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2942:2986" placeholder="SELECT * FRO... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="3254:3307" placeholder="INSERT INTO loggedinusers... " />
+            <marker date="1461053690000" expanded="true" signature="3416:3469" placeholder="INSERT INTO loggedinusers... " />
           </folding>
         </state>
       </provider>
@@ -1017,31 +894,7 @@
           <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1460981103000" expanded="true" signature="1243:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1254:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1507:1575" placeholder="INSERT INTO userMessages... " />
-            <marker date="1460981103000" expanded="true" signature="1691:1726" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1691:1728" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1791:1810" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1858:1876" placeholder="SELECT email... s" />
-            <marker date="1460981103000" expanded="true" signature="1858:1906" placeholder="SELECT email... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="2048:2069" placeholder="SELECT passw... Users" />
-            <marker date="1460981103000" expanded="true" signature="2048:2091" placeholder="SELECT passw... users" />
-            <marker date="1460981103000" expanded="true" signature="2156:2203" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2205" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2213" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2220" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2294:2339" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2422:2474" placeholder="SELECT * fro... users" />
-            <marker date="1460981103000" expanded="true" signature="2435:2474" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2678:2720" placeholder="DELETE FROM " />
-            <marker date="1460981103000" expanded="true" signature="2810:2836" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2843" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2848" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2849" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2851" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2942:2986" placeholder="SELECT * FRO... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="3254:3307" placeholder="INSERT INTO loggedinusers... " />
+            <marker date="1461053690000" expanded="true" signature="3416:3469" placeholder="INSERT INTO loggedinusers... " />
           </folding>
         </state>
       </provider>
@@ -1070,31 +923,7 @@
           <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1460981103000" expanded="true" signature="1243:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1254:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1507:1575" placeholder="INSERT INTO userMessages... " />
-            <marker date="1460981103000" expanded="true" signature="1691:1726" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1691:1728" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1791:1810" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1858:1876" placeholder="SELECT email... s" />
-            <marker date="1460981103000" expanded="true" signature="1858:1906" placeholder="SELECT email... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="2048:2069" placeholder="SELECT passw... Users" />
-            <marker date="1460981103000" expanded="true" signature="2048:2091" placeholder="SELECT passw... users" />
-            <marker date="1460981103000" expanded="true" signature="2156:2203" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2205" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2213" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2220" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2294:2339" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2422:2474" placeholder="SELECT * fro... users" />
-            <marker date="1460981103000" expanded="true" signature="2435:2474" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2678:2720" placeholder="DELETE FROM " />
-            <marker date="1460981103000" expanded="true" signature="2810:2836" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2843" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2848" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2849" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2851" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2942:2986" placeholder="SELECT * FRO... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="3254:3307" placeholder="INSERT INTO loggedinusers... " />
+            <marker date="1461053690000" expanded="true" signature="3416:3469" placeholder="INSERT INTO loggedinusers... " />
           </folding>
         </state>
       </provider>
@@ -1123,31 +952,7 @@
           <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1460981103000" expanded="true" signature="1243:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1254:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1507:1575" placeholder="INSERT INTO userMessages... " />
-            <marker date="1460981103000" expanded="true" signature="1691:1726" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1691:1728" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1791:1810" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1858:1876" placeholder="SELECT email... s" />
-            <marker date="1460981103000" expanded="true" signature="1858:1906" placeholder="SELECT email... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="2048:2069" placeholder="SELECT passw... Users" />
-            <marker date="1460981103000" expanded="true" signature="2048:2091" placeholder="SELECT passw... users" />
-            <marker date="1460981103000" expanded="true" signature="2156:2203" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2205" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2213" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2220" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2294:2339" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2422:2474" placeholder="SELECT * fro... users" />
-            <marker date="1460981103000" expanded="true" signature="2435:2474" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2678:2720" placeholder="DELETE FROM " />
-            <marker date="1460981103000" expanded="true" signature="2810:2836" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2843" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2848" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2849" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2851" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2942:2986" placeholder="SELECT * FRO... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="3254:3307" placeholder="INSERT INTO loggedinusers... " />
+            <marker date="1461053690000" expanded="true" signature="3416:3469" placeholder="INSERT INTO loggedinusers... " />
           </folding>
         </state>
       </provider>
@@ -1176,31 +981,7 @@
           <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1460981103000" expanded="true" signature="1243:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1254:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1507:1575" placeholder="INSERT INTO userMessages... " />
-            <marker date="1460981103000" expanded="true" signature="1691:1726" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1691:1728" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1791:1810" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1858:1876" placeholder="SELECT email... s" />
-            <marker date="1460981103000" expanded="true" signature="1858:1906" placeholder="SELECT email... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="2048:2069" placeholder="SELECT passw... Users" />
-            <marker date="1460981103000" expanded="true" signature="2048:2091" placeholder="SELECT passw... users" />
-            <marker date="1460981103000" expanded="true" signature="2156:2203" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2205" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2213" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2220" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2294:2339" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2422:2474" placeholder="SELECT * fro... users" />
-            <marker date="1460981103000" expanded="true" signature="2435:2474" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2678:2720" placeholder="DELETE FROM " />
-            <marker date="1460981103000" expanded="true" signature="2810:2836" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2843" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2848" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2849" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2851" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2942:2986" placeholder="SELECT * FRO... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="3254:3307" placeholder="INSERT INTO loggedinusers... " />
+            <marker date="1461053690000" expanded="true" signature="3416:3469" placeholder="INSERT INTO loggedinusers... " />
           </folding>
         </state>
       </provider>
@@ -1229,31 +1010,7 @@
           <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1460981103000" expanded="true" signature="1243:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1254:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1507:1575" placeholder="INSERT INTO userMessages... " />
-            <marker date="1460981103000" expanded="true" signature="1691:1726" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1691:1728" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1791:1810" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1858:1876" placeholder="SELECT email... s" />
-            <marker date="1460981103000" expanded="true" signature="1858:1906" placeholder="SELECT email... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="2048:2069" placeholder="SELECT passw... Users" />
-            <marker date="1460981103000" expanded="true" signature="2048:2091" placeholder="SELECT passw... users" />
-            <marker date="1460981103000" expanded="true" signature="2156:2203" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2205" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2213" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2220" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2294:2339" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2422:2474" placeholder="SELECT * fro... users" />
-            <marker date="1460981103000" expanded="true" signature="2435:2474" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2678:2720" placeholder="DELETE FROM " />
-            <marker date="1460981103000" expanded="true" signature="2810:2836" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2843" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2848" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2849" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2851" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2942:2986" placeholder="SELECT * FRO... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="3254:3307" placeholder="INSERT INTO loggedinusers... " />
+            <marker date="1461053690000" expanded="true" signature="3416:3469" placeholder="INSERT INTO loggedinusers... " />
           </folding>
         </state>
       </provider>
@@ -1299,14 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="10" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1376,35 +1125,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+        <state relative-caret-position="690">
+          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1460981103000" expanded="true" signature="1243:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1254:1348" placeholder="INSERT INTO users... " />
-            <marker date="1460981103000" expanded="true" signature="1507:1575" placeholder="INSERT INTO userMessages... " />
-            <marker date="1460981103000" expanded="true" signature="1691:1726" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1691:1728" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1791:1810" placeholder="SELECT * FRO... users" />
-            <marker date="1460981103000" expanded="true" signature="1858:1876" placeholder="SELECT email... s" />
-            <marker date="1460981103000" expanded="true" signature="1858:1906" placeholder="SELECT email... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="2048:2069" placeholder="SELECT passw... Users" />
-            <marker date="1460981103000" expanded="true" signature="2048:2091" placeholder="SELECT passw... users" />
-            <marker date="1460981103000" expanded="true" signature="2156:2203" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2205" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2213" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2156:2220" placeholder="SELECT * FRO... userMessages" />
-            <marker date="1460981103000" expanded="true" signature="2294:2339" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2422:2474" placeholder="SELECT * fro... users" />
-            <marker date="1460981103000" expanded="true" signature="2435:2474" placeholder="UPDATE users... " />
-            <marker date="1460981103000" expanded="true" signature="2678:2720" placeholder="DELETE FROM " />
-            <marker date="1460981103000" expanded="true" signature="2810:2836" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2843" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2848" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2849" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2810:2851" placeholder="INSERT INTO loggedInUsers... " />
-            <marker date="1460981103000" expanded="true" signature="2942:2986" placeholder="SELECT * FRO... loggedInUsers" />
-            <marker date="1460981103000" expanded="true" signature="3254:3307" placeholder="INSERT INTO loggedinusers... " />
+            <marker date="1461053690000" expanded="true" signature="3416:3469" placeholder="INSERT INTO loggedinusers... " />
           </folding>
         </state>
       </provider>
@@ -1435,11 +1160,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab2/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="472">
+          <caret line="121" column="12" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
