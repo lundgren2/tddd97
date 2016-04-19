@@ -64,5 +64,6 @@ target/
 # Own-files
 flask/
 lab2/.idea
+lab1/.idea
 *.pyc
 

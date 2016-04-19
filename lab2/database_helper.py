@@ -28,6 +28,13 @@ def get_db():
 
 # Initializes the database
 def init_db(app):
+    # type: (object) -> object
+    # type: (object) -> object
+    # type: (object) -> object
+    """
+
+    :rtype: object
+    """
     with closing(connect_db()) as db:
         with app.open_resource('database.schema', mode='r') as f:
             db.cursor().executescript(f.read())
@@ -56,14 +63,30 @@ def signup_user(email, password, firstname, familyname, gender, city, country):
     return query_db('INSERT INTO users (email, password, firstname, familyname, country, city , gender) VALUES (?,?,?,?,?,?,?)',
             [email], [password], [firstname], [familyname], [gender], [city], [country])
 
+# Login user
+def signin_user(email, token):
+    return query_db('INSERT INTO loggedInUsers) VALUES (?,?)',
+                    [email], [token])
+
 def add_message(sender, recipient, message):
     return query_db('INSERT INTO userMessages (sender, recipient, message) VALUES (?,?,?)',
                     [sender], [recipient], [message])
 
 # GET functions
+def get_loggedInUsers(email):
+    user = query_db('SELECT * FROM loggedInUsers WHERE email is ?', [email], True)
+    if user is None:
+        return False
+    else:
+        return True
+
 def get_user(email):
     return query_db('SELECT * FROM users WHERE email = ?',
         [email], True)
+
+def get_user_by_token(token):
+    email = get_email(token)
+    return get_user(email)
 
 def get_users():
     return query_db('SELECT * FROM users')
@@ -87,31 +110,18 @@ def set_password(email, password):
 
 
 def valid_login(email, password):
-    result = query_db('SELECT * FROM users WHERE email = ? AND password = ?', [email], [password], True)
-
+    user = query_db('SELECT * FROM users WHERE email = ? AND password = ?', [email], [password], True)
     if user is None:
      return False
     else:
         return True
 
-# IS USER INLOGGED? (email)
-# ADD USER ONLINE?
 
 # Logout user
 def signOut(token):
     return query_db('DELETE FROM loggedInUsers WHERE token is ?', [token], True)
 
-# Login user
-def add_loggedInUsers(email, token):
-    return query_db('INSERT INTO loggedInUsers) VALUES (?,?)',
-                    [email], [token])
 
-def get_loggedInUsers(email):
-    user = query_db('SELECT * FROM loggedInUsers WHERE email is ?', [email], True)
-    if user is None:
-        return False
-    else:
-        return True
 
 
 '''
