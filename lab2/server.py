@@ -36,29 +36,43 @@ def root():
     return app.send_static_file('client.html')
 
 
+@app.route('/hello/<token>', methods=['GET'])
+def hello(token):
+    #token = request.form['hej']
+    return token
+
+
+@app.route('/helloz', methods=['POST'])
+def helloz():
+    token = request.form['token']
+    return token
+
+
 @app.route('/signup', methods=['POST'])
 def signUp():
     getjson = request.get_json()
-    email = getjson['email']
-    password = getjson['password']
-    firstname = getjson['firstname']
-    familyname = getjson['familyname']
-    gender = getjson['gender']
-    city = getjson['city']
-    country = getjson['country']
+    email = request.form['email']
+    password = request.form['password']
+    firstname = request.form['firstname']
+    familyname = request.form['familyname']
+    gender = request.form['gender']
+    city = request.form['city']
+    country = request.form['country']
 
-    if len(email) != 0 and len(firstname) != 0 and len(familyname) != 0 and len(gender) != 0 and len(city) != 0 and len(
-            country) != 0:
+    if len(email) != 0 and len(firstname) != 0 and len(familyname) != 0 and len(gender) != 0 and len(city) != 0 and \
+    len(country) != 0:
+        print "form exist"
         if len(password) < 7:
             return jsonify(success=False, message="Password is too short")
         if not re.match(r"[^@]+@[^@]+\.[^@]+", email):
             return jsonify(success=False, message="Email is invalid")
-        result = database_helper.signup_user(email, password, firstname, familyname, gender, city, country)
-        if result is None:
+        if database_helper.get_user(email):
             return jsonify(success=False, message="Email already exists")
         else:
+            result = database_helper.signup_user(email, password, firstname, familyname, gender, city, country)
             return jsonify(success=True, message="User signed up successfully")
-    return jsonify(success=True, message="Formdata are not complete")
+
+    return jsonify(success=False, message="Formdata are not complete")
 
 
 @app.route('/signin', methods=['POST'])
@@ -106,56 +120,34 @@ def changePass():
         database_helper.set_password(email, new_Password)
         return jsonify(sucess=True, message="Password changed successfully")
 
+
 @app.route('/getuserdatabytoken', methods=['POST'])
 def getUserDataByToken():
     token = request.form['token']
-    user = database_helper.get_user_by_token(token)
+    email = database_helper.get_email(token)
+    if database_helper.get_loggedInUsers(email):
+        user = database_helper.get_user(email)
     if user is None:
-        return jsonify(success=False, message="Invalid token")
-    user = database_helper.get_user(email)
-    if user is None:
-        return jsonify(success=False, message="User doesn't exist")
+        return jsonify(success=False, message="User not signed in!")
     else:
         return jsonify(success=True, message="User data retrieved.", data=user)
 
 
-#MÅSTE FIXAS
 @app.route('/getuserdatabyemail', methods=['POST'])
 def getUserDataByEmail():
     token = request.form['token']
-    token = request.form['email']
-    if database_helper.get_loggedInUsers(email)
-    email = database_helper.get_email(token)
-
-    user = database_helper.get_user(email)
-
-
-getUserDataByToken: function(token)
-{
-    var
-email = tokenToEmail(token);
-return serverstub.getUserDataByEmail(token, email);
-},
-
-getUserDataByEmail: function(token, email)
-{
-if (loggedInUsers[token] != null){
-if (users[email] != null) {
-var match = copyUser(users[email]);
-delete match.messages;
-delete match.password;
-return {"success": true, "message": "User data retrieved.", "data": match};
-} else {
-return {"success": false, "message": "No such user."};
-}
-} else {
-return {"success": false, "message": "You are not signed in."};
-}
-},
+    email = request.form['email']
+    if database_helper.get_loggedInUsers(email):
+        user = database_helper.get_user(email)
+    if user is None:
+        return jsonify(success=False, message="You are not signed in.")
+    else:
+        return jsonify(success=True, message="User data retrived.", data=user)
 
 
+# GET MESSAGE
 
-#@app.route('/get_message/<email>/<password>', methods=['GET'])
+
 
 # Run file as a standalone application
 if __name__ == "__main__":
