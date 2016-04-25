@@ -1,3 +1,7 @@
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS loggedInUsers;
+DROP TABLE IF EXISTS userMessages;
+
 CREATE TABLE IF NOT EXISTS users (
 email text primary key,
 password text not null,
@@ -9,8 +13,8 @@ gender text
 );
 
 CREATE TABLE IF NOT EXISTS loggedInUsers (
-token text primary key not null,
-email text
+email text,
+token text primary key not null
 );
 
 CREATE TABLE IF NOT EXISTS userMessages (

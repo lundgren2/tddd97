@@ -1,9 +1,9 @@
 from flask import Flask, request, redirect, url_for, jsonify
-import random, re, database_helper # Random token, Regular Expressions (important)
+import random, re, string, database_helper # Random token, Regular Expressions (important)
 
 # Create application
 app = Flask(__name__)
-
+app.debug = True
 
 # Database connections
 @app.before_request
@@ -20,10 +20,16 @@ def root():
     return redirect('static/client.html')
 
 
-@app.route('/hello/<token>', methods=['GET'])
-def hello(token):
-    #token = request.form['hej']
-    return token
+@app.route('/signin2', methods=['POST'])
+def signIn2():
+    email = request.form['email']
+    password = request.form['password']
+    # Check valid user
+    if database_helper.valid_login(email, password):
+    #if result is False:
+        return jsonify(success=False, message="Wrong password or email")
+    else:
+        return "YOLO"
 
 
 @app.route('/helloz', methods=['POST'])
@@ -59,20 +65,20 @@ def signUp():
 
 @app.route('/signin', methods=['POST'])
 def signIn():
-    getjson = request.get_json()
-    email = getjson['email']
-    password = getjson['password']
+    email = request.form['email']
+    password = request.form['password']
     # Check valid user
-    result = database_helper.valid_login(email, password)
-    if result is None:
-        return jsonify(success=False, message="Wrong password or email")
-    else:
+    if database_helper.valid_login(email, password):
+        if database_helper.get_loggedInUsers(email):
+            return jsonify(success=False, message="Already signed in")
         # Create token
         token = ''.join(random.choice(string.lowercase) for i in range(35))
         print token
-        result = database_helper.signin_user(email, token)
-        if result:
+        user = database_helper.signin_user(email, token)
+        if user is not None:
             return jsonify(success=True, message="User successfully signed in")
+    else:
+        return jsonify(success=False, message="Wrong password or email")
 
 
 @app.route('/signout', methods=['POST'])
@@ -86,10 +92,9 @@ def signOut():
 
 @app.route('/changepass', methods=['POST'])
 def changePass():
-    getjson = request.get_json()
-    token = getjson['token']
-    old_Password = getjson['old_password']
-    new_Password = getjson['new_password']
+    token = request.form['token']
+    old_Password = request.form['old_password']
+    new_Password = request.form['new_password']
     email = database_helper.get_email(token)
 
     if len(new_Password) < 7:

@@ -43,20 +43,21 @@ def query_db(query, args=(), one=False):
 
 
 # INSERT functions
-
 def signup_user(email, password, firstname, familyname, gender, city, country):
     return query_db('INSERT INTO users VALUES (?,?,?,?,?,?,?)',
-            [email, password, firstname, familyname, gender, city, country])
+                    [email, password, firstname, familyname, gender, city, country])
 
 
 # Login user
 def signin_user(email, token):
-    return query_db('INSERT INTO loggedInUsers) VALUES (?,?)',
+    return query_db('INSERT INTO loggedInUsers VALUES (?,?)',
                     [email, token])
 
+
 def add_message(sender, recipient, message):
-    return query_db('INSERT INTO userMessages (sender, recipient, message) VALUES (?,?,?)',
+    return query_db('INSERT INTO userMessages VALUES (?,?,?)',
                     [sender, recipient, message])
+
 
 # GET functions
 def get_loggedInUsers(email):
@@ -65,6 +66,7 @@ def get_loggedInUsers(email):
         return False
     else:
         return True
+
 
 def get_user(email):
     return query_db('SELECT * FROM users WHERE email = ?',
@@ -78,6 +80,7 @@ def get_user_by_token(token):
 def get_users():
     return query_db('SELECT * FROM users')
 
+
 def get_email(token):
     email = query_db('SELECT email FROM loggedInUsers WHERE token IS ?', [token], True)
     if email is not None:
@@ -85,11 +88,14 @@ def get_email(token):
     else:
         return None
 
+
 def get_password(email):
     return query_db('SELECT password FROM users WHERE email IS ?', [email], True)
 
+
 def get_messages(email):
     return query_db('SELECT * FROM userMessages WHERE recipient IS ?', [email], True)
+
 
 # SET functions
 def set_password(email, password):
@@ -97,11 +103,13 @@ def set_password(email, password):
 
 
 def valid_login(email, password):
-    user = query_db('SELECT * FROM users WHERE email = ? AND password = ?', [email, password], True)
-    if user is None:
-     return False
-    else:
+    user = query_db('SELECT * FROM users WHERE email = ? AND password = ?',
+                    [email, password])
+    if user:
         return True
+    else:
+        return False
+
 
 # Logout user
 def signOut(token):
