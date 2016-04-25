@@ -2,16 +2,8 @@
 import sqlite3
 from flask import g
 from server import app
-#from contextlib import closing
 
-#app = Flask(__name__)
-
-#DATABASE = 'database.db'
-
-#db = sqlite3.connect('database.db')
-#cursor = db.cursor()
-
-#http://flask.pocoo.org/docs/0.10/patterns/sqlite3/
+# Guide: http://flask.pocoo.org/docs/0.10/patterns/sqlite3/
 
 
 # Connect to database.db
@@ -110,7 +102,6 @@ def valid_login(email, password):
      return False
     else:
         return True
-
 
 # Logout user
 def signOut(token):

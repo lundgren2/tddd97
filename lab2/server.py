@@ -1,29 +1,14 @@
-import random
-import string
-import re
-import database_helper
-from flask import Flask, request, redirect, url_for, render_template, abort, flash
-from flask import send_from_directory
-from flask import Flask
-from flask import request
-import database_helper
-# import json
-from flask import jsonify
+from flask import Flask, request, redirect, url_for, jsonify
+import random, re, database_helper # Random token, Regular Expressions (important)
 
 # Create application
 app = Flask(__name__)
-#app._static_folder = '/Users/tobiaslundgren/GitHub/TDDD97/lab2/static'
 
-#app.debug = True
-
-logged_in_users = {}
 
 # Database connections
 @app.before_request
 def before_request():
     database_helper.connect_db()
-   # database_helper.init_db(app)
-
 
 @app.teardown_request
 def teardown_request(exception):
@@ -32,7 +17,6 @@ def teardown_request(exception):
 
 @app.route("/")
 def root():
-    #return app.send_static_file('client.html')
     return redirect('static/client.html')
 
 
@@ -149,6 +133,5 @@ def getUserDataByEmail():
 
 # Run file as a standalone application
 if __name__ == "__main__":
-    #    database_helper.init_db(app)
     app.run()
     # app.run(host = '127.0.0.1', port = 5051)
