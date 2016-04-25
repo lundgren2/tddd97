@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"su",
+				"success"
+			],
+			[
+				"json",
+				"jsonify"
+			],
+			[
 				"a",
 				"altimeter"
 			],
@@ -64,10 +72,18 @@
 	"buffers":
 	[
 		{
-			"file": "tddd97.sublime-project",
+			"file": "lab2/server.py",
 			"settings":
 			{
-				"buffer_size": 45,
+				"buffer_size": 4595,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lab2/database_helper.py",
+			"settings":
+			{
+				"buffer_size": 3347,
 				"line_ending": "Unix"
 			}
 		}
@@ -95,12 +111,12 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 392.0
 	},
 	"console":
 	{
@@ -121,10 +137,11 @@
 	"expanded_folders":
 	[
 		"/Users/tobiaslundgren/Programmering/TDDD97",
-		"/Users/tobiaslundgren/Programmering/TDDD97/.idea"
+		"/Users/tobiaslundgren/Programmering/TDDD97/lab2"
 	],
 	"file_history":
 	[
+		"/Users/tobiaslundgren/Programmering/TDDD97/tddd97.sublime-project",
 		"/Users/tobiaslundgren/lab4/server.py",
 		"/Users/tobiaslundgren/lab4/database.schema",
 		"/Users/tobiaslundgren/lab4/database_helper.py",
@@ -149,7 +166,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -207,32 +224,64 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "tddd97.sublime-project",
-					"semi_transient": false,
+					"file": "lab2/server.py",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 45,
+						"buffer_size": 4595,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								45,
-								45
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lab2/database_helper.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 403.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -274,7 +323,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 181.0
+		"height": 125.0
 	},
 	"output.find_results":
 	{
@@ -322,7 +371,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 189.0,
+	"side_bar_width": 225.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

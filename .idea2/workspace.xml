@@ -1,0 +1,1847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+<<<<<<< Updated upstream
+    <list default="true" id="2d39853b-5204-435b-81c5-6d621e399466" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab2/database.db" afterPath="$PROJECT_DIR$/lab2/database.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab2/database_helper.py" afterPath="$PROJECT_DIR$/lab2/database_helper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab2/server.py" afterPath="$PROJECT_DIR$/lab2/server.py" />
+    </list>
+=======
+    <list default="true" id="2d39853b-5204-435b-81c5-6d621e399466" name="Default" comment="" />
+>>>>>>> Stashed changes
+    <ignored path="TDDD97.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="PyCharm50/coverage/TDDD97$server.coverage" NAME="server Coverage Results" MODIFIED="1456268547618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab2" />
+    <SUITE FILE_PATH="coverage/TDDD97$dbtest.coverage" NAME="dbtest Coverage Results" MODIFIED="1460474838807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab2" />
+<<<<<<< Updated upstream
+    <SUITE FILE_PATH="coverage/TDDD97$server.coverage" NAME="server Coverage Results" MODIFIED="1461101551150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab2" />
+    <SUITE FILE_PATH="coverage/TDDD97$hello.coverage" NAME="hello Coverage Results" MODIFIED="1460576556606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab2" />
+=======
+    <SUITE FILE_PATH="coverage/TDDD97$server.coverage" NAME="server Coverage Results" MODIFIED="1461019996978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab2" />
+    <SUITE FILE_PATH="coverage/TDDD97$hello.coverage" NAME="hello Coverage Results" MODIFIED="1460466006055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab2" />
+>>>>>>> Stashed changes
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+<<<<<<< Updated upstream
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+    </PATH>
+=======
+>>>>>>> Stashed changes
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="TDDD97" />
+  </component>
+  <component name="FileEditorManager">
+<<<<<<< Updated upstream
+    <splitter split-orientation="horizontal" split-proportion="0.68953973">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="serverstub.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="759">
+                  <caret line="95" column="0" selection-start-line="76" selection-start-column="4" selection-end-line="95" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="client.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lab2/static/client.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="495">
+                  <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lab2/server.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="517">
+                  <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+                  <folding>
+                    <element signature="e#0#13#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="database.db" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lab2/database.db">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="27" column="124" selection-start-line="27" selection-start-column="124" selection-end-line="27" selection-end-column="124" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="database_helper.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+                  <folding>
+                    <element signature="e#0#14#0" expanded="true" />
+                    <marker date="1461100552000" expanded="true" signature="1243:1283" placeholder="INSERT INTO users... " />
+                    <marker date="1461100552000" expanded="true" signature="1429:1468" placeholder="INSERT INTO loggedInUsers... " />
+                    <marker date="1461100552000" expanded="true" signature="1574:1642" placeholder="INSERT INTO userMessages... " />
+                    <marker date="1461100552000" expanded="true" signature="1763:1807" placeholder="SELECT * FRO... loggedInUsers" />
+                    <marker date="1461100552000" expanded="true" signature="1940:1975" placeholder="SELECT * FRO... users" />
+                    <marker date="1461100552000" expanded="true" signature="2145:2164" placeholder="SELECT * FRO... users" />
+                    <marker date="1461100552000" expanded="true" signature="2212:2260" placeholder="SELECT email... loggedInUsers" />
+                    <marker date="1461100552000" expanded="true" signature="2402:2445" placeholder="SELECT passw... users" />
+                    <marker date="1461100552000" expanded="true" signature="2510:2557" placeholder="SELECT * FRO... userMessages" />
+                    <marker date="1461100552000" expanded="true" signature="2648:2693" placeholder="UPDATE users... " />
+                    <marker date="1461100552000" expanded="true" signature="2772:2824" placeholder="SELECT * FRO... users" />
+                    <marker date="1461100552000" expanded="true" signature="2978:3020" placeholder="DELETE FROM " />
+                    <marker date="1461100552000" expanded="true" signature="3218:3271" placeholder="INSERT INTO loggedinusers... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lab2/test.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="hello.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lab2/hello.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="client.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lab1/client.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="database.schema" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lab2/database.schema">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="database_helper.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="262">
+                  <caret line="67" column="15" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
+                  <folding>
+                    <element signature="e#0#14#0" expanded="true" />
+                    <marker date="1461100552000" expanded="true" signature="1243:1283" placeholder="INSERT INTO users... " />
+                    <marker date="1461100552000" expanded="true" signature="1429:1468" placeholder="INSERT INTO loggedInUsers... " />
+                    <marker date="1461100552000" expanded="true" signature="1574:1642" placeholder="INSERT INTO userMessages... " />
+                    <marker date="1461100552000" expanded="true" signature="1763:1807" placeholder="SELECT * FRO... loggedInUsers" />
+                    <marker date="1461100552000" expanded="true" signature="1940:1975" placeholder="SELECT * FRO... users" />
+                    <marker date="1461100552000" expanded="true" signature="2145:2164" placeholder="SELECT * FRO... users" />
+                    <marker date="1461100552000" expanded="true" signature="2212:2260" placeholder="SELECT email... loggedInUsers" />
+                    <marker date="1461100552000" expanded="true" signature="2402:2445" placeholder="SELECT passw... users" />
+                    <marker date="1461100552000" expanded="true" signature="2510:2557" placeholder="SELECT * FRO... userMessages" />
+                    <marker date="1461100552000" expanded="true" signature="2648:2693" placeholder="UPDATE users... " />
+                    <marker date="1461100552000" expanded="true" signature="2772:2824" placeholder="SELECT * FRO... users" />
+                    <marker date="1461100552000" expanded="true" signature="2978:3020" placeholder="DELETE FROM " />
+                    <marker date="1461100552000" expanded="true" signature="3218:3271" placeholder="INSERT INTO loggedinusers... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="lundgren2" />
+      </list>
+    </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="lundgren2" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="TDDD97" />
+  </component>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab2/server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1365">
+              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#1849#2405#0" expanded="false" />
+                <element signature="e#2712#3281#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database_helper.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1185">
+              <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+              <folding>
+                <marker date="1461022398000" expanded="true" signature="0:35" placeholder="import ..." />
+                <marker date="1461022398000" expanded="true" signature="1372:1477" placeholder="INSERT INTO users... " />
+                <marker date="1461022398000" expanded="true" signature="1635:1674" placeholder="INSERT INTO loggedInUsers... " />
+                <marker date="1461022398000" expanded="true" signature="1782:1850" placeholder="INSERT INTO userMessages... " />
+                <marker date="1461022398000" expanded="true" signature="1975:2019" placeholder="SELECT * FRO... loggedInUsers" />
+                <marker date="1461022398000" expanded="true" signature="2152:2187" placeholder="SELECT * FRO... users" />
+                <marker date="1461022398000" expanded="true" signature="2339:2358" placeholder="SELECT * FRO... users" />
+                <marker date="1461022398000" expanded="true" signature="2406:2454" placeholder="SELECT email... loggedInUsers" />
+                <marker date="1461022398000" expanded="true" signature="2596:2639" placeholder="SELECT passw... users" />
+                <marker date="1461022398000" expanded="true" signature="2704:2751" placeholder="SELECT * FRO... userMessages" />
+                <marker date="1461022398000" expanded="true" signature="2842:2887" placeholder="UPDATE users... " />
+                <marker date="1461022398000" expanded="true" signature="2968:3020" placeholder="SELECT * FRO... users" />
+                <marker date="1461022398000" expanded="true" signature="3176:3218" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serverstub.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2280">
+              <caret line="152" column="64" selection-start-line="152" selection-start-column="59" selection-end-line="152" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab1/client.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2655">
+              <caret line="177" column="20" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.schema" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab2/database.schema">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hello.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab2/hello.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+>>>>>>> Stashed changes
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/serverstub.js" />
+        <option value="$PROJECT_DIR$/client.css" />
+        <option value="$PROJECT_DIR$/client.js" />
+        <option value="$PROJECT_DIR$/client.html" />
+        <option value="$PROJECT_DIR$/lab1/serverstub.js" />
+<<<<<<< Updated upstream
+        <option value="$PROJECT_DIR$/lab2/dbtest.py" />
+        <option value="$PROJECT_DIR$/lab2/client.html" />
+        <option value="$PROJECT_DIR$/lab2/hello.py" />
+        <option value="$PROJECT_DIR$/lab2/database.schema" />
+        <option value="$PROJECT_DIR$/lab2/static/client.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/lab2/database_helper.py" />
+        <option value="$PROJECT_DIR$/lab2/server.py" />
+        <option value="$PROJECT_DIR$/lab2/database.db" />
+        <option value="$PROJECT_DIR$/lab2/test.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="468" />
+    <option name="y" value="23" />
+    <option name="width" value="2092" />
+    <option name="height" value="1417" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+=======
+        <option value="$PROJECT_DIR$/lab2/hello.py" />
+        <option value="$PROJECT_DIR$/lab2/dbtest.py" />
+        <option value="$PROJECT_DIR$/lab2/database.schema" />
+        <option value="$PROJECT_DIR$/lab2/database_helper.py" />
+        <option value="$PROJECT_DIR$/lab2/server.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="533" />
+    <option name="y" value="23" />
+    <option name="width" value="1147" />
+    <option name="height" value="1027" />
+>>>>>>> Stashed changes
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+<<<<<<< Updated upstream
+    <ConfirmationsSetting value="1" id="Add" />
+=======
+    <ConfirmationsSetting value="2" id="Add" />
+>>>>>>> Stashed changes
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+<<<<<<< Updated upstream
+      <pane id="Scratches" />
+=======
+>>>>>>> Stashed changes
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TDDD97" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TDDD97" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TDDD97" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TDDD97" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TDDD97" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+<<<<<<< Updated upstream
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab2/static" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab2/static" />
+      <recent name="$PROJECT_DIR$/lab2" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab2/static" />
+      <recent name="$PROJECT_DIR$/lab2" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.server">
+    <configuration default="false" name="client.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:5000/TDDD97/lab2/client.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/flask/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab2" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TDDD97" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab2/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TDDD97" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab2/hello.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+=======
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab2/server.py" />
+  </component>
+  <component name="RunManager" selected="Python.server">
+>>>>>>> Stashed changes
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TDDD97" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TDDD97" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TDDD97" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+<<<<<<< Updated upstream
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+=======
+      <option name="SDK_HOME" value="$PROJECT_DIR$/flask/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab2" />
+>>>>>>> Stashed changes
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TDDD97" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+<<<<<<< Updated upstream
+      <option name="SCRIPT_NAME" value="" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab2/server.py" />
+>>>>>>> Stashed changes
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="TDDD97" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TDDD97" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TDDD97" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TDDD97" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TDDD97" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TDDD97" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+<<<<<<< Updated upstream
+    <configuration default="false" name="index" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/TDDD97/lab2/client.html">
+      <method />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.client.html" />
+      <item index="2" class="java.lang.String" itemvalue="Python.server" />
+      <item index="3" class="java.lang.String" itemvalue="Python.hello" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.server" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.client.html" />
+        <item index="2" class="java.lang.String" itemvalue="Python.hello" />
+      </list>
+    </recent_temporary>
+=======
+    <configuration default="false" name="server" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/flask/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab2" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TDDD97" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab2/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.server" />
+    </list>
+>>>>>>> Stashed changes
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d39853b-5204-435b-81c5-6d621e399466" name="Default" comment="" />
+      <created>1453390283257</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1453390283257</updated>
+    </task>
+    <task id="LOCAL-00001" summary="added SQLite with Flask">
+      <created>1456268004694</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1456268004694</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added SQLite with Flask">
+      <created>1457626432881</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1457626432881</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated tab spaces">
+      <created>1458915404359</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1458915404359</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+<<<<<<< Updated upstream
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="468" y="23" width="2092" height="1417" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.110731706" sideWeight="0.48760933" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24032587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23849057" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28301886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980143" sideWeight="0.49708456" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19018868" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980143" sideWeight="0.50291544" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992453" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+  <component name="ToolWindowManager">
+    <frame x="533" y="23" width="1147" height="1027" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2136007" sideWeight="0.48760933" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22319093" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23930754" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980143" sideWeight="0.49708456" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19111817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980143" sideWeight="0.50291544" order="2" side_tool="true" content_ui="tabs" />
+>>>>>>> Stashed changes
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32150313" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24032587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$USER_HOME$" />
+    </ignored-roots>
+    <MESSAGE value="added SQLite with Flask" />
+    <MESSAGE value="updated tab spaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated tab spaces" />
+  </component>
+  <component name="XDebuggerManager">
+<<<<<<< Updated upstream
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/lab2/server.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/lab2/server.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1461100552000" expanded="true" signature="1243:1283" placeholder="INSERT INTO users... " />
+            <marker date="1461100552000" expanded="true" signature="1429:1468" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461100552000" expanded="true" signature="1574:1642" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461100552000" expanded="true" signature="1763:1807" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="1940:1975" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2145:2164" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2212:2260" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="2402:2445" placeholder="SELECT passw... users" />
+            <marker date="1461100552000" expanded="true" signature="2510:2557" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461100552000" expanded="true" signature="2648:2693" placeholder="UPDATE users... " />
+            <marker date="1461100552000" expanded="true" signature="2772:2824" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2978:3020" placeholder="DELETE FROM " />
+            <marker date="1461100552000" expanded="true" signature="3218:3271" placeholder="INSERT INTO loggedinusers... " />
+=======
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#1849#2405#0" expanded="false" />
+            <element signature="e#2712#3281#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+          <folding>
+            <marker date="1461022398000" expanded="true" signature="0:35" placeholder="import ..." />
+            <marker date="1461022398000" expanded="true" signature="1372:1477" placeholder="INSERT INTO users... " />
+            <marker date="1461022398000" expanded="true" signature="1635:1674" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461022398000" expanded="true" signature="1782:1850" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461022398000" expanded="true" signature="1975:2019" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2152:2187" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2339:2358" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2406:2454" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2596:2639" placeholder="SELECT passw... users" />
+            <marker date="1461022398000" expanded="true" signature="2704:2751" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461022398000" expanded="true" signature="2842:2887" placeholder="UPDATE users... " />
+            <marker date="1461022398000" expanded="true" signature="2968:3020" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="3176:3218" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#1849#2405#0" expanded="false" />
+            <element signature="e#2712#3281#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+          <folding>
+            <marker date="1461022398000" expanded="true" signature="0:35" placeholder="import ..." />
+            <marker date="1461022398000" expanded="true" signature="1372:1477" placeholder="INSERT INTO users... " />
+            <marker date="1461022398000" expanded="true" signature="1635:1674" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461022398000" expanded="true" signature="1782:1850" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461022398000" expanded="true" signature="1975:2019" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2152:2187" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2339:2358" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2406:2454" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2596:2639" placeholder="SELECT passw... users" />
+            <marker date="1461022398000" expanded="true" signature="2704:2751" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461022398000" expanded="true" signature="2842:2887" placeholder="UPDATE users... " />
+            <marker date="1461022398000" expanded="true" signature="2968:3020" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="3176:3218" placeholder="DELETE FROM " />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+        <state relative-caret-position="1035">
+          <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> Stashed changes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/lab2/database.schema">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/lab1/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2655">
+          <caret line="177" column="20" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="20" />
+>>>>>>> Stashed changes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1461100552000" expanded="true" signature="1243:1283" placeholder="INSERT INTO users... " />
+            <marker date="1461100552000" expanded="true" signature="1429:1468" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461100552000" expanded="true" signature="1574:1642" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461100552000" expanded="true" signature="1763:1807" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="1940:1975" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2145:2164" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2212:2260" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="2402:2445" placeholder="SELECT passw... users" />
+            <marker date="1461100552000" expanded="true" signature="2510:2557" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461100552000" expanded="true" signature="2648:2693" placeholder="UPDATE users... " />
+            <marker date="1461100552000" expanded="true" signature="2772:2824" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2978:3020" placeholder="DELETE FROM " />
+            <marker date="1461100552000" expanded="true" signature="3218:3271" placeholder="INSERT INTO loggedinusers... " />
+          </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/lab2/database.schema">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database.schema">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+<<<<<<< Updated upstream
+=======
+          <folding />
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+        <state relative-caret-position="300">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+=======
+        <state relative-caret-position="285">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#1849#2405#0" expanded="false" />
+            <element signature="e#2712#3281#0" expanded="false" />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+        <state relative-caret-position="660">
+          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1461100552000" expanded="true" signature="1243:1283" placeholder="INSERT INTO users... " />
+            <marker date="1461100552000" expanded="true" signature="1429:1468" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461100552000" expanded="true" signature="1574:1642" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461100552000" expanded="true" signature="1763:1807" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="1940:1975" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2145:2164" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2212:2260" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="2402:2445" placeholder="SELECT passw... users" />
+            <marker date="1461100552000" expanded="true" signature="2510:2557" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461100552000" expanded="true" signature="2648:2693" placeholder="UPDATE users... " />
+            <marker date="1461100552000" expanded="true" signature="2772:2824" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2978:3020" placeholder="DELETE FROM " />
+            <marker date="1461100552000" expanded="true" signature="3218:3271" placeholder="INSERT INTO loggedinusers... " />
+=======
+        <state relative-caret-position="630">
+          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+          <folding>
+            <marker date="1461022398000" expanded="true" signature="0:35" placeholder="import ..." />
+            <marker date="1461022398000" expanded="true" signature="1372:1477" placeholder="INSERT INTO users... " />
+            <marker date="1461022398000" expanded="true" signature="1635:1674" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461022398000" expanded="true" signature="1782:1850" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461022398000" expanded="true" signature="1975:2019" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2152:2187" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2339:2358" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2406:2454" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2596:2639" placeholder="SELECT passw... users" />
+            <marker date="1461022398000" expanded="true" signature="2704:2751" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461022398000" expanded="true" signature="2842:2887" placeholder="UPDATE users... " />
+            <marker date="1461022398000" expanded="true" signature="2968:3020" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="3176:3218" placeholder="DELETE FROM " />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+<<<<<<< Updated upstream
+=======
+            <element signature="e#1849#2405#0" expanded="false" />
+            <element signature="e#2712#3281#0" expanded="false" />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+<<<<<<< Updated upstream
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1461100552000" expanded="true" signature="1243:1283" placeholder="INSERT INTO users... " />
+            <marker date="1461100552000" expanded="true" signature="1429:1468" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461100552000" expanded="true" signature="1574:1642" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461100552000" expanded="true" signature="1763:1807" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="1940:1975" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2145:2164" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2212:2260" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="2402:2445" placeholder="SELECT passw... users" />
+            <marker date="1461100552000" expanded="true" signature="2510:2557" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461100552000" expanded="true" signature="2648:2693" placeholder="UPDATE users... " />
+            <marker date="1461100552000" expanded="true" signature="2772:2824" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2978:3020" placeholder="DELETE FROM " />
+            <marker date="1461100552000" expanded="true" signature="3218:3271" placeholder="INSERT INTO loggedinusers... " />
+=======
+            <marker date="1461022398000" expanded="true" signature="0:35" placeholder="import ..." />
+            <marker date="1461022398000" expanded="true" signature="1372:1477" placeholder="INSERT INTO users... " />
+            <marker date="1461022398000" expanded="true" signature="1635:1674" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461022398000" expanded="true" signature="1782:1850" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461022398000" expanded="true" signature="1975:2019" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2152:2187" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2339:2358" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2406:2454" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2596:2639" placeholder="SELECT passw... users" />
+            <marker date="1461022398000" expanded="true" signature="2704:2751" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461022398000" expanded="true" signature="2842:2887" placeholder="UPDATE users... " />
+            <marker date="1461022398000" expanded="true" signature="2968:3020" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="3176:3218" placeholder="DELETE FROM " />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="152" column="55" selection-start-line="152" selection-start-column="55" selection-end-line="152" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+<<<<<<< Updated upstream
+=======
+            <element signature="e#1849#2405#0" expanded="false" />
+            <element signature="e#2712#3281#0" expanded="false" />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="152" column="55" selection-start-line="152" selection-start-column="55" selection-end-line="152" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+<<<<<<< Updated upstream
+=======
+            <element signature="e#1849#2405#0" expanded="false" />
+            <element signature="e#2712#3281#0" expanded="false" />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+<<<<<<< Updated upstream
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1461100552000" expanded="true" signature="1243:1283" placeholder="INSERT INTO users... " />
+            <marker date="1461100552000" expanded="true" signature="1429:1468" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461100552000" expanded="true" signature="1574:1642" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461100552000" expanded="true" signature="1763:1807" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="1940:1975" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2145:2164" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2212:2260" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="2402:2445" placeholder="SELECT passw... users" />
+            <marker date="1461100552000" expanded="true" signature="2510:2557" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461100552000" expanded="true" signature="2648:2693" placeholder="UPDATE users... " />
+            <marker date="1461100552000" expanded="true" signature="2772:2824" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2978:3020" placeholder="DELETE FROM " />
+            <marker date="1461100552000" expanded="true" signature="3218:3271" placeholder="INSERT INTO loggedinusers... " />
+=======
+            <marker date="1461022398000" expanded="true" signature="0:35" placeholder="import ..." />
+            <marker date="1461022398000" expanded="true" signature="1372:1477" placeholder="INSERT INTO users... " />
+            <marker date="1461022398000" expanded="true" signature="1635:1674" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461022398000" expanded="true" signature="1782:1850" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461022398000" expanded="true" signature="1975:2019" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2152:2187" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2339:2358" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2406:2454" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2596:2639" placeholder="SELECT passw... users" />
+            <marker date="1461022398000" expanded="true" signature="2704:2751" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461022398000" expanded="true" signature="2842:2887" placeholder="UPDATE users... " />
+            <marker date="1461022398000" expanded="true" signature="2968:3020" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="3176:3218" placeholder="DELETE FROM " />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="154" column="55" selection-start-line="154" selection-start-column="55" selection-end-line="154" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+<<<<<<< Updated upstream
+=======
+            <element signature="e#1849#2405#0" expanded="false" />
+            <element signature="e#2712#3281#0" expanded="false" />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+<<<<<<< Updated upstream
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1461100552000" expanded="true" signature="1243:1283" placeholder="INSERT INTO users... " />
+            <marker date="1461100552000" expanded="true" signature="1429:1468" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461100552000" expanded="true" signature="1574:1642" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461100552000" expanded="true" signature="1763:1807" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="1940:1975" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2145:2164" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2212:2260" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="2402:2445" placeholder="SELECT passw... users" />
+            <marker date="1461100552000" expanded="true" signature="2510:2557" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461100552000" expanded="true" signature="2648:2693" placeholder="UPDATE users... " />
+            <marker date="1461100552000" expanded="true" signature="2772:2824" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2978:3020" placeholder="DELETE FROM " />
+            <marker date="1461100552000" expanded="true" signature="3218:3271" placeholder="INSERT INTO loggedinusers... " />
+=======
+            <marker date="1461022398000" expanded="true" signature="0:35" placeholder="import ..." />
+            <marker date="1461022398000" expanded="true" signature="1372:1477" placeholder="INSERT INTO users... " />
+            <marker date="1461022398000" expanded="true" signature="1635:1674" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461022398000" expanded="true" signature="1782:1850" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461022398000" expanded="true" signature="1975:2019" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2152:2187" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2339:2358" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2406:2454" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2596:2639" placeholder="SELECT passw... users" />
+            <marker date="1461022398000" expanded="true" signature="2704:2751" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461022398000" expanded="true" signature="2842:2887" placeholder="UPDATE users... " />
+            <marker date="1461022398000" expanded="true" signature="2968:3020" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="3176:3218" placeholder="DELETE FROM " />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="154" column="55" selection-start-line="154" selection-start-column="55" selection-end-line="154" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+<<<<<<< Updated upstream
+=======
+            <element signature="e#1849#2405#0" expanded="false" />
+            <element signature="e#2712#3281#0" expanded="false" />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+<<<<<<< Updated upstream
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1461100552000" expanded="true" signature="1243:1283" placeholder="INSERT INTO users... " />
+            <marker date="1461100552000" expanded="true" signature="1429:1468" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461100552000" expanded="true" signature="1574:1642" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461100552000" expanded="true" signature="1763:1807" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="1940:1975" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2145:2164" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2212:2260" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="2402:2445" placeholder="SELECT passw... users" />
+            <marker date="1461100552000" expanded="true" signature="2510:2557" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461100552000" expanded="true" signature="2648:2693" placeholder="UPDATE users... " />
+            <marker date="1461100552000" expanded="true" signature="2772:2824" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2978:3020" placeholder="DELETE FROM " />
+            <marker date="1461100552000" expanded="true" signature="3218:3271" placeholder="INSERT INTO loggedinusers... " />
+=======
+            <marker date="1461022398000" expanded="true" signature="0:35" placeholder="import ..." />
+            <marker date="1461022398000" expanded="true" signature="1372:1477" placeholder="INSERT INTO users... " />
+            <marker date="1461022398000" expanded="true" signature="1635:1674" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461022398000" expanded="true" signature="1782:1850" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461022398000" expanded="true" signature="1975:2019" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2152:2187" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2339:2358" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2406:2454" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2596:2639" placeholder="SELECT passw... users" />
+            <marker date="1461022398000" expanded="true" signature="2704:2751" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461022398000" expanded="true" signature="2842:2887" placeholder="UPDATE users... " />
+            <marker date="1461022398000" expanded="true" signature="2968:3020" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="3176:3218" placeholder="DELETE FROM " />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="154" column="55" selection-start-line="154" selection-start-column="55" selection-end-line="154" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+<<<<<<< Updated upstream
+=======
+            <element signature="e#1849#2405#0" expanded="false" />
+            <element signature="e#2712#3281#0" expanded="false" />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+<<<<<<< Updated upstream
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1461100552000" expanded="true" signature="1243:1283" placeholder="INSERT INTO users... " />
+            <marker date="1461100552000" expanded="true" signature="1429:1468" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461100552000" expanded="true" signature="1574:1642" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461100552000" expanded="true" signature="1763:1807" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="1940:1975" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2145:2164" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2212:2260" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="2402:2445" placeholder="SELECT passw... users" />
+            <marker date="1461100552000" expanded="true" signature="2510:2557" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461100552000" expanded="true" signature="2648:2693" placeholder="UPDATE users... " />
+            <marker date="1461100552000" expanded="true" signature="2772:2824" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2978:3020" placeholder="DELETE FROM " />
+            <marker date="1461100552000" expanded="true" signature="3218:3271" placeholder="INSERT INTO loggedinusers... " />
+=======
+            <marker date="1461022398000" expanded="true" signature="0:35" placeholder="import ..." />
+            <marker date="1461022398000" expanded="true" signature="1372:1477" placeholder="INSERT INTO users... " />
+            <marker date="1461022398000" expanded="true" signature="1635:1674" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461022398000" expanded="true" signature="1782:1850" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461022398000" expanded="true" signature="1975:2019" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2152:2187" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2339:2358" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2406:2454" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2596:2639" placeholder="SELECT passw... users" />
+            <marker date="1461022398000" expanded="true" signature="2704:2751" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461022398000" expanded="true" signature="2842:2887" placeholder="UPDATE users... " />
+            <marker date="1461022398000" expanded="true" signature="2968:3020" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="3176:3218" placeholder="DELETE FROM " />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2250">
+          <caret line="150" column="55" selection-start-line="150" selection-start-column="55" selection-end-line="150" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+<<<<<<< Updated upstream
+=======
+            <element signature="e#1849#2405#0" expanded="false" />
+            <element signature="e#2712#3281#0" expanded="false" />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+<<<<<<< Updated upstream
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1461100552000" expanded="true" signature="1243:1283" placeholder="INSERT INTO users... " />
+            <marker date="1461100552000" expanded="true" signature="1429:1468" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461100552000" expanded="true" signature="1574:1642" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461100552000" expanded="true" signature="1763:1807" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="1940:1975" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2145:2164" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2212:2260" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="2402:2445" placeholder="SELECT passw... users" />
+            <marker date="1461100552000" expanded="true" signature="2510:2557" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461100552000" expanded="true" signature="2648:2693" placeholder="UPDATE users... " />
+            <marker date="1461100552000" expanded="true" signature="2772:2824" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2978:3020" placeholder="DELETE FROM " />
+            <marker date="1461100552000" expanded="true" signature="3218:3271" placeholder="INSERT INTO loggedinusers... " />
+=======
+            <marker date="1461022398000" expanded="true" signature="0:35" placeholder="import ..." />
+            <marker date="1461022398000" expanded="true" signature="1372:1477" placeholder="INSERT INTO users... " />
+            <marker date="1461022398000" expanded="true" signature="1635:1674" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461022398000" expanded="true" signature="1782:1850" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461022398000" expanded="true" signature="1975:2019" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2152:2187" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2339:2358" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2406:2454" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2596:2639" placeholder="SELECT passw... users" />
+            <marker date="1461022398000" expanded="true" signature="2704:2751" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461022398000" expanded="true" signature="2842:2887" placeholder="UPDATE users... " />
+            <marker date="1461022398000" expanded="true" signature="2968:3020" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="3176:3218" placeholder="DELETE FROM " />
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="150" column="55" selection-start-line="150" selection-start-column="55" selection-end-line="150" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database.schema.sql" />
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/lab2/dbtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+=======
+    <entry file="file://$PROJECT_DIR$/lab2/database.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask/lib/python2.7/site-packages/flask/testsuite/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/flask/lib/python2.7/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24600">
+          <caret line="1665" column="0" selection-start-line="1665" selection-start-column="0" selection-end-line="1665" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask/lib/python2.7/site-packages/werkzeug/serving.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="677" column="45" selection-start-line="677" selection-start-column="45" selection-end-line="677" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/static/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/static/serverstub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/static/client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/lab2/dbtest.py" />
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#1849#2405#0" expanded="false" />
+            <element signature="e#2712#3281#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+          <folding>
+            <marker date="1461022398000" expanded="true" signature="0:35" placeholder="import ..." />
+            <marker date="1461022398000" expanded="true" signature="1372:1477" placeholder="INSERT INTO users... " />
+            <marker date="1461022398000" expanded="true" signature="1635:1674" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461022398000" expanded="true" signature="1782:1850" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461022398000" expanded="true" signature="1975:2019" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2152:2187" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2339:2358" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="2406:2454" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461022398000" expanded="true" signature="2596:2639" placeholder="SELECT passw... users" />
+            <marker date="1461022398000" expanded="true" signature="2704:2751" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461022398000" expanded="true" signature="2842:2887" placeholder="UPDATE users... " />
+            <marker date="1461022398000" expanded="true" signature="2968:3020" placeholder="SELECT * FRO... users" />
+            <marker date="1461022398000" expanded="true" signature="3176:3218" placeholder="DELETE FROM " />
+          </folding>
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+        <state relative-caret-position="375">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="795">
+          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+>>>>>>> Stashed changes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/serverstub.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+        <state relative-caret-position="759">
+          <caret line="95" column="0" selection-start-line="76" selection-start-column="4" selection-end-line="95" selection-end-column="0" />
+=======
+        <state relative-caret-position="2280">
+          <caret line="152" column="64" selection-start-line="152" selection-start-column="59" selection-end-line="152" selection-end-column="64" />
+>>>>>>> Stashed changes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/lab2/static/client.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/lab1/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2655">
+          <caret line="177" column="20" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="20" />
+>>>>>>> Stashed changes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database.schema">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+        <state relative-caret-position="120">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="124" selection-start-line="27" selection-start-column="124" selection-end-line="27" selection-end-column="124" />
+=======
+        <state relative-caret-position="150">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+>>>>>>> Stashed changes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/lab2/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/database_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1461100552000" expanded="true" signature="1243:1283" placeholder="INSERT INTO users... " />
+            <marker date="1461100552000" expanded="true" signature="1429:1468" placeholder="INSERT INTO loggedInUsers... " />
+            <marker date="1461100552000" expanded="true" signature="1574:1642" placeholder="INSERT INTO userMessages... " />
+            <marker date="1461100552000" expanded="true" signature="1763:1807" placeholder="SELECT * FRO... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="1940:1975" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2145:2164" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2212:2260" placeholder="SELECT email... loggedInUsers" />
+            <marker date="1461100552000" expanded="true" signature="2402:2445" placeholder="SELECT passw... users" />
+            <marker date="1461100552000" expanded="true" signature="2510:2557" placeholder="SELECT * FRO... userMessages" />
+            <marker date="1461100552000" expanded="true" signature="2648:2693" placeholder="UPDATE users... " />
+            <marker date="1461100552000" expanded="true" signature="2772:2824" placeholder="SELECT * FRO... users" />
+            <marker date="1461100552000" expanded="true" signature="2978:3020" placeholder="DELETE FROM " />
+            <marker date="1461100552000" expanded="true" signature="3218:3271" placeholder="INSERT INTO loggedinusers... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+=======
+    <entry file="file://$PROJECT_DIR$/lab2/hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+>>>>>>> Stashed changes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/lab2/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+=======
+>>>>>>> Stashed changes
+  </component>
+</project>

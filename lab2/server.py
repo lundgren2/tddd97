@@ -50,7 +50,6 @@ def helloz():
 
 @app.route('/signup', methods=['POST'])
 def signUp():
-    getjson = request.get_json()
     email = request.form['email']
     password = request.form['password']
     firstname = request.form['firstname']
