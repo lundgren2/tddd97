@@ -2,7 +2,7 @@ import random
 import string
 import re
 import database_helper
-from flask import Flask, request, redirect, url_for
+from flask import Flask, request, redirect, url_for, render_template, abort, flash
 from flask import send_from_directory
 from flask import Flask
 from flask import request
@@ -14,17 +14,15 @@ from flask import jsonify
 app = Flask(__name__)
 #app._static_folder = '/Users/tobiaslundgren/GitHub/TDDD97/lab2/static'
 
-app.debug = True
+#app.debug = True
 
-# Session
-socket = {}
-
+logged_in_users = {}
 
 # Database connections
 @app.before_request
 def before_request():
     database_helper.connect_db()
-    database_helper.init_db(app)
+   # database_helper.init_db(app)
 
 
 @app.teardown_request
@@ -51,7 +49,6 @@ def helloz():
 
 @app.route('/signup', methods=['POST'])
 def signUp():
-    getjson = request.get_json()
     email = request.form['email']
     password = request.form['password']
     firstname = request.form['firstname']

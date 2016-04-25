@@ -1,16 +1,17 @@
+#from flask import Flask
 import sqlite3
 from flask import g
 from server import app
-from contextlib import closing
+#from contextlib import closing
 
-
-import os.path
-from flask import Flask
+#app = Flask(__name__)
 
 #DATABASE = 'database.db'
 
 #db = sqlite3.connect('database.db')
 #cursor = db.cursor()
+
+#http://flask.pocoo.org/docs/0.10/patterns/sqlite3/
 
 
 # Connect to database.db
@@ -27,26 +28,25 @@ def get_db():
     return db
 
 # Initializes the database
-def init_db(app):
-    with closing(connect_db()) as db:
+def init_db():
+    with app.app_context():
+        db = get_db()
         with app.open_resource('database.schema', mode='r') as f:
             db.cursor().executescript(f.read())
         db.commit()
-        print("db init done")
 
 
 # Teardown active db
 def close_db():
     print "close_db"
-    db = getattr(g, '_database', None)
-    if db is not None:
-        db.close()
+    get_db().close()
 
 # Getting the cursor, executing and fetching the results
 def query_db(query, args=(), one=False):
-    cur = get_db().execute(query, args) # db.cursor()
+    cur = get_db().execute(query, args)
     rv = cur.fetchall()
     cur.close()
+    get_db().commit() #db.commit
     return (rv[0] if rv else None) if one else rv
 
 
@@ -55,6 +55,7 @@ def query_db(query, args=(), one=False):
 def signup_user(email, password, firstname, familyname, gender, city, country):
     return query_db('INSERT INTO users VALUES (?,?,?,?,?,?,?)',
             [email, password, firstname, familyname, gender, city, country])
+
 
 # Login user
 def signin_user(email, token):
@@ -116,16 +117,3 @@ def signOut(token):
     return query_db('DELETE FROM loggedInUsers WHERE token is ?', [token], True)
 
 
-
-
-'''
-def login()
-  user = get_user(email)
-  if user is None:
-      return "Wrong password or mail."
-  elif user[email] is email and user[password] is password:
-
-      query_db('INSERT INTO loggedinusers (email, token) VALUES (?,?)',
-               (user[email], token)
-               )      return True
-'''
