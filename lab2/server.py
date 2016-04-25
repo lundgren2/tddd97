@@ -12,7 +12,8 @@ from flask import jsonify
 
 # Create application
 app = Flask(__name__)
-app._static_folder = '/Users/tobiaslundgren/GitHub/TDDD97/lab2/static'
+#app._static_folder = '/Users/tobiaslundgren/GitHub/TDDD97/lab2/static'
+
 app.debug = True
 
 # Session
@@ -33,7 +34,8 @@ def teardown_request(exception):
 
 @app.route("/")
 def root():
-    return app.send_static_file('client.html')
+    #return app.send_static_file('client.html')
+    return redirect('static/client.html')
 
 
 @app.route('/hello/<token>', methods=['GET'])
@@ -47,7 +49,6 @@ def helloz():
     token = request.form['token']
     return token
 
-#NY VERSION
 @app.route('/signup', methods=['POST'])
 def signUp():
     getjson = request.get_json()
