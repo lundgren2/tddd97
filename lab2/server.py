@@ -20,23 +20,6 @@ def root():
     return redirect('static/client.html')
 
 
-@app.route('/signin2', methods=['POST'])
-def signIn2():
-    email = request.form['email']
-    password = request.form['password']
-    # Check valid user
-    if database_helper.valid_login(email, password):
-    #if result is False:
-        return jsonify(success=False, message="Wrong password or email")
-    else:
-        return "YOLO"
-
-
-@app.route('/helloz', methods=['POST'])
-def helloz():
-    token = request.form['token']
-    return token
-
 @app.route('/signup', methods=['POST'])
 def signUp():
     email = request.form['email']

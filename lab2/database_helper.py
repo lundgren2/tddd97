@@ -73,13 +73,15 @@ def get_user(email):
         [email], one=True)
 
 
+'''
+# TEST
 def get_user_by_token(token):
     email = get_email(token)
     return get_user(email)
 
 def get_users():
     return query_db('SELECT * FROM users')
-
+'''
 
 def get_email(token):
     email = query_db('SELECT email FROM loggedInUsers WHERE token IS ?', [token], one=True)
@@ -122,4 +124,3 @@ def signOut(token):
         return True
     else:
         return False
-
