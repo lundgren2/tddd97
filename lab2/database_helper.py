@@ -55,13 +55,13 @@ def signin_user(email, token):
 
 
 def add_message(sender, recipient, message):
-    return query_db('INSERT INTO userMessages VALUES (?,?,?)',
+    return query_db('INSERT INTO userMessages (sender, recipient, message) VALUES (?,?,?)',
                     [sender, recipient, message])
 
 
 # GET functions
 def get_loggedInUsers(email):
-    user = query_db('SELECT * FROM loggedInUsers WHERE email is ?', [email], True)
+    user = query_db('SELECT * FROM loggedInUsers WHERE email is ?', [email])
     if user is None:
         return False
     else:
@@ -69,20 +69,20 @@ def get_loggedInUsers(email):
 
 
 def get_user(email):
-    return query_db('SELECT * FROM users WHERE email = ?',
-        [email], True)
-'''
-UNNECESSARY
+    return query_db('SELECT email, firstname, familyname, country, city, gender FROM users WHERE email = ?',
+        [email], one=True)
+
+
 def get_user_by_token(token):
     email = get_email(token)
     return get_user(email)
-'''
+
 def get_users():
     return query_db('SELECT * FROM users')
 
 
 def get_email(token):
-    email = query_db('SELECT email FROM loggedInUsers WHERE token IS ?', [token], True)
+    email = query_db('SELECT email FROM loggedInUsers WHERE token IS ?', [token], one=True)
     if email is not None:
         return email
     else:
@@ -90,16 +90,19 @@ def get_email(token):
 
 
 def get_password(email):
-    return query_db('SELECT password FROM users WHERE email IS ?', [email], True)
-
+    passwd = query_db('SELECT password FROM users WHERE email IS ?', [email], one=True)
+    if passwd is not None:
+        return passwd
+    else:
+        return None
 
 def get_messages(email):
-    return query_db('SELECT * FROM userMessages WHERE recipient IS ?', [email], True)
+    return query_db('SELECT * FROM userMessages WHERE recipient IS ?', [email])
 
 
 # SET functions
 def set_password(email, password):
-    return query_db('UPDATE users SET password IS ? AND email IS ?', [password, email])
+    return query_db('UPDATE users SET password = ? WHERE email IS ?', [password, email])
 
 
 def valid_login(email, password):
@@ -113,6 +116,10 @@ def valid_login(email, password):
 
 # Logout user
 def signOut(token):
-    return query_db('DELETE FROM loggedInUsers WHERE token is ?', [token], True)
-
+    user = query_db('DELETE FROM loggedInUsers WHERE token is ?',
+                    [token], one=True)
+    if user:
+        return True
+    else:
+        return False
 

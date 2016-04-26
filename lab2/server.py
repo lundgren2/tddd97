@@ -1,5 +1,5 @@
 from flask import Flask, request, redirect, url_for, jsonify
-import random, re, string, database_helper # Random token, Regular Expressions (important)
+import random, re, string, database_helper, json # Random token, Regular Expressions (important)
 
 # Create application
 app = Flask(__name__)
@@ -57,7 +57,7 @@ def signUp():
         if database_helper.get_user(email):
             return jsonify(success=False, message="Email already exists")
         else:
-            result = database_helper.signup_user(email, password, firstname, familyname, gender, city, country)
+            database_helper.signup_user(email, password, firstname, familyname, gender, city, country)
             return jsonify(success=True, message="User signed up successfully")
 
     return jsonify(success=False, message="Formdata are not complete")
@@ -84,10 +84,11 @@ def signIn():
 @app.route('/signout', methods=['POST'])
 def signOut():
     token = request.form['token']
-    if database_helper.signOut(token):
+    if token:
+        database_helper.signOut(token)
         return jsonify(sucess=True, message="User signed out successfully")
     else:
-        return False
+        return jsonify(sucess=False, message="No token!")
 
 
 @app.route('/changepass', methods=['POST'])
@@ -96,22 +97,30 @@ def changePass():
     old_Password = request.form['old_password']
     new_Password = request.form['new_password']
     email = database_helper.get_email(token)
+    email = email[0]
+
+    print email
+    curr_pw = database_helper.get_password(email)
+    curr_pw = curr_pw[0]
+    print curr_pw
 
     if len(new_Password) < 7:
         return jsonify(success=False, message="Too short password")
 
-    if email is None:
+    if not email:
         return jsonify(success=False, message="Invalid token")
 
-    if database_helper.get_password(email) == old_Password:
+    if curr_pw == old_Password:
         database_helper.set_password(email, new_Password)
         return jsonify(sucess=True, message="Password changed successfully")
-
+    else:
+        return jsonify(sucess=False, message="Wrong password")
 
 @app.route('/getuserdatabytoken', methods=['POST'])
 def getUserDataByToken():
     token = request.form['token']
     email = database_helper.get_email(token)
+    email = email[0]
     if database_helper.get_loggedInUsers(email):
         user = database_helper.get_user(email)
     if user is None:
@@ -124,16 +133,65 @@ def getUserDataByToken():
 def getUserDataByEmail():
     token = request.form['token']
     email = request.form['email']
-    if database_helper.get_loggedInUsers(email):
+    checkuser = database_helper.get_email(token)
+    checklogin = database_helper.get_loggedInUsers(checkuser[0])
+    if checklogin:
         user = database_helper.get_user(email)
-    if user is None:
-        return jsonify(success=False, message="You are not signed in.")
-    else:
-        return jsonify(success=True, message="User data retrived.", data=user)
+        if not user:
+            return jsonify(success=False, message="User not signed in!")
+        else:
+            return jsonify(success=True, message="User data retrieved.", data=user)
 
 
 # GET MESSAGE
+@app.route('/getusermessagebytoken', methods=['POST'])
+def getUserMessageByToken():
+    token = request.form['token']
+    email = database_helper.get_email(token)
+    email = email[0]
+    if not email:
+        return jsonify(success=False, message="Error!")
+    else:
+        messages = database_helper.get_messages(email)
+        if not messages:
+            return jsonify(success=True, message="No messages for user")
+        else:
+            return jsonify(success=True, message="User messages retrieved.", data=messages)
 
+
+@app.route('/getusermessagebyemail', methods=['POST'])
+def getUserMessageByEmail():
+    token = request.form['token']
+    email = request.form['email']
+    if checkLogin(token):
+        user = database_helper.get_messages(email)
+        if not user:
+            return jsonify(success=True, message="No messages for user")
+        else:
+            return jsonify(success=True, message="User data retrieved.", data=user)
+
+
+@app.route('/postmessage', methods=['POST'])
+def postMessage():
+    token = request.form['token']
+    message = request.form['message']
+    recepient = request.form['email']
+    sender = database_helper.get_email(token)
+    sender = sender[0]
+
+    if checkLogin(token):
+        database_helper.add_message(sender, recepient, message)
+        return jsonify(success=True, message="Message sent")
+
+
+def checkLogin(token):
+    email = database_helper.get_email(token)
+    email = email[0]
+    result = database_helper.get_loggedInUsers(email)
+    if not result:
+        return False
+    else:
+        return True
 
 
 # Run file as a standalone application
