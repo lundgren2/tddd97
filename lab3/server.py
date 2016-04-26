@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, redirect, url_for, jsonify
 import random, re, string, database_helper, json # Random token, Regular Expressions (important)
 
 # Create application
@@ -18,7 +18,7 @@ def teardown_request(exception):
 
 @app.route("/")
 def root():
-    return "TWIDDER HOME!"
+    return redirect('static/client.html')
 
 
 @app.route('/signup', methods=['POST'])

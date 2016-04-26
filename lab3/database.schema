@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS loggedInUsers;
+DROP TABLE IF EXISTS userMessages;
+
+CREATE TABLE IF NOT EXISTS users (
+email text primary key,
+password text not null,
+firstname text,
+familyname text,
+country text,
+city text,
+gender text
+);
+
+CREATE TABLE IF NOT EXISTS loggedInUsers (
+email text,
+token text primary key not null
+);
+
+CREATE TABLE IF NOT EXISTS userMessages (
+id integer primary key autoincrement,
+sender text,
+recipient text,
+message text
+);
