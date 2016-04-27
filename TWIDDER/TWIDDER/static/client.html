@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="../static/client.css" type="text/css" rel="stylesheet">
-    <script src="../static/client.js" type="text/javascript"></script>
+    <link href="/static/client.css" type="text/css" rel="stylesheet">
+    <script src="/static/handlebars.js" type="text/javascript"></script>
+    <script src="/static/client.js" type="text/javascript"></script>
+
     <!-- script src="serverstub.js" type="text/javascript"></script-->
     <title>TWIDDER</title>
+
+ <!-- Template for a user's profile information. -->
+    <script id="profileInformation" type="text/x-handlebars-template">
+      <h1>Profile</h1>
+      <h2>Profile information</h2>
+      <p><span>Name:</span> {{usrfirstname}} {{ usrfamname }}</p>
+      <p><span>Email:</span> {{usremail}}</p>
+      <p><span>Gender:</span> {{usrgender}}</p>
+      <p><span>City:</span> {{usrcity}}</p>
+    <p><span>Country:</span> {{usrcountry}}</p>
+
+    </script>
+
+
 
     <script id="welcomeview" type="text/view">
         <div class="container">
@@ -65,6 +80,7 @@
     </script><!-- profileveview -->
 
     <script id="hometab" type="text/html">
+        <div id="personalinfo2"></div>
         <div id="personalinfo">
         <h1>Welcome <span id="usrfirstname"></span> <span id="usrfamname"></span> to TWIDDER</h1>
         <br />
