@@ -1,7 +1,7 @@
 from flask import Flask, request, redirect, url_for, jsonify, render_template
 import random, re, string, database_helper, json # Random token, Regular Expressions (important)
 #from flask_sockets import Sockets
-#from gevent.pywsgi import WSGIServer
+from gevent.pywsgi import WSGIServer
 from TWIDDER import app
 
 # GLOBAL VARIABEL
@@ -46,7 +46,7 @@ def api():
                 #ws.send(email)
             except WebSocketError as err:
                 print (str(err))
-    return 'API OK'
+    #return 'API OK'
 
 
 @app.route('/signup', methods=['POST'])

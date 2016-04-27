@@ -51,28 +51,31 @@ function connectSocket(email) {
 
 
 var HttpRequest = function (method, path, data, callback) {
+    console.info("HttpRequest");
     var xml = new XMLHttpRequest();
     console.info(path);
+
     xml.onreadystatechange = function () {
         if (xml.readyState==4 && xml.status==200) {
             var serverResponse = JSON.parse(xml.responseText);
             if (serverResponse.success) {
                 callback(serverResponse);
             } else {
-                console.info(response.message);
+                console.info(serverResponse.message);
             }
         }
-        var urlz = "http://localhost:5000/" + path
-        window.alert(urlz);
-        xml.open(method, urlz, true); //CHECK OM DYNAMISK WORKS
-
-        if (method == "GET") {
-            xml.send(null);
-        } else if (method == "POST") {
-            xml.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xml.send(data);
-        }
     };
+    var urlz = "http://localhost:5000" + path;
+
+    xml.open(method, urlz, true); //CHECK OM DYNAMISK WORKS
+    if (method == "GET") {
+        xml.send(null);
+    } else if (method == "POST") {
+         window.alert(data);
+        xml.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xml.send(data);
+    }
+
 
 
 };
@@ -134,6 +137,7 @@ function login(formInput) {
 
     HttpRequest("POST", "/signin", data, function (result) {
         if (result.data) {
+            console.info("hej post signin");
             connectSocket(email);
             localStorage.setItem("userToken", json.parse(result.data));
         }
