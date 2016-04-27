@@ -63,9 +63,11 @@ target/
 
 # Own-files
 flask/
+flask/*
 TWIDDER/.idea
 lab2/.idea
 lab1/.idea
 .idea/
+.idea/*
 *.pyc
 
