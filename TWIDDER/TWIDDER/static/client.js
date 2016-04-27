@@ -139,7 +139,7 @@ function login(formInput) {
         if (result.data) {
             console.info("hej post signin");
             connectSocket(email);
-            localStorage.setItem("userToken", json.parse(result.data));
+            localStorage.setItem("userToken", result.data);
         }
         displayView();
         tabs("home");
