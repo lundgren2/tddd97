@@ -181,7 +181,7 @@ def getUserMessageByToken():
             return jsonify(success=True, message="User messages retrieved.", data=messages)
 
 
-@app.route('/getusermessagebyemail', methods=['POST'])
+@app.route('/getusermessagebreyemail', methods=['POST'])
 def getUserMessageByEmail():
     token = request.form['token']
     email = request.form['email']

@@ -2,8 +2,17 @@
  * Created by tobiaslundgren on 2016-01-20.
  */
 var connection;
-var source   = $("#profile-information").html();
-var template = Handlebars.compile(source);
+
+
+Handlebars.registerHelper('link', function(text, url) {
+  text = Handlebars.Utils.escapeExpression(text);
+  url  = Handlebars.Utils.escapeExpression(url);
+
+  var result = '<a href="' + url + '">' + text + '</a>';
+
+  return new Handlebars.SafeString(result);
+});
+
 
 displayView = function() {
     if(localStorage.userToken) {
@@ -21,6 +30,22 @@ window.onload = function() {
     displayView();
     //window.alert("Hello TDDD97!");
 };
+
+function rendertemplate() {
+    var context = {
+        usrfirstname: "usrData.firstname",
+        usrfamname: "usrData.familyname",
+        usrgender: "usrData.gender",
+        usrcity: "usrData.city",
+        usrcountry: "usrData.country",
+        usremail: "usrData.email"
+    };
+
+    var source = document.getElementById("profileInformation").innerHTML;
+    var template = Handlebars.compile(source);
+    document.getElementById("personalinfo2").innerHTML = template(context);
+}
+
 
 function connectSocket(email) {
     connection = new WebSocket('ws://localhost:5000/api');
@@ -226,9 +251,21 @@ function getUserInfo(email) {
     email = serverstub.getUserDataByToken(get_token()).data.email;
     }
 
+    email = getUserDataByToken(get_token()).data.email;
+
     var token = localStorage.getItem("userToken");
     console.log("user info loaded.");
     var usrData = serverstub.getUserDataByEmail(get_token(), email).data;
+
+    var context = {
+        usrfirstname: usrData.firstname,
+        usrfamname: usrData.familyname,
+        usrgender: usrData.gender,
+        usrcity: usrData.city,
+        usrcountry: usrData.country,
+        usremail: usrData.email
+    };
+    var html = template(context);
 
     document.getElementById("usrfirstname").innerHTML = usrData.firstname;
     document.getElementById("usrfamname").innerHTML = usrData.familyname;
@@ -251,15 +288,6 @@ function browseUserInfo(email) {
 
     if(serverstub.getUserDataByEmail(get_token(), email.value).success === true) {
         var usrData = serverstub.getUserDataByEmail(get_token(), email.value).data;
-
-        var context = { usrfirstname: usrData.firstname,
-        usrfamname: usrData.familyname,
-            usrgender: usrData.gender,
-            usrcity: usrData.city,
-            usrcountry: usrData.country,
-            usremail: usrData.email
-        };
-
 
         document.getElementById("usrfirstname").innerHTML = usrData.firstname;
         document.getElementById("usrfamname").innerHTML = usrData.familyname;
