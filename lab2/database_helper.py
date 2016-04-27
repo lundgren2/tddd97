@@ -4,7 +4,7 @@ from flask import g
 from server import app
 
 # Guide: http://flask.pocoo.org/docs/0.10/patterns/sqlite3/
-
+# Fix json.dumps()
 
 # Connect to database.db
 def connect_db():
