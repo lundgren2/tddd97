@@ -69,8 +69,13 @@ def get_loggedInUsers(email):
 def get_user(email):
     return query_db('SELECT email, firstname, familyname, country, city, gender FROM users WHERE email = ?',
         [email], one=True)
+<<<<<<< Updated upstream
 
 
+=======
+
+
+>>>>>>> Stashed changes
 '''
 # TEST
 def get_user_by_token(token):
@@ -116,9 +121,39 @@ def valid_login(email, password):
 
 # Logout user
 def signOut(token):
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    return query_db('DELETE FROM loggedInUsers WHERE token is ?', [token], True)
+
+
+
+
+'''
+def login()
+  user = get_user(email)
+  if user is None:
+      return "Wrong password or mail."
+  elif user[email] is email and user[password] is password:
+
+<<<<<<< HEAD
+#
+=======
+      query_db('INSERT INTO loggedinusers (email, token) VALUES (?,?)',
+               (user[email], token)
+               )      return True
+'''
+>>>>>>> master
+=======
+>>>>>>> Stashed changes
     user = query_db('DELETE FROM loggedInUsers WHERE token is ?',
                     [token], one=True)
     if user:
         return True
     else:
+<<<<<<< Updated upstream
         return False
+=======
+        return False
+>>>>>>> master
+>>>>>>> Stashed changes
