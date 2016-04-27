@@ -1,6 +1,7 @@
 /**
  * Created by tobiaslundgren on 2016-01-20.
  */
+var connection;
 
 displayView = function() {
     if(localStorage.userToken) {
@@ -19,9 +20,68 @@ window.onload = function() {
     //window.alert("Hello TDDD97!");
 };
 
+function connectSocket(email) {
+    connection = new WebSocket('ws://localhost:5000/api')
+    console.log("connection: " + connection);
+    // Event handler
+    connection.onopen = function () {
+        emailjson = JSON.stringify({ email: email });
+
+      connection.send(emailjson); // Send the message 'Ping' to the server
+    };
+    // Log errors
+    connection.onerror = function (error) {
+        console.log('WebSocket Error ' + error);
+    };
+
+    // Receive messages from the server
+    connection.onmessage = function (message) {
+        var jsonmessage = JSON.parse(message.data);
+        console.log('Server: ' + message.data);
+        if (message.data == "signout") {
+            signOut(get_token());
+        }
+    };
+
+    connection.onclose = function () {
+        console.log("Socket closed")
+    }
+
+}
+
+
+var HttpRequest = function (method, path, data, callback) {
+    var xml = new XMLHttpRequest();
+    console.info(path);
+    xml.onreadystatechange = function () {
+        if (xml.readyState==4 && xml.status==200) {
+            var serverResponse = JSON.parse(xml.responseText);
+            if (serverResponse.success) {
+                callback(serverResponse);
+            } else {
+                console.info(response.message);
+            }
+        }
+        var urlz = "http://localhost:5000/" + path
+        window.alert(urlz);
+        xml.open(method, urlz, true); //CHECK OM DYNAMISK WORKS
+
+        if (method == "GET") {
+            xml.send(null);
+        } else if (method == "POST") {
+            xml.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xml.send(data);
+        }
+    };
+
+
+};
+
+
+
 function passwordLength() {
     var password = document.getElementById("password").value;
-    if(password.length < 5) {
+    if(password.length < 7) {
         document.getElementById("password").setCustomValidity("Password too short!");
         return false;
 } else {
@@ -64,6 +124,22 @@ function loginConverter(formInput) {
 
     console.log('retrievedObject: ', JSON.parse(retrievedObject));
 
+}
+
+// SERVER SIDE LOGIN
+function login(formInput) {
+    console.info("loginfunktion")
+    var data = "email=" + formInput.email.value + "&password=" + formInput.password.value;
+    console.info(data)
+
+    HttpRequest("POST", "/signin", data, function (result) {
+        if (result.data) {
+            connectSocket(email);
+            localStorage.setItem("userToken", json.parse(result.data));
+        }
+        displayView();
+        tabs("home");
+    })
 }
 
 function logoutUser() {

@@ -1,14 +1,13 @@
 #from flask import Flask
 import sqlite3
 from flask import g
-from server import app
-
+from TWIDDER import app
 # Guide: http://flask.pocoo.org/docs/0.10/patterns/sqlite3/
 
 
 # Connect to database.db
 def connect_db():
-    return sqlite3.connect('database.db')
+    return sqlite3.connect('TWIDDER/database.db')
 
 
 # Get current database connection
@@ -22,6 +21,7 @@ def get_db():
 def init_db():
     with app.app_context():
         db = get_db()
+        print db
         with app.open_resource('database.schema', mode='r') as f:
             db.cursor().executescript(f.read())
         db.commit()
@@ -59,11 +59,11 @@ def add_message(sender, recipient, message):
 
 # GET functions
 def get_loggedInUsers(email):
-    user = query_db('SELECT * FROM loggedInUsers WHERE email is ?', [email])
-    if user is None:
-        return False
-    else:
+    user = query_db('SELECT * FROM loggedInUsers WHERE email is ?', [email], one=True)
+    if user is not None:
         return True
+    else:
+        return False
 
 
 def get_user(email):
@@ -116,9 +116,11 @@ def valid_login(email, password):
 
 # Logout user
 def signOut(token):
-    user = query_db('DELETE FROM loggedInUsers WHERE token is ?',
+    checktoken = query_db('SELECT * FROM loggedInUsers WHERE token = ?', [token], one=True)
+    user = query_db('DELETE FROM loggedInUsers WHERE token = ?',
                     [token], one=True)
-    if user:
+
+    if user is None and checktoken is not None:
         return True
     else:
         return False

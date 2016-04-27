@@ -63,6 +63,7 @@ target/
 
 # Own-files
 flask/
+TWIDDER/.idea
 lab2/.idea
 lab1/.idea
 .idea/

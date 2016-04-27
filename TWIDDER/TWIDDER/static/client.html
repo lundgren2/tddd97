@@ -1,20 +1,21 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href='client.css' type="text/css" rel="stylesheet">
-    <script src="client.js" type="text/javascript"></script>
-    <script src="serverstub.js" type="text/javascript"></script>
+    <link href="../static/client.css" type="text/css" rel="stylesheet">
+    <script src="../static/client.js" type="text/javascript"></script>
+    <!-- script src="serverstub.js" type="text/javascript"></script-->
     <title>TWIDDER</title>
 
     <script id="welcomeview" type="text/view">
         <div class="container">
-            <div id="logoslogan"><a href="/TDDD97/client.html"><img src="wimagew.png" width="340" height="400"/></a></div><!-- logo slogan -->
+            <div id="logoslogan"><a href="/client.html"><img src="../static/wimagew.png" width="340" height="400"/></a></div><!-- logo slogan -->
             <div id="login">
                 <h2>Sign In</h2><br />
-                <form onsubmit="return loginConverter(this);">
+                <form method="POST" onsubmit="return login(this);">
                     <label>Email<input type="email" name="email" required></label><br>
-                    <label>Password<input type="password" id="loginpass" name="password" required></label>
+                    <label>Passsword<input type="password" id="loginpass" name="password" required></label>
                     <button type="submit">Login</button>
                     <div id="loginfail" class="failed"></div>
                 </form>

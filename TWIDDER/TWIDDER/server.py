@@ -1,14 +1,22 @@
-from flask import Flask, request, redirect, url_for, jsonify
+from flask import Flask, request, redirect, url_for, jsonify, render_template
 import random, re, string, database_helper, json # Random token, Regular Expressions (important)
+#from flask_sockets import Sockets
+#from gevent.pywsgi import WSGIServer
+from TWIDDER import app
 
-# Create application
-app = Flask(__name__)
-app.debug = True
+# GLOBAL VARIABEL
+#remove redirect render template
+# TO DO: /init_db function
+
+
+session = {}
 
 # Database connections
 @app.before_request
 def before_request():
+    #database_helper.init_db()
     database_helper.connect_db()
+
 
 
 @app.teardown_request
@@ -18,7 +26,27 @@ def teardown_request(exception):
 
 @app.route("/")
 def root():
-    return redirect('static/client.html')
+    #return render_template('client.html')
+    #return redirect('client.html')
+    return app.send_static_file('client.html')
+
+
+# https://www.ida.liu.se/~TDDD97/lectures/slides/TDDD97_Lecture4.pdf
+@app.route('/api')
+def api():
+    if request.environ.get('wsgi.websocket'):
+        ws = request.environ['wsgi.websocket']
+
+        while True:
+            try:
+                email = ws.receive() #receive current user
+                if email in session:
+                    session[email].send("signout")
+                session[email] = ws
+                #ws.send(email)
+            except WebSocketError as err:
+                print (str(err))
+    return 'API OK'
 
 
 @app.route('/signup', methods=['POST'])
@@ -52,6 +80,9 @@ def signIn():
     email = request.form['email']
     password = request.form['password']
     # Check valid user
+    print email
+    print "hello sikadnjsdjda"
+    print password
     if database_helper.valid_login(email, password):
         if database_helper.get_loggedInUsers(email):
             return jsonify(success=False, message="Already signed in")
@@ -60,7 +91,7 @@ def signIn():
         print token
         user = database_helper.signin_user(email, token)
         if user is not None:
-            return jsonify(success=True, message="User successfully signed in")
+            return jsonify(success=True, message="User successfully signed in", data=token)
     else:
         return jsonify(success=False, message="Wrong password or email")
 
@@ -69,10 +100,13 @@ def signIn():
 def signOut():
     token = request.form['token']
     if token:
-        database_helper.signOut(token)
-        return jsonify(sucess=True, message="User signed out successfully")
+        response = database_helper.signOut(token)
+        if response:
+            return jsonify(success=True, message="User signed out successfully")
+        else:
+            return jsonify(success=False, message="Already logged out")
     else:
-        return jsonify(sucess=False, message="No token!")
+        return jsonify(success=False, message="No token!")
 
 
 @app.route('/changepass', methods=['POST'])
@@ -96,9 +130,9 @@ def changePass():
 
     if curr_pw == old_Password:
         database_helper.set_password(email, new_Password)
-        return jsonify(sucess=True, message="Password changed successfully")
+        return jsonify(success=True, message="Password changed successfully")
     else:
-        return jsonify(sucess=False, message="Wrong password")
+        return jsonify(success=False, message="Wrong password")
 
 
 @app.route('/getuserdatabytoken', methods=['POST'])
