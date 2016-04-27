@@ -3,6 +3,17 @@
  */
 var connection;
 
+
+Handlebars.registerHelper('link', function(text, url) {
+  text = Handlebars.Utils.escapeExpression(text);
+  url  = Handlebars.Utils.escapeExpression(url);
+
+  var result = '<a href="' + url + '">' + text + '</a>';
+
+  return new Handlebars.SafeString(result);
+});
+
+
 displayView = function() {
     if(localStorage.userToken) {
         document.getElementById("mainview").innerHTML = document.getElementById("profileview").innerHTML;
@@ -19,6 +30,22 @@ window.onload = function() {
     displayView();
     //window.alert("Hello TDDD97!");
 };
+
+function rendertemplate() {
+    var context = {
+        usrfirstname: "usrData.firstname",
+        usrfamname: "usrData.familyname",
+        usrgender: "usrData.gender",
+        usrcity: "usrData.city",
+        usrcountry: "usrData.country",
+        usremail: "usrData.email"
+    };
+
+    var source = document.getElementById("profileInformation").innerHTML;
+    var template = Handlebars.compile(source);
+    document.getElementById("personalinfo2").innerHTML = template(context);
+}
+
 
 function connectSocket(email) {
     connection = new WebSocket('ws://localhost:5000/api');
@@ -71,7 +98,7 @@ var HttpRequest = function (method, path, data, callback) {
     if (method == "GET") {
         xml.send(null);
     } else if (method == "POST") {
-         window.alert(data);
+        //window.alert(data);
         xml.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xml.send(data);
     }
@@ -136,7 +163,7 @@ function login(formInput) {
         if (result.data) {
             connectSocket(formInput.email.value);
             localStorage.setItem("userToken", result.data);
-            localStorage.setItem("email", formInput.email.data);
+            //localStorage.setItem("email", formInput.email.data);
         }
         displayView();
         tabs("home");
@@ -155,19 +182,22 @@ function signup(formInput) {
         "&country=" + formInput.country.value;
         
     HttpRequest("POST", "/signup", data, function (result){
-        alert(result.message);
-        displayView();
+        //alert(result.message);
     })
+
+    login(formInput);
+
 }
 //SERVER SIDE LOGOUT
 function logoutUser() {
     var logindata =  "token=" + get_token();
-                
+    console.info(logindata);
     HttpRequest("POST", "/signout", logindata, function (res){
-        if (res.data){
-            console.info("hejdå");
+        if (res.success) {
             localStorage.removeItem('userToken');
-
+        }
+        else {
+            console.info("ELSSE");
         }
         displayView();
         tabs("home");
@@ -203,7 +233,8 @@ function signupConverter(formInput) {
 // GET LOCAL TOKEN
 function get_token() {
     var token = localStorage.getItem('userToken');
-    return JSON.parse(token);
+    //return JSON.parse(token);
+    return token;
 }
 
 // SERVER SIDE
@@ -226,6 +257,7 @@ function getUserDataByEmail(email) {
     var data = "token=" + get_token() + "&email=" + email;
     var qemail;
 
+<<<<<<< HEAD
     HttpRequest("POST", "/getuserdatabytoken", "token=" + get_token() , function (result) {
         if (result.data) {
             connectSocket(result.data.email);
@@ -240,6 +272,32 @@ function getUserDataByEmail(email) {
             console.log(result.data);
         }
     })
+=======
+    email = getUserDataByToken(get_token()).data.email;
+
+    var token = localStorage.getItem("userToken");
+    console.log("user info loaded.");
+    var usrData = serverstub.getUserDataByEmail(get_token(), email).data;
+
+    var context = {
+        usrfirstname: usrData.firstname,
+        usrfamname: usrData.familyname,
+        usrgender: usrData.gender,
+        usrcity: usrData.city,
+        usrcountry: usrData.country,
+        usremail: usrData.email
+    };
+    var html = template(context);
+
+    document.getElementById("usrfirstname").innerHTML = usrData.firstname;
+    document.getElementById("usrfamname").innerHTML = usrData.familyname;
+    document.getElementById("usrgender").innerHTML = usrData.gender;
+    document.getElementById("usrcity").innerHTML = usrData.city;
+    document.getElementById("usrcountry").innerHTML = usrData.country;
+    document.getElementById("usremail").innerHTML = usrData.email;
+    get_messages();
+    return false;
+>>>>>>> master
 }
 
 function browseUserInfo(email) {
@@ -253,6 +311,7 @@ function browseUserInfo(email) {
 
     if(serverstub.getUserDataByEmail(get_token(), email.value).success === true) {
         var usrData = serverstub.getUserDataByEmail(get_token(), email.value).data;
+
         document.getElementById("usrfirstname").innerHTML = usrData.firstname;
         document.getElementById("usrfamname").innerHTML = usrData.familyname;
         document.getElementById("usrgender").innerHTML = usrData.gender;

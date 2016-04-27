@@ -52,7 +52,7 @@ def api():
 @app.route('/initdb')
 def doinitdb():
     database_helper.init_db()
-    return True
+    return 'OK'
 
 
 @app.route('/signup', methods=['POST'])
@@ -86,9 +86,6 @@ def signIn():
     email = request.form['email']
     password = request.form['password']
     # Check valid user
-    print email
-    print "hello sikadnjsdjda"
-    print password
     if database_helper.valid_login(email, password):
         if database_helper.get_loggedInUsers(email):
             return jsonify(success=False, message="Already signed in")
@@ -184,7 +181,7 @@ def getUserMessageByToken():
             return jsonify(success=True, message="User messages retrieved.", data=messages)
 
 
-@app.route('/getusermessagebyemail', methods=['POST'])
+@app.route('/getusermessagebreyemail', methods=['POST'])
 def getUserMessageByEmail():
     token = request.form['token']
     email = request.form['email']
