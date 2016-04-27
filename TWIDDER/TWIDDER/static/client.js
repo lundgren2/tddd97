@@ -275,6 +275,8 @@ function getUserDataByEmail(email) {
 =======
     email = getUserDataByToken(get_token()).data.email;
 
+    email = getUserDataByToken(get_token()).data.email;
+
     var token = localStorage.getItem("userToken");
     console.log("user info loaded.");
     var usrData = serverstub.getUserDataByEmail(get_token(), email).data;
