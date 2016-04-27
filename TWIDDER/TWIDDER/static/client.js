@@ -188,6 +188,7 @@ function signup(formInput) {
     login(formInput);
 
 }
+//SERVER SIDE LOGOUT
 function logoutUser() {
     var logindata =  "token=" + get_token();
     console.info(logindata);
@@ -229,7 +230,7 @@ function signupConverter(formInput) {
  }
 
 }
-
+// GET LOCAL TOKEN
 function get_token() {
     var token = localStorage.getItem('userToken');
     //return JSON.parse(token);
@@ -237,19 +238,42 @@ function get_token() {
 }
 
 // SERVER SIDE
-function getUserDataByToken(token) {
-    HttpRequest("POST", "/getuserdatabytoken", "", function (result) {
+function getUserDataByToken() {
+
+    var data = "token=" + get_token();
+
+    HttpRequest("POST", "/getuserdatabytoken", data, function (result) {
         if (result.data) {
-            connectSocket(email);
+            connectSocket(result.data.email);
+            console.log(result.data);
+            
         }
     })
 }
 
 
-function getUserInfo(email) {
-    if (email == null) {
-    email = serverstub.getUserDataByToken(get_token()).data.email;
-    }
+function getUserDataByEmail(email) {
+    
+    var data = "token=" + get_token() + "&email=" + email;
+    var qemail;
+
+<<<<<<< HEAD
+    HttpRequest("POST", "/getuserdatabytoken", "token=" + get_token() , function (result) {
+        if (result.data) {
+            connectSocket(result.data.email);
+            qemail = result.data.email;
+
+        }
+    })
+
+    HttpRequest("POST", "/getuserdatabyemail", data, function (result) {
+        if (result.data) {
+            connectSocket(qemail);
+            console.log(result.data);
+        }
+    })
+=======
+    email = getUserDataByToken(get_token()).data.email;
 
     email = getUserDataByToken(get_token()).data.email;
 
@@ -275,6 +299,7 @@ function getUserInfo(email) {
     document.getElementById("usremail").innerHTML = usrData.email;
     get_messages();
     return false;
+>>>>>>> master
 }
 
 function browseUserInfo(email) {
