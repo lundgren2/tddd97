@@ -68,4 +68,5 @@ lab2/.idea
 lab1/.idea
 .idea/
 *.pyc
-
+*.sublime-project
+*.sublime-workspace
