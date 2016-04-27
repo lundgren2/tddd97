@@ -49,6 +49,12 @@ def api():
     #return 'API OK'
 
 
+@app.route('/initdb')
+def doinitdb():
+    database_helper.init_db()
+    return True
+
+
 @app.route('/signup', methods=['POST'])
 def signUp():
     email = request.form['email']

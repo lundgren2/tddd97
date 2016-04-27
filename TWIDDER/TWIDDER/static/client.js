@@ -146,12 +146,37 @@ function login(formInput) {
     })
 }
 
+//SERVER SIDE SIGNUP
+function signup(formInput) {
+    var data = 
+        "email=" + formInput.email.value +
+        "&password=" + formInput.password.value +
+        "&firstname=" + formInput.firstname.value +
+        "&familyname=" + formInput.lastname.value +
+        "&gender=" + formInput.gender.value +
+        "&city=" + formInput.city.value +
+        "&country=" + formInput.country.value;
+        
+    HttpRequest("POST", "/signup", data, function (result){
+        alert(result.message);
+        displayView();
+    })
+}
 function logoutUser() {
-    serverstub.signOut(get_token());
-    localStorage.removeItem('userToken');
-    displayView();
+    var logindata =  "token=" + get_token();
+                
+    HttpRequest("POST", "/signout", logindata, function (res){
+        if (res.data){
+            console.info("hejdå");
+            localStorage.removeItem('userToken');
+
+        }
+        displayView();
+        tabs("home");
+    })
 
 }
+
 
 function signupConverter(formInput) {
   if(true) {
