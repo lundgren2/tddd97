@@ -21,7 +21,7 @@ window.onload = function() {
 };
 
 function connectSocket(email) {
-    connection = new WebSocket('ws://localhost:5000/api')
+    connection = new WebSocket('ws://localhost:5000/api');
     console.log("connection: " + connection);
     // Event handler
     connection.onopen = function () {
@@ -65,9 +65,9 @@ var HttpRequest = function (method, path, data, callback) {
             }
         }
     };
-    var urlz = "http://localhost:5000" + path;
+    var url = "http://localhost:5000" + path;
 
-    xml.open(method, urlz, true); //CHECK OM DYNAMISK WORKS
+    xml.open(method, url, true); //CHECK OM DYNAMISK WORKS
     if (method == "GET") {
         xml.send(null);
     } else if (method == "POST") {
@@ -76,10 +76,7 @@ var HttpRequest = function (method, path, data, callback) {
         xml.send(data);
     }
 
-
-
 };
-
 
 
 function passwordLength() {
@@ -131,15 +128,15 @@ function loginConverter(formInput) {
 
 // SERVER SIDE LOGIN
 function login(formInput) {
-    console.info("loginfunktion")
+    console.info("loginfunktion");
     var data = "email=" + formInput.email.value + "&password=" + formInput.password.value;
-    console.info(data)
+    console.info(data);
 
     HttpRequest("POST", "/signin", data, function (result) {
         if (result.data) {
-            console.info("hej post signin");
-            connectSocket(email);
+            connectSocket(formInput.email.value);
             localStorage.setItem("userToken", result.data);
+            localStorage.setItem("email", formInput.email.data);
         }
         displayView();
         tabs("home");
@@ -182,6 +179,16 @@ function get_token() {
     var token = localStorage.getItem('userToken');
     return JSON.parse(token);
 }
+
+// SERVER SIDE
+function getUserDataByToken(token) {
+    HttpRequest("POST", "/getuserdatabytoken", "", function (result) {
+        if (result.data) {
+            connectSocket(email);
+        }
+    })
+}
+
 
 function getUserInfo(email) {
     if (email == null) {
