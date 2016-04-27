@@ -52,7 +52,7 @@ def api():
 @app.route('/initdb')
 def doinitdb():
     database_helper.init_db()
-    return True
+    return 'OK'
 
 
 @app.route('/signup', methods=['POST'])

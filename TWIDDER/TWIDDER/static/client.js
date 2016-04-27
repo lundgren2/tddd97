@@ -71,7 +71,7 @@ var HttpRequest = function (method, path, data, callback) {
     if (method == "GET") {
         xml.send(null);
     } else if (method == "POST") {
-         window.alert(data);
+        //window.alert(data);
         xml.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xml.send(data);
     }
@@ -136,7 +136,7 @@ function login(formInput) {
         if (result.data) {
             connectSocket(formInput.email.value);
             localStorage.setItem("userToken", result.data);
-            localStorage.setItem("email", formInput.email.data);
+            //localStorage.setItem("email", formInput.email.data);
         }
         displayView();
         tabs("home");
@@ -155,18 +155,23 @@ function signup(formInput) {
         "&country=" + formInput.country.value;
         
     HttpRequest("POST", "/signup", data, function (result){
-        alert(result.message);
-        displayView();
+        //alert(result.message);
     })
+
+    login(formInput);
+
 }
 function logoutUser() {
     var logindata =  "token=" + get_token();
-                
+    console.info(logindata);
     HttpRequest("POST", "/signout", logindata, function (res){
-        if (res.data){
-            console.info("hejdå");
+        if (res.success) {
             localStorage.removeItem('userToken');
+            console.info("hejdå");
 
+        }
+        else {
+            console.info("ELSSE");
         }
         displayView();
         tabs("home");
@@ -202,7 +207,8 @@ function signupConverter(formInput) {
 
 function get_token() {
     var token = localStorage.getItem('userToken');
-    return JSON.parse(token);
+    //return JSON.parse(token);
+    return token;
 }
 
 // SERVER SIDE
