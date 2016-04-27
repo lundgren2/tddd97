@@ -2,6 +2,8 @@
  * Created by tobiaslundgren on 2016-01-20.
  */
 var connection;
+var source   = $("#profile-information").html();
+var template = Handlebars.compile(source);
 
 displayView = function() {
     if(localStorage.userToken) {
@@ -167,8 +169,6 @@ function logoutUser() {
     HttpRequest("POST", "/signout", logindata, function (res){
         if (res.success) {
             localStorage.removeItem('userToken');
-            console.info("hejdå");
-
         }
         else {
             console.info("ELSSE");
@@ -251,6 +251,16 @@ function browseUserInfo(email) {
 
     if(serverstub.getUserDataByEmail(get_token(), email.value).success === true) {
         var usrData = serverstub.getUserDataByEmail(get_token(), email.value).data;
+
+        var context = { usrfirstname: usrData.firstname,
+        usrfamname: usrData.familyname,
+            usrgender: usrData.gender,
+            usrcity: usrData.city,
+            usrcountry: usrData.country,
+            usremail: usrData.email
+        };
+
+
         document.getElementById("usrfirstname").innerHTML = usrData.firstname;
         document.getElementById("usrfamname").innerHTML = usrData.familyname;
         document.getElementById("usrgender").innerHTML = usrData.gender;

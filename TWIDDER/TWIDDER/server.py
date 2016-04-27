@@ -86,9 +86,6 @@ def signIn():
     email = request.form['email']
     password = request.form['password']
     # Check valid user
-    print email
-    print "hello sikadnjsdjda"
-    print password
     if database_helper.valid_login(email, password):
         if database_helper.get_loggedInUsers(email):
             return jsonify(success=False, message="Already signed in")
