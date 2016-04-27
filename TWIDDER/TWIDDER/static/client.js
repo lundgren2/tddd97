@@ -159,6 +159,7 @@ function signup(formInput) {
         displayView();
     })
 }
+//SERVER SIDE LOGOUT
 function logoutUser() {
     var logindata =  "token=" + get_token();
                 
@@ -199,39 +200,46 @@ function signupConverter(formInput) {
  }
 
 }
-
+// GET LOCAL TOKEN
 function get_token() {
     var token = localStorage.getItem('userToken');
     return JSON.parse(token);
 }
 
 // SERVER SIDE
-function getUserDataByToken(token) {
-    HttpRequest("POST", "/getuserdatabytoken", "", function (result) {
+function getUserDataByToken() {
+
+    var data = "token=" + get_token();
+
+    HttpRequest("POST", "/getuserdatabytoken", data, function (result) {
         if (result.data) {
-            connectSocket(email);
+            connectSocket(result.data.email);
+            console.log(result.data);
+            
         }
     })
 }
 
 
-function getUserInfo(email) {
-    if (email == null) {
-    email = serverstub.getUserDataByToken(get_token()).data.email;
-    }
+function getUserDataByEmail(email) {
+    
+    var data = "token=" + get_token() + "&email=" + email;
+    var qemail;
 
-    var token = localStorage.getItem("userToken");
-    console.log("user info loaded.");
-    var usrData = serverstub.getUserDataByEmail(get_token(), email).data;
+    HttpRequest("POST", "/getuserdatabytoken", "token=" + get_token() , function (result) {
+        if (result.data) {
+            connectSocket(result.data.email);
+            qemail = result.data.email;
 
-    document.getElementById("usrfirstname").innerHTML = usrData.firstname;
-    document.getElementById("usrfamname").innerHTML = usrData.familyname;
-    document.getElementById("usrgender").innerHTML = usrData.gender;
-    document.getElementById("usrcity").innerHTML = usrData.city;
-    document.getElementById("usrcountry").innerHTML = usrData.country;
-    document.getElementById("usremail").innerHTML = usrData.email;
-    get_messages();
-    return false;
+        }
+    })
+
+    HttpRequest("POST", "/getuserdatabyemail", data, function (result) {
+        if (result.data) {
+            connectSocket(qemail);
+            console.log(result.data);
+        }
+    })
 }
 
 function browseUserInfo(email) {
