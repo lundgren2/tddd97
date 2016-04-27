@@ -6,7 +6,7 @@ from TWIDDER import app
 
 # GLOBAL VARIABEL
 #remove redirect render template
-# TO DO: /init_db function
+# TODO: /init_db function
 
 
 session = {}
