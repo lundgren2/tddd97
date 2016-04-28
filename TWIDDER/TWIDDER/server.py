@@ -9,17 +9,6 @@ bcrypt = Bcrypt(app)
 
 session = {}
 
-#APP_ROOT = os.path.dirname(os.path.abspath(__file__))
-'''
-UPLOAD_FOLDER = '/TWIDDER/uploads'
-ALLOWED_EXTENSIONS = set(['txt', 'mp4', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'mp3'])
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-
-'''
-=======
->>>>>>> master
-
 
 # Database connections
 @app.before_request
@@ -93,8 +82,7 @@ def signUp():
             return jsonify(success=False, message="Email already exists")
         else:
             pw_hash = bcrypt.generate_password_hash(password)
-            print "pw: ", password, "pw_hash: ", pw_hash
-
+            #print "pw: ", password, "pw_hash: ", pw_hash
             database_helper.signup_user(email, pw_hash, firstname, familyname, gender, city, country)
             return jsonify(success=True, message="User signed up successfully")
 
@@ -228,19 +216,6 @@ def postMessage():
         database_helper.add_message(sender, recepient, message)
         return jsonify(success=True, message="Message sent")
 
-
-'''
-@app.route("/stream", methods=["GET"])
-def generateFile();
-    file = request.form['file']
-    path = "/storedfiles/" + file
-    try:
-
-        return send_file(path, file)
-    except Exception as e:
-        return str(e)
-
-'''
 
 def checkLogin(token):
     email = database_helper.get_email(token)
