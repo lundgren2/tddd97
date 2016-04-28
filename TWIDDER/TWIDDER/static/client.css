@@ -49,8 +49,8 @@ h1,h2 { font-size: 15pt; }
 .clear { clear:both; }
 .container {
     margin: 100px auto;
-    width: 604px; /* inclusive border 4px */
-    height: auto;
+    awidth: 604px; /* inclusive border 4px */
+    aheight: auto;
 }
 
 /* Header */
@@ -61,7 +61,8 @@ h1,h2 { font-size: 15pt; }
     height: 52px;
     background-color: rgba(255, 255, 255, 0.85);
 }
-#nav { margin:0 auto; width: 800px; }
+a#nav { margin:0 auto; width: 800px; }
+.navcontainer { max-width: 1100px; padding:0 10px; margin: 0 auto; }
 ul#tabs { margin-bottom: 15px; }
 ul#tabs li.selected {
     background-color: rgba(0, 0, 0, 0.75);
@@ -88,7 +89,7 @@ padding: 18px 8px;
 ul#tabs li#signout {float:right; background-color: rgba(102, 0, 0, 0.92); }
 ul#tabs li#signout a {color: #FFFFFF; opacity: 0.8;}
 #logoslogan {
-    width: 320px;
+    width: 100%;
     height: 380px;
     background-color: rgba(34, 34, 30, 0.6);
     border: 1px dotted #444;
@@ -97,6 +98,11 @@ ul#tabs li#signout a {color: #FFFFFF; opacity: 0.8;}
     color: #FFF;
     padding:10px;
 
+}
+#logoslogan img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .failed, #error { color: red; }
 #loggedin {
@@ -111,8 +117,8 @@ ul#tabs li#signout a {color: #FFFFFF; opacity: 0.8;}
 }
 #login {
     padding:10px;
-    width: 230px;
-    height: 120px;
+    width: 100%;
+    min-height: 120px;
     margin-bottom: 10px;
     float:left;
     background-color: rgba(255, 255, 255, 0.85);
@@ -120,29 +126,33 @@ ul#tabs li#signout a {color: #FFFFFF; opacity: 0.8;}
 }
 
 #login label, #signup label, #personalinfo label {
-    height: 22px;
+    aheight: 25px;
     width: 100%;
     float: left;
+    min-height: 25px;
 }
 #login input, #signup input, #signup select {
     float: right;
     background-color: rgba(0, 0, 0, 0.1);
     border:1px solid #aaa;
     border-radius: 4px;
-    max-width: 140px;
+    max-width: 400px;
+    min-width: 100px;
+    width: 200px;
+    height: 25px;
 }
 #personalinfo input{
     float: right;
     background-color: rgba(255, 255, 255, 0.1);
-    border:1px solid #aaa;
+    border: 1px solid #aaa;
     border-radius: 4px;
     max-width: 140px;
     color: #FFF;
 }
 
 #signup {
-    width: 230px;
-    height: 228px;
+    width: 100%;
+    height: auto;
     float:left;
     background-color: rgba(255, 255, 255, 0.85);
     border: 1px solid #444;
@@ -154,7 +164,7 @@ ul#tabs li#signout a {color: #FFFFFF; opacity: 0.8;}
     float:right;
     border:1px solid #888;
     font-size: 12px;
-    padding: 2px;
+    padding: 8px 12px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 }
@@ -171,18 +181,23 @@ ul#tabs li#signout a {color: #FFFFFF; opacity: 0.8;}
 
 /* Home */
 #personalinfo { margin-top: 70px; width: 260px;}
+@media only screen and (max-width: 650px) {
+    #personalinfo {margin-top: 310px;}
+    #loggedin {background-position: center top !important;}
+}
 #messageform {
-    width: 550px;
+    width: 100%;
+    max-width: 750px;
     float: left;
-    margin: 90px 0 0 30px;
+    margin: 90px 0 0 0px;
 }
 #messageform textarea {
     font-size: 0.8em;
     display: block;
-    width: 450px;
+    max-width: 850px;
+    width: 70%;
     min-height: 50px;
     padding:5px;
-    max-width: 450px;
     float:left;
     background: rgba(255,255,255, 0.05);
     color: #EEEEEE;
@@ -215,5 +230,5 @@ button#updatewall {background: url("refresh.png") no-repeat;
     width: 20px;
     background-size: cover;
     float:right;
-    margin:15px 20px 0 0;
+    margin:15px 20% 0 0;
 }
