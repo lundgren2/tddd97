@@ -3,6 +3,12 @@
  */
 var connection;
 
+Handlebars.registerHelper('if_eq', function(a, b, opts) {
+    if(a == b) // Or === depending on your needs
+        return opts.fn(this);
+    else
+        return opts.inverse(this);
+});
 
 Handlebars.registerHelper('link', function(text, url) {
   text = Handlebars.Utils.escapeExpression(text);
@@ -40,12 +46,7 @@ function rendertemplate() {
         usrcountry: "usrData.country",
         usremail: "usrData.email"
     };
-
-    var source = document.getElementById("profileInformation").innerHTML;
-    var template = Handlebars.compile(source);
-    document.getElementById("personalinfo2").innerHTML = template(context);
 }
-
 
 function connectSocket(email) {
     connection = new WebSocket('ws://localhost:5000/api');
@@ -53,7 +54,7 @@ function connectSocket(email) {
     // Event handler
     connection.onopen = function () {
         emailjson = JSON.stringify({ email: email });
-
+// TODO: caught
       connection.send(emailjson); // Send the message 'Ping' to the server
     };
     // Log errors
@@ -80,12 +81,12 @@ function connectSocket(email) {
 var HttpRequest = function (method, path, data, callback) {
     console.info("HttpRequest");
     var xml = new XMLHttpRequest();
-    console.info(path);
+    console.info("PATH i HTTPRequest: " + path);
 
     xml.onreadystatechange = function () {
         if (xml.readyState==4 && xml.status==200) {
             var serverResponse = JSON.parse(xml.responseText);
-            if (serverResponse.success) {
+            if (serverResponse) {
                 callback(serverResponse);
             } else {
                 console.info(serverResponse.message);
@@ -158,12 +159,12 @@ function login(formInput) {
     console.info("loginfunktion");
     var data = "email=" + formInput.email.value + "&password=" + formInput.password.value;
     console.info(data);
-
     HttpRequest("POST", "/signin", data, function (result) {
         if (result.data) {
+            console.log(formInput.email.value);
             connectSocket(formInput.email.value);
             localStorage.setItem("userToken", result.data);
-            //localStorage.setItem("email", formInput.email.data);
+            localStorage.setItem("email", formInput.email.value);
         }
         displayView();
         tabs("home");
@@ -183,7 +184,7 @@ function signup(formInput) {
         
     HttpRequest("POST", "/signup", data, function (result){
         //alert(result.message);
-    })
+    });
 
     login(formInput);
 
@@ -195,40 +196,14 @@ function logoutUser() {
     HttpRequest("POST", "/signout", logindata, function (res){
         if (res.success) {
             localStorage.removeItem('userToken');
+            localStorage.removeItem('email');
         }
         else {
             console.info("ELSSE");
         }
         displayView();
         tabs("home");
-    })
-
-}
-
-
-function signupConverter(formInput) {
-  if(true) {
-        var formData = {
-            "email": formInput.email.value,
-            "password": formInput.password.value,
-            "firstname": formInput.firstname.value,
-            "familyname": formInput.lastname.value,
-            "gender": formInput.gender.value,
-            "city": formInput.city.value,
-            "country": formInput.country.value
-        };
-        var resp = serverstub.signUp(formData);
-         if(resp.success === true) {
-            var resplog = loginConverter(formInput);
-            console.log(resplog);
-        }
-
-    return true;
-    } else {
-      alert("Invalid password");
-      return false;
- }
-
+    });
 }
 // GET LOCAL TOKEN
 function get_token() {
@@ -237,95 +212,69 @@ function get_token() {
     return token;
 }
 
+
+function renderData(usrData, tab) {
+    var context = {
+    usrfirstname: usrData[1],
+    usrfamname: usrData[2],
+    usrgender: usrData[3],
+    usrcity: usrData[4],
+    usrcountry: usrData[5],
+    usremail: usrData[0],
+    tabs: tab
+    };
+
+    var source = document.getElementById("profileInformation").innerHTML;
+    var template = Handlebars.compile(source);
+    if (context.tabs == "profile") {
+        document.getElementById("personalinformation").innerHTML = template(context);
+    } else {
+        document.getElementById("browseinformation").innerHTML = template(context);
+    }
+
+}
+
 // SERVER SIDE
 function getUserDataByToken() {
-
     var data = "token=" + get_token();
 
     HttpRequest("POST", "/getuserdatabytoken", data, function (result) {
         if (result.data) {
-            connectSocket(result.data.email);
             console.log(result.data);
-            
+            renderData(result.data, "profile");
+            console.log("BARA I HOME!");
+            get_messages();
         }
-    })
+    });
 }
 
 
 function getUserDataByEmail(email) {
-    
     var data = "token=" + get_token() + "&email=" + email;
-    var qemail;
-
-<<<<<<< HEAD
-    HttpRequest("POST", "/getuserdatabytoken", "token=" + get_token() , function (result) {
-        if (result.data) {
-            connectSocket(result.data.email);
-            qemail = result.data.email;
-
-        }
-    })
 
     HttpRequest("POST", "/getuserdatabyemail", data, function (result) {
         if (result.data) {
-            connectSocket(qemail);
-            console.log(result.data);
+            console.info(result.data);
+            renderData(result.data, "browse");
+            console.log("BARA I BROWSE!");
+            get_messages(email);
         }
-    })
-=======
-    email = getUserDataByToken(get_token()).data.email;
+    });
 
-    email = getUserDataByToken(get_token()).data.email;
-
-    var token = localStorage.getItem("userToken");
-    console.log("user info loaded.");
-    var usrData = serverstub.getUserDataByEmail(get_token(), email).data;
-
-    var context = {
-        usrfirstname: usrData.firstname,
-        usrfamname: usrData.familyname,
-        usrgender: usrData.gender,
-        usrcity: usrData.city,
-        usrcountry: usrData.country,
-        usremail: usrData.email
-    };
-    var html = template(context);
-
-    document.getElementById("usrfirstname").innerHTML = usrData.firstname;
-    document.getElementById("usrfamname").innerHTML = usrData.familyname;
-    document.getElementById("usrgender").innerHTML = usrData.gender;
-    document.getElementById("usrcity").innerHTML = usrData.city;
-    document.getElementById("usrcountry").innerHTML = usrData.country;
-    document.getElementById("usremail").innerHTML = usrData.email;
-    get_messages();
+    // TODO: Ta bort om det fungerar ändå
     return false;
->>>>>>> master
 }
 
 function browseUserInfo(email) {
     tabs("browse");
 
     var token = localStorage.getItem("userToken");
-    console.log(token);
-    console.log(email.value);
     console.log("Browsed user loaded.");
 
 
-    if(serverstub.getUserDataByEmail(get_token(), email.value).success === true) {
-        var usrData = serverstub.getUserDataByEmail(get_token(), email.value).data;
-
-        document.getElementById("usrfirstname").innerHTML = usrData.firstname;
-        document.getElementById("usrfamname").innerHTML = usrData.familyname;
-        document.getElementById("usrgender").innerHTML = usrData.gender;
-        document.getElementById("usrcity").innerHTML = usrData.city;
-        document.getElementById("usrcountry").innerHTML = usrData.country;
-        document.getElementById("usremail").innerHTML = usrData.email;
-
-        get_messages(email.value);
-        document.getElementById("browseinfo").className = "show";
-     }else {
-    document.getElementById("error").innerHTML = "User doesn't exist. Please try again.";
-     }
+    getUserDataByEmail(email.value);
+    document.getElementById("browseinfo").className = "show";
+    //get_messages(email.value);
 
     return false;
 }
@@ -342,7 +291,7 @@ function tabs(tab) {
     if (tab != "browse" && tab != "account") {
         document.getElementById("tabview").innerHTML = document.getElementById("hometab").innerHTML;
         element1.classList.add("selected");
-        getUserInfo();
+        getUserDataByToken();
     }
     if (tab == "browse") {
         document.getElementById("tabview").innerHTML = document.getElementById("browsetab").innerHTML;
@@ -355,56 +304,68 @@ function tabs(tab) {
     return false;
 }
 
+function updateWall() {
+    var email = document.getElementById("usremail").innerHTML;
+    get_messages(email);
+}
 
 function get_messages(email) {
-    if (email == null) {
-        var email = document.getElementById("usremail").innerHTML;
-    }
-
-    var token = get_token();
-    var usrData = serverstub.getUserMessagesByEmail(get_token(), email).data;
-    var dataLenght = usrData.length;
     var messContent;
-    console.log(usrData);
+    document.getElementById("userwall").innerHTML = "";
+    if (email == null) {
+        var data = "token=" + get_token();
+        HttpRequest("POST", "/getusermessagebytoken", data, function (result) {
+            if (result.success) {
+                for (var i = 0; i < result.data.length; ++i) {
+                    messContent = "<div class=\"message\">" + result.data[i][1] + ": " + result.data[i][3] + "</div><br>";
+                    document.getElementById("userwall").innerHTML += messContent;
+                }
+            }
 
-document.getElementById("userwall").innerHTML = "";
-    for (var i = 0; i < dataLenght; ++i) {
-
-        messContent = "<div class=\"message\">" + usrData[i].writer + ": " + usrData[i].content + "</div><br>";
-        document.getElementById("userwall").innerHTML += messContent;
+        });
+    } else {
+        var data = "token=" + get_token() + "&email=" + email;
+        HttpRequest("POST", "/getusermessagebyemail", data, function (result) {
+            if (result.success) {
+                for (var i = 0; i < result.data.length; ++i) {
+                    messContent = "<div class=\"message\">" + result.data[i][1] + ": " + result.data[i][3] + "</div><br>";
+                    document.getElementById("userwall").innerHTML += messContent;
+                }
+            }
+        });
     }
-    return false;
+
+    return false; //ta ej bort
+}
+
+function postMessage(token, message, email) {
+    var data = "token=" + token + "&message=" + message + "&email=" + email;
+    HttpRequest("POST", "/postmessage", data, function (result) {
+        console.log(result.message);
+    })
 }
 
 function post_message(formInput) {
     var message = formInput.textbox.value;
-    console.log("POSTAT TILL: ", message);
-
-    //var email = serverstub.getUserDataByToken(get_token()).data.email;
     var email = document.getElementById("usremail").innerHTML;
-    var token = get_token();
-    console.log("POSTAR MAIL", token, email);
-
-    var resp = serverstub.postMessage(token, message, email);
-         if(resp.success === true) {
-             console.log(resp);
-             get_messages(email);
-            document.getElementById('textbox').value = "";
-         }
+    console.log("POSTAT TILL: ", message);
+    postMessage(get_token(), message, email);
+    console.log("POSTAR MAIL", get_token(), email);
+    document.getElementById('textbox').value = "";
+    get_messages(email);
     return false;
 }
 
+// SERVERSIDE
+function changePassword(token, oldpw, newpw) {
+    var data = "token=" + token + "&old_password=" + oldpw + "&new_password=" + newpw;
+        HttpRequest("POST", "/changepass", data, function (result) {
+           document.getElementById("info").innerHTML = result.message;
+        });
+}
+
 function changePass(formInput){
-    var retrievedObject = serverstub.changePassword(get_token(), formInput.oldPassword.value, formInput.newPassword.value)
+    changePassword(get_token(), formInput.oldPassword.value, formInput.newPassword.value);
     tabs("account");
-     if(retrievedObject.success === true) {
-         document.getElementById("info").innerHTML = "Password is successfully changed!.";
-         info.classList.remove("failed");
-     }else{
-         info.classList.add("failed");
-         document.getElementById("info").innerHTML = "Failed to change password.";
-
-
-     }
     return false;
 }

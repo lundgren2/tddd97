@@ -44,7 +44,8 @@ def api():
                     session[email].send("signout")
                 session[email] = ws
                 #ws.send(email)
-            except WebSocketError as err:
+                # TODO: fixa except
+            except "" as err:
                 print (str(err))
     #return 'API OK'
 
@@ -160,7 +161,7 @@ def getUserDataByEmail():
     if checklogin:
         user = database_helper.get_user(email)
         if not user:
-            return jsonify(success=False, message="User not signed in!")
+            return jsonify(success=False, message="User doesn't exist.")
         else:
             return jsonify(success=True, message="User data retrieved.", data=user)
 
@@ -181,7 +182,7 @@ def getUserMessageByToken():
             return jsonify(success=True, message="User messages retrieved.", data=messages)
 
 
-@app.route('/getusermessagebreyemail', methods=['POST'])
+@app.route('/getusermessagebyemail', methods=['POST'])
 def getUserMessageByEmail():
     token = request.form['token']
     email = request.form['email']

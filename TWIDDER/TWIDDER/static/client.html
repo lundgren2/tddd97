@@ -11,10 +11,13 @@
 
  <!-- Template for a user's profile information. -->
     <script id="profileInformation" type="text/x-handlebars-template">
-      <h1>Profile</h1>
-      <h2>Profile information</h2>
-      <p><span>Name:</span> {{usrfirstname}} {{ usrfamname }}</p>
-      <p><span>Email:</span> {{usremail}}</p>
+        {{#if_eq tabs 'profile'}}
+          <h1>Welcome {{ usrfirstname }} {{ usrfamname }} to TWIDDER</h1><br />
+          <br />
+        {{else}}
+        <h1>Profile for:<br> {{ usrfirstname }} {{ usrfamname }}</h1>
+        {{/if_eq}}
+      <p><span>Email:</span> <span id="usremail">{{usremail}}</span></p>
       <p><span>Gender:</span> {{usrgender}}</p>
       <p><span>City:</span> {{usrcity}}</p>
     <p><span>Country:</span> {{usrcountry}}</p>
@@ -80,27 +83,9 @@
     </script><!-- profileveview -->
 
     <script id="hometab" type="text/html">
-        <div id="personalinfo2"></div>
+
         <div id="personalinfo">
-        <h1>Welcome <span id="usrfirstname"></span> <span id="usrfamname"></span> to TWIDDER</h1>
-        <br />
-
-
-
-            <h2>Personal information</h2>
-            <br />
-            Gender:
-            <span class="persinfo" id="usrgender"></span><br />
-
-            City:
-            <span class="persinfo" id="usrcity"></span><br />
-
-            Country:
-            <span class="persinfo" id="usrcountry"></span><br />
-
-            E-mail:
-            <span class="persinfo" id="usremail"></span><br />
-            <br />
+             <div id="personalinformation"></div>
         </div>
         <div class="clear"></div>
         <div id="messageform">
@@ -142,22 +127,10 @@
         </div><!-- personal info-->
 <div id="browseinfo">
 
-        <h1>Profile for: <br><span id="usrfirstname"></span> <span id="usrfamname"></span></h1>
-        <br />
 
-            <h2>Personal information</h2>
-            <br />
-            Gender:
-            <span class="persinfo" id="usrgender"></span><br />
 
-            City:
-            <span class="persinfo" id="usrcity"></span><br />
+       <div id="browseinformation"></div>
 
-            Country:
-            <span class="persinfo" id="usrcountry"></span><br />
-
-            E-mail:
-            <span class="persinfo" id="usremail"></span><br />
             <br />
 
     <h2>Post on this wall</h2>
@@ -171,7 +144,7 @@
               <button id="sendmess" type="submit">SEND</button>
                         </fieldset>
               </form>
-              <button id="updatewall" type="submit" value="Update wall" onclick="return get_messages();"></button>
+              <button id="updatewall" type="submit" value="Update wall" onclick="return updateWall();"></button>
          <div id="userwall"></div>
 
                         </div><!-- messageform -->
