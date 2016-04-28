@@ -49,8 +49,8 @@ h1,h2 { font-size: 15pt; }
 .clear { clear:both; }
 .container {
     margin: 100px auto;
-    width: 604px; /* inclusive border 4px */
-    height: auto;
+    awidth: 604px; /* inclusive border 4px */
+    aheight: auto;
 }
 
 /* Header */
@@ -88,7 +88,7 @@ padding: 18px 8px;
 ul#tabs li#signout {float:right; background-color: rgba(102, 0, 0, 0.92); }
 ul#tabs li#signout a {color: #FFFFFF; opacity: 0.8;}
 #logoslogan {
-    width: 320px;
+    width: 100%;
     height: 380px;
     background-color: rgba(34, 34, 30, 0.6);
     border: 1px dotted #444;
@@ -97,6 +97,11 @@ ul#tabs li#signout a {color: #FFFFFF; opacity: 0.8;}
     color: #FFF;
     padding:10px;
 
+}
+#logoslogan img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .failed, #error { color: red; }
 #loggedin {
@@ -111,8 +116,8 @@ ul#tabs li#signout a {color: #FFFFFF; opacity: 0.8;}
 }
 #login {
     padding:10px;
-    width: 230px;
-    height: 120px;
+    width: 100%;
+    min-height: 120px;
     margin-bottom: 10px;
     float:left;
     background-color: rgba(255, 255, 255, 0.85);
