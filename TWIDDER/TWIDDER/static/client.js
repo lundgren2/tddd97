@@ -230,7 +230,6 @@ function getUserDataByToken() {
         if (result.data) {
             console.log(result.data);
             renderData(result.data, "profile");
-            console.log("BARA I HOME!");
             get_messages();
         }
     });
@@ -244,7 +243,6 @@ function getUserDataByEmail(email) {
         if (result.data) {
             console.info(result.data);
             renderData(result.data, "browse");
-            console.log("BARA I BROWSE!");
             get_messages(email);
         }
     });
