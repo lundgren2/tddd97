@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, url_for, jsonify, render_template
+from flask import Flask, request, redirect, url_for, jsonify, render_template, send_from_directory
 import random, re, string, database_helper, json # Random token, Regular Expressions (important)
 #from flask_sockets import Sockets
 from gevent.pywsgi import WSGIServer
@@ -11,12 +11,21 @@ from TWIDDER import app
 
 session = {}
 
+#APP_ROOT = os.path.dirname(os.path.abspath(__file__))
+'''
+UPLOAD_FOLDER = '/TWIDDER/uploads'
+ALLOWED_EXTENSIONS = set(['txt', 'mp4', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'mp3'])
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+'''
+
+
 # Database connections
 @app.before_request
 def before_request():
     #database_helper.init_db()
     database_helper.connect_db()
-
 
 
 @app.teardown_request
@@ -53,11 +62,14 @@ def api():
                 break
 
 
-
 @app.route('/initdb')
 def doinitdb():
     database_helper.init_db()
-    return 'OK'
+    return 'DB INIT OK'
+
+
+
+
 
 
 @app.route('/signup', methods=['POST'])

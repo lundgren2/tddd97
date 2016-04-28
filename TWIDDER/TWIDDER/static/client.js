@@ -359,3 +359,6 @@ function changePass(formInput){
     tabs("account");
     return false;
 }
+function upload(url){
+
+}
