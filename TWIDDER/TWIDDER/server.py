@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, url_for, jsonify, render_template
+from flask import Flask, request, redirect, url_for, jsonify, render_template, send_file
 import random, re, string, database_helper, json # Random token, Regular Expressions (important)
 #from flask_sockets import Sockets
 from gevent.pywsgi import WSGIServer
@@ -209,6 +209,19 @@ def postMessage():
     if checkLogin(token):
         database_helper.add_message(sender, recepient, message)
         return jsonify(success=True, message="Message sent")
+
+
+
+@app.route("/stream", methods=["GET"])
+def generateFile();
+    file = request.form['file']
+    path = "/storedfiles/" + file
+    try:
+
+        return send_file(path, file)
+    except Exception as e:
+        return str(e)
+
 
 
 def checkLogin(token):
