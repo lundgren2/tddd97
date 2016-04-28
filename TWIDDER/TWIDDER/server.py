@@ -1,13 +1,11 @@
-from flask import Flask, request, redirect, url_for, jsonify, render_template, send_from_directory
+from flask import Flask, request, redirect, url_for, jsonify, render_template
 import random, re, string, database_helper, json # Random token, Regular Expressions (important)
 #from flask_sockets import Sockets
 from gevent.pywsgi import WSGIServer
+from flask.ext.bcrypt import Bcrypt
 from TWIDDER import app
 
-# GLOBAL VARIABEL
-#remove redirect render template
-
-
+bcrypt = Bcrypt(app)
 
 session = {}
 
@@ -92,7 +90,10 @@ def signUp():
         if database_helper.get_user(email):
             return jsonify(success=False, message="Email already exists")
         else:
-            database_helper.signup_user(email, password, firstname, familyname, gender, city, country)
+            pw_hash = bcrypt.generate_password_hash(password)
+            print "pw: ", password, "pw_hash: ", pw_hash
+
+            database_helper.signup_user(email, pw_hash, firstname, familyname, gender, city, country)
             return jsonify(success=True, message="User signed up successfully")
 
     return jsonify(success=False, message="Formdata are not complete")
@@ -103,10 +104,10 @@ def signIn():
     email = request.form['email']
     password = request.form['password']
     # Check valid user
-    if database_helper.valid_login(email, password):
-        #if database_helper.get_loggedInUsers(email):
-            #return jsonify(success=False, message="Already signed in")
-        # Create token
+    usrpw= database_helper.get_password(email)
+    pw_hash = usrpw[0]
+    #print "pw: hash ", pw_hash
+    if bcrypt.check_password_hash(pw_hash, password):
         token = ''.join(random.choice(string.lowercase) for i in range(35))
         print token
         user = database_helper.signin_user(email, token)
@@ -148,8 +149,11 @@ def changePass():
     if not email:
         return jsonify(success=False, message="Invalid token")
 
-    if curr_pw == old_Password:
-        database_helper.set_password(email, new_Password)
+    #pw_hash = database_helper.get_password(email)
+    if (bcrypt.check_password_hash(curr_pw, old_Password)):
+    #if curr_pw == old_Password:
+        new_pw_hash = bcrypt.generate_password_hash(new_Password)
+        database_helper.set_password(email, new_pw_hash)
         return jsonify(success=True, message="Password changed successfully")
     else:
         return jsonify(success=False, message="Wrong password")
@@ -222,6 +226,19 @@ def postMessage():
         database_helper.add_message(sender, recepient, message)
         return jsonify(success=True, message="Message sent")
 
+
+'''
+@app.route("/stream", methods=["GET"])
+def generateFile();
+    file = request.form['file']
+    path = "/storedfiles/" + file
+    try:
+
+        return send_file(path, file)
+    except Exception as e:
+        return str(e)
+
+'''
 
 def checkLogin(token):
     email = database_helper.get_email(token)
