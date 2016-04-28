@@ -42,7 +42,7 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
 }
-h1,h2 { font-size: 20pt; }
+h1,h2 { font-size: 15pt; }
 
 .floatl {float:left;}
 .floatr {float:right;}
@@ -86,7 +86,7 @@ padding: 18px 8px;
 }
 
 ul#tabs li#signout {float:right; background-color: rgba(102, 0, 0, 0.92); }
-ul#tabs li#signout a {color: #ccc; opacity: 0.8;}
+ul#tabs li#signout a {color: #FFFFFF; opacity: 0.8;}
 #logoslogan {
     width: 320px;
     height: 380px;
@@ -199,8 +199,8 @@ button#sendmess {
 }
 
 #userwall {
-    max-height:150px;
-    overflow: scroll;
+    /*max-height:150px;
+    overflow: scroll; */
     margin-top: 20px;
     width: 100%;
     float:left;
