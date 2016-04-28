@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, url_for, jsonify, render_template
+from flask import Flask, request, redirect, url_for, jsonify, render_template, send_file
 import random, re, string, database_helper, json # Random token, Regular Expressions (important)
 #from flask_sockets import Sockets
 from gevent.pywsgi import WSGIServer
@@ -17,6 +17,8 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 '''
+=======
+>>>>>>> master
 
 
 # Database connections
