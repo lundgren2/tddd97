@@ -6,7 +6,7 @@ from TWIDDER import app
 
 # GLOBAL VARIABEL
 #remove redirect render template
-# TODO: /init_db function
+
 
 
 session = {}
@@ -36,18 +36,22 @@ def root():
 def api():
     if request.environ.get('wsgi.websocket'):
         ws = request.environ['wsgi.websocket']
-
         while True:
             try:
+                print session
                 email = ws.receive() #receive current user
+                print email
+                print "API CHECK EMAIL IN SESSION"
                 if email in session:
                     session[email].send("signout")
+                    print "API efter check session"
                 session[email] = ws
-                #ws.send(email)
-                # TODO: fixa except
-            except "" as err:
+
+            except Exception as err:
+                #session.remove(ws)
                 print (str(err))
-    #return 'API OK'
+                break
+
 
 
 @app.route('/initdb')
@@ -88,8 +92,8 @@ def signIn():
     password = request.form['password']
     # Check valid user
     if database_helper.valid_login(email, password):
-        if database_helper.get_loggedInUsers(email):
-            return jsonify(success=False, message="Already signed in")
+        #if database_helper.get_loggedInUsers(email):
+            #return jsonify(success=False, message="Already signed in")
         # Create token
         token = ''.join(random.choice(string.lowercase) for i in range(35))
         print token

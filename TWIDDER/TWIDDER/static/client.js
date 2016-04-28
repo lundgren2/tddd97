@@ -49,25 +49,30 @@ function rendertemplate() {
 }
 
 function connectSocket(email) {
+    console.log("connectSocketEmail 1");
     connection = new WebSocket('ws://localhost:5000/api');
     console.log("connection: " + connection);
     // Event handler
     connection.onopen = function () {
+        console.log("connectSocketEmail 3");
         emailjson = JSON.stringify({ email: email });
 // TODO: caught
-      connection.send(emailjson); // Send the message 'Ping' to the server
+      connection.send(email); // Send the message 'Ping' to the server
     };
     // Log errors
     connection.onerror = function (error) {
+        console.log("connectSocketEmail error");
         console.log('WebSocket Error ' + error);
     };
 
     // Receive messages from the server
     connection.onmessage = function (message) {
-        var jsonmessage = JSON.parse(message.data);
+        console.log("connectSocketEmail Message");
         console.log('Server: ' + message.data);
+
         if (message.data == "signout") {
-            signOut(get_token());
+            console.log("SIGNOUTSESSIONLOGISANDAJD");
+            logoutUser();
         }
     };
 
@@ -136,33 +141,16 @@ function validatePassword() {
     confirm_password.onkeyup = validatePassword;
 }
 
-function loginConverter(formInput) {
-    console.info("loggar in...");
-    var retrievedObject = serverstub.signIn(formInput.email.value, formInput.password.value);
-
-        if(retrievedObject.success === true){
-            localStorage.setItem('userToken', JSON.stringify(retrievedObject.data));
-            displayView();
-            tabs("home");
-			return true;
-        }else{
-            document.getElementById("loginfail").innerHTML = retrievedObject.message;
-            return false;
-        }
-
-    console.log('retrievedObject: ', JSON.parse(retrievedObject));
-
-}
 
 // SERVER SIDE LOGIN
 function login(formInput) {
-    console.info("loginfunktion");
     var data = "email=" + formInput.email.value + "&password=" + formInput.password.value;
     console.info(data);
     HttpRequest("POST", "/signin", data, function (result) {
+        connectSocket(formInput.email.value);
         if (result.data) {
-            console.log(formInput.email.value);
-            connectSocket(formInput.email.value);
+            console.log("i login email value: " + formInput.email.value);
+
             localStorage.setItem("userToken", result.data);
             localStorage.setItem("email", formInput.email.value);
         }
@@ -199,7 +187,7 @@ function logoutUser() {
             localStorage.removeItem('email');
         }
         else {
-            console.info("ELSSE");
+            console.info("ELSE");
         }
         displayView();
         tabs("home");
@@ -261,7 +249,6 @@ function getUserDataByEmail(email) {
         }
     });
 
-    // TODO: Ta bort om det fungerar ändå
     return false;
 }
 
@@ -284,9 +271,12 @@ function tabs(tab) {
     var element1 = document.getElementById("home");
     var element2 = document.getElementById("browse");
     var element3 = document.getElementById("account");
-    element1.classList.remove("selected");
-    element2.classList.remove("selected");
-    element3.classList.remove("selected");
+
+    if (tab == "home" || tab == "browse" || tab == "account") {
+        element1.classList.remove("selected");
+        element2.classList.remove("selected");
+        element3.classList.remove("selected");
+    }
 
     if (tab != "browse" && tab != "account") {
         document.getElementById("tabview").innerHTML = document.getElementById("hometab").innerHTML;

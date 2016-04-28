@@ -174,7 +174,7 @@ ul#tabs li#signout a {color: #FFFFFF; opacity: 0.8;}
 #messageform {
     width: 550px;
     float: left;
-    margin: 40px 0 0 30px;
+    margin: 90px 0 0 30px;
 }
 #messageform textarea {
     font-size: 0.8em;
@@ -201,7 +201,7 @@ button#sendmess {
 #userwall {
     /*max-height:150px;
     overflow: scroll; */
-    margin-top: 20px;
+    margin-top: 5px;
     width: 100%;
     float:left;
 }
