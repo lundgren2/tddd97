@@ -4,6 +4,10 @@ import random, re, string, database_helper, json # Random token, Regular Express
 from gevent.pywsgi import WSGIServer
 from flask.ext.bcrypt import Bcrypt
 from TWIDDER import app
+import hashlib
+import hmac
+import base64
+
 
 bcrypt = Bcrypt(app)
 
@@ -57,10 +61,6 @@ def doinitdb():
     return 'DB INIT OK'
 
 
-
-
-
-
 @app.route('/signup', methods=['POST'])
 def signUp():
     email = request.form['email']
@@ -110,6 +110,7 @@ def signIn():
 @app.route('/signout', methods=['POST'])
 def signOut():
     token = request.form['token']
+    token = verify_token(token)
     if token:
         response = database_helper.signOut(token)
         if response:
@@ -123,6 +124,7 @@ def signOut():
 @app.route('/changepass', methods=['POST'])
 def changePass():
     token = request.form['token']
+    token = verify_token(token)
     old_Password = request.form['old_password']
     new_Password = request.form['new_password']
     email = database_helper.get_email(token)
@@ -152,8 +154,14 @@ def changePass():
 @app.route('/getuserdatabytoken', methods=['POST'])
 def getUserDataByToken():
     token = request.form['token']
+    print token
+    token = verify_token(token)
+    print "token i getuserfan: ", token
     email = database_helper.get_email(token)
+    print email
     email = email[0]
+    print "EMAIL 0: ", email
+
     if database_helper.get_loggedInUsers(email):
         user = database_helper.get_user(email)
     if user is None:
@@ -165,6 +173,8 @@ def getUserDataByToken():
 @app.route('/getuserdatabyemail', methods=['POST'])
 def getUserDataByEmail():
     token = request.form['token']
+    token = verify_token(token)
+
     email = request.form['email']
     checkuser = database_helper.get_email(token)
     checklogin = database_helper.get_loggedInUsers(checkuser[0])
@@ -180,6 +190,7 @@ def getUserDataByEmail():
 @app.route('/getusermessagebytoken', methods=['POST'])
 def getUserMessageByToken():
     token = request.form['token']
+    token = verify_token(token)
     email = database_helper.get_email(token)
     email = email[0]
     if not email:
@@ -195,6 +206,7 @@ def getUserMessageByToken():
 @app.route('/getusermessagebyemail', methods=['POST'])
 def getUserMessageByEmail():
     token = request.form['token']
+    token = verify_token(token)
     email = request.form['email']
     if checkLogin(token):
         user = database_helper.get_messages(email)
@@ -207,15 +219,20 @@ def getUserMessageByEmail():
 @app.route('/postmessage', methods=['POST'])
 def postMessage():
     token = request.form['token']
+    token = verify_token(token)
+    check = request.form['check'] # FIXA!
+
+
     message = request.form['message']
     recepient = request.form['email']
     sender = database_helper.get_email(token)
     sender = sender[0]
 
-    if checkLogin(token):
-        database_helper.add_message(sender, recepient, message)
-        return jsonify(success=True, message="Message sent")
-
+    if checksum(message, token, check):
+        if checkLogin(token):
+            database_helper.add_message(sender, recepient, message)
+            return jsonify(success=True, message="Message sent")
+    return jsonify(success=False, message="Message ERROR!")
 
 def checkLogin(token):
     email = database_helper.get_email(token)
@@ -226,6 +243,36 @@ def checkLogin(token):
     else:
         return True
 
+
+def verify_token(hashObj):
+    hashObj = json.loads(hashObj)
+
+    email = hashObj['email']
+    hash = hashObj['hash']
+    email = bytes(email).encode('utf-8')
+    hash = bytes(hash).encode('utf-8')
+    secrettoken = database_helper.get_loggedInUsers(email)
+    secrettoken = secrettoken[1]
+    secrettoken = bytes(secrettoken).encode('utf-8')
+    print secrettoken
+    print "EMAIL ", email
+    print "HASH: ", hash
+    compare = base64.b64encode(hmac.new(secrettoken, email, digestmod=hashlib.sha256).digest())
+    print "COMPARE :", compare
+
+    if compare == hash:
+        return secrettoken
+    else:
+        return False
+
+def checksum(msg, token, hash):
+    localhash = hash.hash
+    compare = base64.b64encode(hmac.new(token, msg, digestmod=hashlib.sha256).digest())
+
+    if compare == localhash:
+        return True
+    else:
+        return False
 
 # Run file as a standalone application
 if __name__ == "__main__":

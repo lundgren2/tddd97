@@ -61,7 +61,7 @@ def add_message(sender, recipient, message):
 def get_loggedInUsers(email):
     user = query_db('SELECT * FROM loggedInUsers WHERE email is ?', [email], one=True)
     if user is not None:
-        return True
+        return user
     else:
         return False
 

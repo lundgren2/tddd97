@@ -196,8 +196,17 @@ function logoutUser() {
 // GET LOCAL TOKEN
 function get_token() {
     var token = localStorage.getItem('userToken');
-    //return JSON.parse(token);
-    return token;
+    var email = localStorage.getItem('email');
+    //http://www.jokecamp.com/blog/examples-of-creating-base64-hashes-using-hmac-sha256-in-different-languages/
+
+    var hash = CryptoJS.HmacSHA256(email, token);
+    var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
+    console.log(hashInBase64);
+    var jsonHash = JSON.stringify({ email: email, hash: hashInBase64 });
+
+    console.log("jsonHash: " + jsonHash);
+    return jsonHash;
+
 }
 
 
@@ -225,7 +234,7 @@ function renderData(usrData, tab) {
 // SERVER SIDE
 function getUserDataByToken() {
     var data = "token=" + get_token();
-
+    console.log("token i get USERSDATABYTOKEN: " + data);
     HttpRequest("POST", "/getuserdatabytoken", data, function (result) {
         if (result.data) {
             console.log(result.data);
@@ -326,8 +335,10 @@ function get_messages(email) {
     return false; //ta ej bort
 }
 
+// SERVER SIDE
 function postMessage(token, message, email) {
-    var data = "token=" + token + "&message=" + message + "&email=" + email;
+    var checksum = hashMessage(message);
+    var data = "token=" + token + "&message=" + message + "&email=" + email + "&check=" + checksum;
     HttpRequest("POST", "/postmessage", data, function (result) {
         console.log(result.message);
     })
@@ -358,3 +369,15 @@ function changePass(formInput){
     return false;
 }
 
+
+function hashMessage (message) {
+    var token = localStorage.getItem('userToken');
+    var hash = CryptoJS.HmacSHA512(message, token);
+    var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
+    console.log(hashInBase64);
+    var jsonHash = JSON.stringify({ hash: hashInBase64 });
+
+    console.log("jsonHash: " + jsonHash);
+    return jsonHash;
+
+}
