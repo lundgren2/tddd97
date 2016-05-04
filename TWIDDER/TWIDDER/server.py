@@ -142,17 +142,13 @@ def signOut():
     token = verify_token(token)
     print "TOKEN EFTER SIGNOUT: ", token
 
-    email = database_helper.get_email(token)[0]
+    #email = database_helper.get_email(token)[0]
 
-    global session
+    #global session
 
     if token:
         response = database_helper.signOut(token)
         if response:
-            print "NU SIGNAR VI UT!", response
-            #session = {}
-            #del session[email]
-            print session
             return jsonify(success=True, message="User signed out successfully")
         else:
             return jsonify(success=False, message="Already logged out")
