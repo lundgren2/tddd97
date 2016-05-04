@@ -124,3 +124,12 @@ def signOut(token):
         return True
     else:
         return False
+
+def signOutbyEmail(email):
+    user = query_db('DELETE FROM loggedInUsers WHERE email = ?',
+                    [email], one=True)
+
+    if user is None:
+        return True
+    else:
+        return False

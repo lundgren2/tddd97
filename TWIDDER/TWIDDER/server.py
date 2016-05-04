@@ -4,6 +4,7 @@ import random, re, string, database_helper, json # Random token, Regular Express
 from gevent.pywsgi import WSGIServer
 from flask.ext.bcrypt import Bcrypt
 from TWIDDER import app
+import urllib
 import hashlib
 import hmac
 import base64
@@ -42,17 +43,33 @@ def api():
             try:
                 print session
                 email = ws.receive() #receive current user
-                print email
-                print "API CHECK EMAIL IN SESSION"
+                print "EMAIL I API: ", email
+
+                if email is not None:
+                    print "not none"
+                else:
+                    print "heheheh FET VARNING!!!"
+
                 if email in session:
                     session[email].send("signout")
+                    del session[email]
+                    database_helper.signOutbyEmail(email)
+                    print session
+                    ws.close()
                     print "API efter check session"
                 session[email] = ws
 
+                if email is None:
+                    del session[email]
+                    ws.close()
+                    return ''
+
             except Exception as err:
+                #print "Hej except"
                 #session.remove(ws)
                 print (str(err))
                 break
+                #return "Hej except"
 
 
 @app.route('/initdb')
@@ -97,9 +114,11 @@ def signIn():
     usrpw= database_helper.get_password(email)
     pw_hash = usrpw[0]
     #print "pw: hash ", pw_hash
+
     if bcrypt.check_password_hash(pw_hash, password):
         token = ''.join(random.choice(string.lowercase) for i in range(35))
         print token
+        #database_helper.signOutbyEmail(email)
         user = database_helper.signin_user(email, token)
         if user is not None:
             return jsonify(success=True, message="User successfully signed in", data=token)
@@ -111,9 +130,17 @@ def signIn():
 def signOut():
     token = request.form['token']
     token = verify_token(token)
+    email = database_helper.get_email(token)[0]
+
+    global session
+    print "TOKEN I SIGNOUT: ", token
     if token:
         response = database_helper.signOut(token)
         if response:
+            print "NU SIGNAR VI UT!"
+            #session = {}
+            del session[email]
+            print session
             return jsonify(success=True, message="User signed out successfully")
         else:
             return jsonify(success=False, message="Already logged out")
@@ -154,11 +181,9 @@ def changePass():
 @app.route('/getuserdatabytoken', methods=['POST'])
 def getUserDataByToken():
     token = request.form['token']
-    print token
     token = verify_token(token)
     print "token i getuserfan: ", token
     email = database_helper.get_email(token)
-    print email
     email = email[0]
     print "EMAIL 0: ", email
 
@@ -221,8 +246,8 @@ def postMessage():
     token = request.form['token']
     token = verify_token(token)
     check = request.form['check'] # FIXA!
-
-
+    check = json.loads(check)
+    print "CHECK i postmessage:", check['hash']
     message = request.form['message']
     recepient = request.form['email']
     sender = database_helper.get_email(token)
@@ -236,6 +261,7 @@ def postMessage():
 
 def checkLogin(token):
     email = database_helper.get_email(token)
+    print email
     email = email[0]
     result = database_helper.get_loggedInUsers(email)
     if not result:
@@ -249,15 +275,19 @@ def verify_token(hashObj):
 
     email = hashObj['email']
     hash = hashObj['hash']
+    #print "HASH INNNA UFTENCODE: ", hash
     email = bytes(email).encode('utf-8')
     hash = bytes(hash).encode('utf-8')
     secrettoken = database_helper.get_loggedInUsers(email)
     secrettoken = secrettoken[1]
+    #print secrettoken
     secrettoken = bytes(secrettoken).encode('utf-8')
     print secrettoken
-    print "EMAIL ", email
+    #print "EMAIL ", email
     print "HASH: ", hash
+
     compare = base64.b64encode(hmac.new(secrettoken, email, digestmod=hashlib.sha256).digest())
+    #compare = urllib.quote_plus(compare)
     print "COMPARE :", compare
 
     if compare == hash:
@@ -266,9 +296,12 @@ def verify_token(hashObj):
         return False
 
 def checksum(msg, token, hash):
-    localhash = hash.hash
+    print "checksum HASH", hash
+    localhash = hash['hash']
+    #print "hash jsonhsah", hash['hash']
+    print 'hashhash: ', localhash
     compare = base64.b64encode(hmac.new(token, msg, digestmod=hashlib.sha256).digest())
-
+    print "COMPARE I CHECK: ", compare
     if compare == localhash:
         return True
     else:

@@ -10,6 +10,7 @@ Handlebars.registerHelper('if_eq', function(a, b, opts) {
         return opts.inverse(this);
 });
 
+// TODO: Ta bort
 Handlebars.registerHelper('link', function(text, url) {
   text = Handlebars.Utils.escapeExpression(text);
   url  = Handlebars.Utils.escapeExpression(url);
@@ -25,7 +26,6 @@ displayView = function() {
         document.getElementById("mainview").innerHTML = document.getElementById("profileview").innerHTML;
         tabs();
     } else {
-
         document.getElementById("mainview").innerHTML = document.getElementById("welcomeview").innerHTML;
     }
 };
@@ -150,12 +150,11 @@ function login(formInput) {
         connectSocket(formInput.email.value);
         if (result.data) {
             console.log("i login email value: " + formInput.email.value);
-
             localStorage.setItem("userToken", result.data);
             localStorage.setItem("email", formInput.email.value);
         }
         displayView();
-        tabs("home");
+        //tabs("home");
     })
 }
 
@@ -183,8 +182,12 @@ function logoutUser() {
     console.info(logindata);
     HttpRequest("POST", "/signout", logindata, function (res){
         if (res.success) {
+            console.info("SU CCESS");
             localStorage.removeItem('userToken');
             localStorage.removeItem('email');
+            console.log("DÖDAR SOCKET");
+            connection.close();
+            console.log(" SOCKETDÖD");
         }
         else {
             console.info("ELSE");
@@ -202,6 +205,7 @@ function get_token() {
     var hash = CryptoJS.HmacSHA256(email, token);
     var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
     console.log(hashInBase64);
+    hashInBase64 = fixEscape(hashInBase64);
     var jsonHash = JSON.stringify({ email: email, hash: hashInBase64 });
 
     console.log("jsonHash: " + jsonHash);
@@ -252,7 +256,7 @@ function getUserDataByEmail(email) {
         if (result.data) {
             console.info(result.data);
             renderData(result.data, "browse");
-            get_messages(email);
+            //get_messages(email);
         }
     });
 
@@ -264,7 +268,6 @@ function browseUserInfo(email) {
 
     var token = localStorage.getItem("userToken");
     console.log("Browsed user loaded.");
-
 
     getUserDataByEmail(email.value);
     document.getElementById("browseinfo").className = "show";
@@ -307,6 +310,8 @@ function updateWall() {
 }
 
 function get_messages(email) {
+
+    console.log("INNE I GET_MESSAGE");
     var messContent;
     document.getElementById("userwall").innerHTML = "";
     if (email == null) {
@@ -338,6 +343,8 @@ function get_messages(email) {
 // SERVER SIDE
 function postMessage(token, message, email) {
     var checksum = hashMessage(message);
+    checksum = fixEscape(checksum);
+    console.log("postMessage checksum:", checksum);
     var data = "token=" + token + "&message=" + message + "&email=" + email + "&check=" + checksum;
     HttpRequest("POST", "/postmessage", data, function (result) {
         console.log(result.message);
@@ -372,7 +379,7 @@ function changePass(formInput){
 
 function hashMessage (message) {
     var token = localStorage.getItem('userToken');
-    var hash = CryptoJS.HmacSHA512(message, token);
+    var hash = CryptoJS.HmacSHA256(message, token);
     var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
     console.log(hashInBase64);
     var jsonHash = JSON.stringify({ hash: hashInBase64 });
@@ -380,4 +387,8 @@ function hashMessage (message) {
     console.log("jsonHash: " + jsonHash);
     return jsonHash;
 
+}
+function fixEscape(str)
+{
+    return encodeURIComponent(str);
 }
