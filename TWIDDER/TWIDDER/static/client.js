@@ -57,7 +57,7 @@ function connectSocket(email) {
         console.log("connectSocketEmail 3");
         emailjson = JSON.stringify({ email: email });
 // TODO: caught
-      connection.send(email); // Send the message 'Ping' to the server
+      connection.send(email);
     };
     // Log errors
     connection.onerror = function (error) {
@@ -192,6 +192,7 @@ function logoutUser() {
         else {
             console.info("ELSE");
         }
+
         displayView();
         tabs("home");
     });
@@ -243,7 +244,7 @@ function getUserDataByToken() {
         if (result.data) {
             console.log(result.data);
             renderData(result.data, "profile");
-            get_messages();
+            //get_messages(); //LÄGG TIBX
         }
     });
 }

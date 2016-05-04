@@ -116,6 +116,7 @@ def valid_login(email, password):
 
 # Logout user
 def signOut(token):
+    print "INNE I SIGNOUT"
     checktoken = query_db('SELECT * FROM loggedInUsers WHERE token = ?', [token], one=True)
     user = query_db('DELETE FROM loggedInUsers WHERE token = ?',
                     [token], one=True)
