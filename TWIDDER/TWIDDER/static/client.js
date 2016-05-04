@@ -10,16 +10,6 @@ Handlebars.registerHelper('if_eq', function(a, b, opts) {
         return opts.inverse(this);
 });
 
-// TODO: Ta bort
-Handlebars.registerHelper('link', function(text, url) {
-  text = Handlebars.Utils.escapeExpression(text);
-  url  = Handlebars.Utils.escapeExpression(url);
-
-  var result = '<a href="' + url + '">' + text + '</a>';
-
-  return new Handlebars.SafeString(result);
-});
-
 
 displayView = function() {
     if(localStorage.userToken) {
@@ -244,7 +234,7 @@ function getUserDataByToken() {
         if (result.data) {
             console.log(result.data);
             renderData(result.data, "profile");
-            //get_messages(); //LÄGG TIBX
+            get_messages(); //LÄGG TIBX
         }
     });
 }
@@ -257,7 +247,7 @@ function getUserDataByEmail(email) {
         if (result.data) {
             console.info(result.data);
             renderData(result.data, "browse");
-            //get_messages(email);
+            get_messages(email);
         }
     });
 
