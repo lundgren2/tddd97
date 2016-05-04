@@ -61,7 +61,7 @@ def add_message(sender, recipient, message):
 def get_loggedInUsers(email):
     user = query_db('SELECT * FROM loggedInUsers WHERE email is ?', [email], one=True)
     if user is not None:
-        return True
+        return user
     else:
         return False
 
@@ -116,11 +116,21 @@ def valid_login(email, password):
 
 # Logout user
 def signOut(token):
+    print "INNE I SIGNOUT"
     checktoken = query_db('SELECT * FROM loggedInUsers WHERE token = ?', [token], one=True)
     user = query_db('DELETE FROM loggedInUsers WHERE token = ?',
                     [token], one=True)
 
     if user is None and checktoken is not None:
+        return True
+    else:
+        return False
+
+def signOutbyEmail(email):
+    user = query_db('DELETE FROM loggedInUsers WHERE email = ?',
+                    [email], one=True)
+
+    if user is None:
         return True
     else:
         return False

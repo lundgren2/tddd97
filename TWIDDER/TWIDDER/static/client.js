@@ -10,6 +10,7 @@ Handlebars.registerHelper('if_eq', function(a, b, opts) {
         return opts.inverse(this);
 });
 
+// TODO: Ta bort
 Handlebars.registerHelper('link', function(text, url) {
   text = Handlebars.Utils.escapeExpression(text);
   url  = Handlebars.Utils.escapeExpression(url);
@@ -25,7 +26,6 @@ displayView = function() {
         document.getElementById("mainview").innerHTML = document.getElementById("profileview").innerHTML;
         tabs();
     } else {
-
         document.getElementById("mainview").innerHTML = document.getElementById("welcomeview").innerHTML;
     }
 };
@@ -57,7 +57,7 @@ function connectSocket(email) {
         console.log("connectSocketEmail 3");
         emailjson = JSON.stringify({ email: email });
 // TODO: caught
-      connection.send(email); // Send the message 'Ping' to the server
+      connection.send(email);
     };
     // Log errors
     connection.onerror = function (error) {
@@ -150,12 +150,11 @@ function login(formInput) {
         connectSocket(formInput.email.value);
         if (result.data) {
             console.log("i login email value: " + formInput.email.value);
-
             localStorage.setItem("userToken", result.data);
             localStorage.setItem("email", formInput.email.value);
         }
         displayView();
-        tabs("home");
+        //tabs("home");
     })
 }
 
@@ -183,12 +182,17 @@ function logoutUser() {
     console.info(logindata);
     HttpRequest("POST", "/signout", logindata, function (res){
         if (res.success) {
+            console.info("SU CCESS");
             localStorage.removeItem('userToken');
             localStorage.removeItem('email');
+            console.log("DÖDAR SOCKET");
+            connection.close();
+            console.log(" SOCKETDÖD");
         }
         else {
             console.info("ELSE");
         }
+
         displayView();
         tabs("home");
     });
@@ -196,8 +200,18 @@ function logoutUser() {
 // GET LOCAL TOKEN
 function get_token() {
     var token = localStorage.getItem('userToken');
-    //return JSON.parse(token);
-    return token;
+    var email = localStorage.getItem('email');
+    //http://www.jokecamp.com/blog/examples-of-creating-base64-hashes-using-hmac-sha256-in-different-languages/
+
+    var hash = CryptoJS.HmacSHA256(email, token);
+    var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
+    console.log(hashInBase64);
+    hashInBase64 = fixEscape(hashInBase64);
+    var jsonHash = JSON.stringify({ email: email, hash: hashInBase64 });
+
+    console.log("jsonHash: " + jsonHash);
+    return jsonHash;
+
 }
 
 
@@ -225,12 +239,12 @@ function renderData(usrData, tab) {
 // SERVER SIDE
 function getUserDataByToken() {
     var data = "token=" + get_token();
-
+    console.log("token i get USERSDATABYTOKEN: " + data);
     HttpRequest("POST", "/getuserdatabytoken", data, function (result) {
         if (result.data) {
             console.log(result.data);
             renderData(result.data, "profile");
-            get_messages();
+            //get_messages(); //LÄGG TIBX
         }
     });
 }
@@ -243,7 +257,7 @@ function getUserDataByEmail(email) {
         if (result.data) {
             console.info(result.data);
             renderData(result.data, "browse");
-            get_messages(email);
+            //get_messages(email);
         }
     });
 
@@ -255,7 +269,6 @@ function browseUserInfo(email) {
 
     var token = localStorage.getItem("userToken");
     console.log("Browsed user loaded.");
-
 
     getUserDataByEmail(email.value);
     document.getElementById("browseinfo").className = "show";
@@ -298,6 +311,8 @@ function updateWall() {
 }
 
 function get_messages(email) {
+
+    console.log("INNE I GET_MESSAGE");
     var messContent;
     document.getElementById("userwall").innerHTML = "";
     if (email == null) {
@@ -326,8 +341,12 @@ function get_messages(email) {
     return false; //ta ej bort
 }
 
+// SERVER SIDE
 function postMessage(token, message, email) {
-    var data = "token=" + token + "&message=" + message + "&email=" + email;
+    var checksum = hashMessage(message);
+    checksum = fixEscape(checksum);
+    console.log("postMessage checksum:", checksum);
+    var data = "token=" + token + "&message=" + message + "&email=" + email + "&check=" + checksum;
     HttpRequest("POST", "/postmessage", data, function (result) {
         console.log(result.message);
     })
@@ -358,3 +377,19 @@ function changePass(formInput){
     return false;
 }
 
+
+function hashMessage (message) {
+    var token = localStorage.getItem('userToken');
+    var hash = CryptoJS.HmacSHA256(message, token);
+    var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
+    console.log(hashInBase64);
+    var jsonHash = JSON.stringify({ hash: hashInBase64 });
+
+    console.log("jsonHash: " + jsonHash);
+    return jsonHash;
+
+}
+function fixEscape(str)
+{
+    return encodeURIComponent(str);
+}
