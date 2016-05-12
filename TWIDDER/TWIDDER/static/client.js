@@ -328,7 +328,7 @@ function get_messages(email) {
         });
     }
 
-    return false; //ta ej bort
+    return false;
 }
 
 // SERVER SIDE

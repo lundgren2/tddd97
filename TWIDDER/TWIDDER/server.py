@@ -119,7 +119,8 @@ def signIn():
     #print "pw: hash ", pw_hash
     if email in session:
         session[email].send("signout")
-        del session[email]
+        #del session[email]
+        #database_helper.signOutbyEmail(email)
     if bcrypt.check_password_hash(pw_hash, password):
         token = ''.join(random.choice(string.lowercase) for i in range(35))
         print "Token i sign in: ", token
@@ -142,12 +143,13 @@ def signOut():
     token = verify_token(token)
     print "TOKEN EFTER SIGNOUT: ", token
 
-    #email = database_helper.get_email(token)[0]
+    email = database_helper.get_email(token)[0]
 
     #global session
 
     if token:
         response = database_helper.signOut(token)
+        del session[email]
         if response:
             return jsonify(success=True, message="User signed out successfully")
         else:
